@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "brown_concrete_powder",
+  "ingredients": [
+    {
+      "tag": "minecraft:concrete_powder"
+    },
+    {
+      "item": "minecraft:brown_dye"
+    }
+  ],
+  "result": {
+    "item": "minecraft:brown_concrete_powder"
+  }
+}
