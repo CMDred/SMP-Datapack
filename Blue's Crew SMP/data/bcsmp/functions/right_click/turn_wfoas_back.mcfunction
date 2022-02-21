@@ -4,6 +4,7 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #------------CHECK SLOT CHANGE-------------#
+tag @s add InFunction
 data modify storage bcsmp:inventory Inventory set from entity @s Inventory
 
 scoreboard players set #SlotHasChanged Temp 0
@@ -45,5 +46,6 @@ execute if score #SlotHasChanged Temp matches 0 if data storage bcsmp:inventory 
 execute if score #SlotHasChanged Temp matches 0 if data storage bcsmp:inventory Inventory[{Slot:35b,tag:{RightClickItem:1b}}] run function bcsmp:right_click/turn_wfoas_back/inventory_26
 
 advancement revoke @s only bcsmp:right_click/change_wfoas_back
+tag @s remove InFunction
 #------------------------------------------#
 
