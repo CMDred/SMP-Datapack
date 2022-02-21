@@ -1,0 +1,14 @@
+{
+  "function": "minecraft:copy_nbt",
+  "source": {
+    "type": "minecraft:storage",
+    "source": "bcsmp:change_durability"
+  },
+  "ops": [
+    {
+      "source": "Damage",
+      "target": "Damage",
+      "op": "replace"
+    }
+  ]
+}

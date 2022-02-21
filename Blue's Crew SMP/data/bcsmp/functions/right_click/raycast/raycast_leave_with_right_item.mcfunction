@@ -16,4 +16,3 @@ item replace entity @s weapon.mainhand from block 29999977 1 29832 container.0
 setblock 29999977 1 29832 air
 tag @s remove AimsAtRightBlockWithRightItem
 #------------------------------------------#
-

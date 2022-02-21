@@ -5,7 +5,7 @@
 #==========================================#
 #---------CHECK WHAT BLOCK WE HIT----------#
 ## 1 = concrete powder
-## 2 = crops
+## 2 = crops (hoes)
 ## 3 = piston (slime_ball)
 ## 4 = sticky_piston (axes)
 execute if score #SearchFor Temp matches 1 if block ~ ~ ~ #minecraft:concrete_powders run tag @s add SugarOnConcrete
@@ -20,4 +20,3 @@ execute if score #SearchFor Temp matches 3 if block ~ ~ ~ minecraft:piston if en
 execute if score #SearchFor Temp matches 4 if block ~ ~ ~ minecraft:sticky_piston run tag @s add AxesOnStickyPiston
 execute if score #SearchFor Temp matches 4 if block ~ ~ ~ minecraft:sticky_piston if entity @s[tag=!AimsAtRightBlockWithRightItem] run function bcsmp:right_click/raycast/raycast_enter_with_right_item
 #------------------------------------------#
-
