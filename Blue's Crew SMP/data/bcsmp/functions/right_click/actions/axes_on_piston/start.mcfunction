@@ -21,14 +21,13 @@ execute if block ~ ~ ~ sticky_piston[facing=south] align xyz run particle item_s
 execute if block ~ ~ ~ sticky_piston[facing=east] align xyz run particle item_slime ~1.2 ~0.3 ~0.5 0.02 0.2 0.2 0.01 12 normal
 execute if block ~ ~ ~ sticky_piston[facing=west] align xyz run particle item_slime ~-0.2 ~0.3 ~0.5 0.02 0.2 0.2 0.01 12 normal
 #replace sticky_piston to piston
-execute if block ~ ~ ~ sticky_piston[facing=down] run setblock ~ ~ ~ piston[facing=down] 
-execute if block ~ ~ ~ sticky_piston[facing=up] run setblock ~ ~ ~ piston[facing=up] 
-execute if block ~ ~ ~ sticky_piston[facing=north] run setblock ~ ~ ~ piston[facing=north] 
-execute if block ~ ~ ~ sticky_piston[facing=south] run setblock ~ ~ ~ piston[facing=south] 
-execute if block ~ ~ ~ sticky_piston[facing=east] run setblock ~ ~ ~ piston[facing=east] 
+execute if block ~ ~ ~ sticky_piston[facing=down] run setblock ~ ~ ~ piston[facing=down]
+execute if block ~ ~ ~ sticky_piston[facing=up] run setblock ~ ~ ~ piston[facing=up]
+execute if block ~ ~ ~ sticky_piston[facing=north] run setblock ~ ~ ~ piston[facing=north]
+execute if block ~ ~ ~ sticky_piston[facing=south] run setblock ~ ~ ~ piston[facing=south]
+execute if block ~ ~ ~ sticky_piston[facing=east] run setblock ~ ~ ~ piston[facing=east]
 execute if block ~ ~ ~ sticky_piston[facing=west] run setblock ~ ~ ~ piston[facing=west]
 
 #play sound
-playsound entity.slime.jump master @s ~ ~ ~ 1 1.3 1
+playsound minecraft:item.axe.scrape master @s ~ ~ ~ 1 1.3 1
 #------------------------------------------#
-
