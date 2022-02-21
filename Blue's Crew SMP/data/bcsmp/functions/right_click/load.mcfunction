@@ -6,4 +6,3 @@
 #-------------------INIT-------------------#
 scoreboard objectives add PreviousSlot dummy
 #------------------------------------------#
-
