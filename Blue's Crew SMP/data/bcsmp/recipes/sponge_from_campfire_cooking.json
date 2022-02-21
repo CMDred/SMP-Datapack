@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "group": "sponge",
+  "ingredient": {
+    "item": "minecraft:wet_sponge"
+  },
+  "result": "minecraft:sponge",
+  "cookingtime": 600
+}

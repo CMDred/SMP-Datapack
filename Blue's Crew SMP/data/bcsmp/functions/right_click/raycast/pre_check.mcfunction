@@ -30,4 +30,3 @@ tag @s add ThisPlayer
 execute anchored eyes run function bcsmp:right_click/raycast/raycast
 tag @s remove ThisPlayer
 #------------------------------------------#
-

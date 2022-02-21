@@ -9,4 +9,3 @@ tag @s remove IsHoldingRCItem
 function bcsmp:right_click/turn_wfoas_back
 execute if predicate bcsmp:right_click/check_rightclickable run function bcsmp:right_click/is_holding_rightclickable
 #------------------------------------------#
-
