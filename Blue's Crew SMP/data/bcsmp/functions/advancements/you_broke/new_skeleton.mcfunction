@@ -3,8 +3,11 @@
 # Please don't claim this as your own work #
 #     Youtube : Blue's Production Team     #
 #==========================================#
-#------------CHECK SLOT CHANGE-------------#
-execute store result score #CurrentSlot Temp run data get entity @s SelectedItemSlot
-execute unless score #CurrentSlot Temp = @s PreviousSlot run function bcsmp:right_click/slot_changed 
+#-------------------INIT-------------------#
+scoreboard players set in RandMath 120
+scoreboard players set in1 RandMath 200
+function bcsmp:random/range_lcg
+scoreboard players operation @s YB_ArrowsLeft = out RandMath
+tag @s add YB_Registered
 #------------------------------------------#
 

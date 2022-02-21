@@ -4,7 +4,7 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #------------------RESET-------------------#
-scoreboard players operation @s PreviousSlot = $CurrentSlot Temp
+scoreboard players operation @s PreviousSlot = #CurrentSlot Temp
 #----------------CALC STATS----------------#
 function stats:calculate/stats
 #---------------UPDATE LORE----------------#
@@ -29,14 +29,14 @@ execute if entity @s[nbt={Dimension:"bcsmp:mines",SelectedItem:{tag:{bcsmp:{Type
 data remove storage bcsmp:item Item
 data modify storage bcsmp:item Item set from entity @s SelectedItem
 effect clear @s haste
-execute store result score $MiningSpeed Temp run data get storage bcsmp:item Item.tag.bcsmp.MiningSpeed
-execute if score $MiningSpeed Temp matches 1 run effect give @s haste 99999 0 true
-execute if score $MiningSpeed Temp matches 2 run effect give @s haste 99999 1 true
-execute if score $MiningSpeed Temp matches 3 run effect give @s haste 99999 2 true
-execute if score $MiningSpeed Temp matches 4 run effect give @s haste 99999 3 true
-execute if score $MiningSpeed Temp matches 5 run effect give @s haste 99999 4 true
-execute if score $MiningSpeed Temp matches 6 run effect give @s haste 99999 5 true
-execute if score $MiningSpeed Temp matches 7 run effect give @s haste 99999 6 true
+execute store result score #MiningSpeed Temp run data get storage bcsmp:item Item.tag.bcsmp.MiningSpeed
+execute if score #MiningSpeed Temp matches 1 run effect give @s haste 99999 0 true
+execute if score #MiningSpeed Temp matches 2 run effect give @s haste 99999 1 true
+execute if score #MiningSpeed Temp matches 3 run effect give @s haste 99999 2 true
+execute if score #MiningSpeed Temp matches 4 run effect give @s haste 99999 3 true
+execute if score #MiningSpeed Temp matches 5 run effect give @s haste 99999 4 true
+execute if score #MiningSpeed Temp matches 6 run effect give @s haste 99999 5 true
+execute if score #MiningSpeed Temp matches 7 run effect give @s haste 99999 6 true
 #-------------SPELL RECORDING--------------#
 clear @s warped_fungus_on_a_stick{SpellRecorder:1b}
 tag @s remove RecordingSpell

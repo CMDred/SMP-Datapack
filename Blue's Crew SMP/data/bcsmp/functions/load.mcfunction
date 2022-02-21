@@ -85,6 +85,8 @@ scoreboard objectives add SneakDelay dummy
 scoreboard objectives add Air dummy
 #--------------MODULE RELOADS--------------#
 function bcsmp:right_click/load
+function bcsmp:advancements/load
+function bcsmp:mobs/load
 #-----------------MESSAGE------------------#
 tellraw @a ["",{"text":"BlueSMP =>","color":"green","bold":true},{"text":" Reload Successful.","color":"gray","italic":true}]
 #------------------------------------------#

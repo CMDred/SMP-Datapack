@@ -3,8 +3,8 @@
 # Please don't claim this as your own work #
 #     Youtube : Blue's Production Team     #
 #==========================================#
-#------------CHECK SLOT CHANGE-------------#
-execute store result score #CurrentSlot Temp run data get entity @s SelectedItemSlot
-execute unless score #CurrentSlot Temp = @s PreviousSlot run function bcsmp:right_click/slot_changed 
+#-------------------INIT-------------------#
+scoreboard players remove @s YB_ArrowsLeft 1
+execute if score @s YB_ArrowsLeft matches ..0 run function bcsmp:advancements/you_broke/run_out_of_arrows
 #------------------------------------------#
 

@@ -1,6 +1,8 @@
 {
     "values": [
         "minecraft:sugar",
-        "#minecraft:hoes"
+        "#minecraft:hoes",
+        "#minecraft:axes",
+        "minecraft:slime_ball"
     ]
 }

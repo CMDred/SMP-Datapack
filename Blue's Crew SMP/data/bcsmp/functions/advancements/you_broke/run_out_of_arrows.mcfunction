@@ -3,8 +3,10 @@
 # Please don't claim this as your own work #
 #     Youtube : Blue's Production Team     #
 #==========================================#
-#------------CHECK SLOT CHANGE-------------#
-execute store result score #CurrentSlot Temp run data get entity @s SelectedItemSlot
-execute unless score #CurrentSlot Temp = @s PreviousSlot run function bcsmp:right_click/slot_changed 
+#-------------------INIT-------------------#
+data remove entity @s HandItems[0]
+scoreboard players set #Reach Temp 40
+function bcsmp:advancements/you_broke/find_player_raycast
+advancement grant @a[tag=ThisPlayer] only bcsmp:custom_advancements/you_broke
 #------------------------------------------#
 
