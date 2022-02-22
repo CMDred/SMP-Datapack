@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:lime_shulker_box"
+    },
+    "title": "Wait, you do that too?",
+    "description": "Rename a shulker to \"jeb_\" to make it colorful, just like sheeps.",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:end/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

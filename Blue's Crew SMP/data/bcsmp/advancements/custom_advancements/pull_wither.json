@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:fishing_rod"
+    },
+    "title": "You think that's gonna work?",
+    "description": "Pull a wither with a fishing rod.",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/summon_wither",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:wither"
+        }
+      }
+    }
+  }
+}
