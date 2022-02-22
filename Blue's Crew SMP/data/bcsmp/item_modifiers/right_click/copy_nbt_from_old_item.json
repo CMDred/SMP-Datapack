@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:copy_nbt",
+      "source": {
+        "type": "minecraft:storage",
+        "source": "bcsmp:inventory"
+      },
+      "ops": [
+        {
+          "source": "OldItem.tag",
+          "target": "{}",
+          "op": "merge"
+        }
+      ]
+    }
+  ]
+  

@@ -3,12 +3,8 @@
 # Please don't claim this as your own work #
 #     Youtube : Blue's Production Team     #
 #==========================================#
-#-------------------TICK-------------------#
-#Modules
-function bcsmp:right_click/main
-function bcsmp:advancements/main
-function bcsmp:mobs/main
-
-# Events
-execute as @a[scores={RightClick=1..}] at @s run function bcsmp:keyboard_event/right_click
+#-------------------INIT-------------------#
+execute store result score #UUID0 Temp run data get entity @s UUID[0]
+execute if score #SearchUUID0 Temp = #UUID0 Temp if entity @s[type=#minecraft:skeletons] at @s run function bcsmp:advancements/you_broke/shot
 #------------------------------------------#
+

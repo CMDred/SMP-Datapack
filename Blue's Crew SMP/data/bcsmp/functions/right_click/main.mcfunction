@@ -4,11 +4,8 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-------------------TICK-------------------#
-#Modules
-function bcsmp:right_click/main
-function bcsmp:advancements/main
-function bcsmp:mobs/main
-
-# Events
-execute as @a[scores={RightClick=1..}] at @s run function bcsmp:keyboard_event/right_click
+# Change Slot detection
+execute as @a run function bcsmp:right_click/check_slot_change
+# Check
+execute as @a[tag=IsHoldingRCItem] at @s run function bcsmp:right_click/raycast/pre_check
 #------------------------------------------#
