@@ -26,6 +26,7 @@ data modify block 29999977 1 29832 Items[0].id set value "minecraft:warped_fungu
 data modify block 29999977 1 29832 Items[0].tag.StoredID set from storage bcsmp:inventory OldItem.id
 data modify block 29999977 1 29832 Items[0].tag.RightClickItem set value 1b
 execute store result block 29999977 1 29832 Items[0].tag.CustomModelData int 1 run scoreboard players get #CMM Temp
+
 scoreboard players set #HadNoName Temp 0
 execute unless data storage bcsmp:inventory OldItem.tag.display.Name run scoreboard players set #HadNoName Temp 1
 execute if score #HadNoName Temp matches 1 run data modify block 29999977 1 29832 Items[0].tag.HadNoName set value 1b

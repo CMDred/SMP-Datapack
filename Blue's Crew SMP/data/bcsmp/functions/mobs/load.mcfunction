@@ -12,5 +12,12 @@ scoreboard objectives add MobBaseHealth dummy
 scoreboard objectives add MobBaseArmor dummy
 scoreboard objectives add MobBaseSpeed dummy
 
+scoreboard objectives add MobTier dummy
+
+scoreboard objectives add PlayerMobKills dummy
+
+scoreboard objectives add FullChance dummy
+
+scoreboard objectives add GetPlaytime trigger
 #------------------------------------------#
 

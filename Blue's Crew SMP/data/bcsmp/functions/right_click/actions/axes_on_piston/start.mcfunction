@@ -20,6 +20,7 @@ execute if block ~ ~ ~ sticky_piston[facing=north] align xyz run particle item_s
 execute if block ~ ~ ~ sticky_piston[facing=south] align xyz run particle item_slime ~0.5 ~0.3 ~1.2 0.2 0.2 0.02 0.01 12 normal
 execute if block ~ ~ ~ sticky_piston[facing=east] align xyz run particle item_slime ~1.2 ~0.3 ~0.5 0.02 0.2 0.2 0.01 12 normal
 execute if block ~ ~ ~ sticky_piston[facing=west] align xyz run particle item_slime ~-0.2 ~0.3 ~0.5 0.02 0.2 0.2 0.01 12 normal
+
 #replace sticky_piston to piston
 execute if block ~ ~ ~ sticky_piston[facing=down] run setblock ~ ~ ~ piston[facing=down]
 execute if block ~ ~ ~ sticky_piston[facing=up] run setblock ~ ~ ~ piston[facing=up]
