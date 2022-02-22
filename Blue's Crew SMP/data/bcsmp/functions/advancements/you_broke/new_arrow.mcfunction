@@ -3,12 +3,10 @@
 # Please don't claim this as your own work #
 #     Youtube : Blue's Production Team     #
 #==========================================#
-#-------------------TICK-------------------#
-#Modules
-function bcsmp:right_click/main
-function bcsmp:advancements/main
-function bcsmp:mobs/main
-
-# Events
-execute as @a[scores={RightClick=1..}] at @s run function bcsmp:keyboard_event/right_click
+#-------------------INIT-------------------#
+# find entity who shot
+execute store result score #SearchUUID0 Temp run data get entity @s Owner[0]
+execute at @s as @e[distance=..1.65] run function bcsmp:advancements/you_broke/check_uuid
+tag @s add YB_Registered
 #------------------------------------------#
+
