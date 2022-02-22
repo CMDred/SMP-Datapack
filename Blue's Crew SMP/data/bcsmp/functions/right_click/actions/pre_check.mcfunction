@@ -13,6 +13,6 @@ execute if entity @s[tag=AxesOnStickyPiston] run scoreboard players set #SearchF
 # reach in blocks / 0.25 = #Reach
 scoreboard players set #Reach Temp 20
 tag @s add ThisPlayer
-execute anchored eyes positioned ^ ^ ^ run function bcsmp:right_click/actions/raycast
+execute at @s anchored eyes positioned ^ ^ ^ run function bcsmp:right_click/actions/raycast
 tag @s remove ThisPlayer
 #------------------------------------------#

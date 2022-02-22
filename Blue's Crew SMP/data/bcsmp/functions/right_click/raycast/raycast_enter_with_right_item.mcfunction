@@ -26,6 +26,23 @@ data modify block 29999977 1 29832 Items[0].id set value "minecraft:warped_fungu
 data modify block 29999977 1 29832 Items[0].tag.StoredID set from storage bcsmp:inventory OldItem.id
 data modify block 29999977 1 29832 Items[0].tag.RightClickItem set value 1b
 execute store result block 29999977 1 29832 Items[0].tag.CustomModelData int 1 run scoreboard players get #CMM Temp
+scoreboard players set #HadNoName Temp 0
+execute unless data storage bcsmp:inventory OldItem.tag.display.Name run scoreboard players set #HadNoName Temp 1
+execute if score #HadNoName Temp matches 1 run data modify block 29999977 1 29832 Items[0].tag.HadNoName set value 1b
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 1 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.sugar","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 2 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.wooden_hoe","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 3 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.stone_hoe","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 4 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.iron_hoe","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 5 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.golden_hoe","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 6 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.diamond_hoe","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 7 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.netherite_hoe","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 8 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.slime_ball","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 9 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.wooden_axe","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 10 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.stone_axe","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 11 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.iron_axe","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 12 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.golden_axe","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 13 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.diamond_axe","italic":"false"}'
+execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 14 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.netherite_axe","italic":"false"}'
 item replace entity @s weapon.mainhand from block 29999977 1 29832 container.0
 setblock 29999977 1 29832 air
 tag @s add AimsAtRightBlockWithRightItem
