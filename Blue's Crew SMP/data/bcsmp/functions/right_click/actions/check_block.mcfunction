@@ -4,19 +4,14 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #---------CHECK WHAT BLOCK WE HIT----------#
-## 1 = concrete powder
-## 2 = crops
+## 1 = concrete powder (sugar)
+## 2 = crops (hoes)
 ## 3 = piston (slime_ball)
 ## 4 = sticky_piston (axes)
 
-tag @s remove ConsumesItem
-tag @s remove ConsumesDurability
-
-# add EITHER "ConsumesItem" OR "ConsumesDurability" to @s to choose what the action consumes
-
 execute if score #SearchFor Temp matches 1 if block ~ ~ ~ #minecraft:concrete_powders run function bcsmp:right_click/actions/sugar_on_concrete/start
-execute if score #SearchFor Temp matches 2 if block ~ ~ ~ #minecraft:crops[age=7] run function bcsmp:right_click/actions/hoes_on_crops/start
+execute if score #SearchFor Temp matches 2 if block ~ ~ ~ #bcsmp:crops[age=7] run function bcsmp:right_click/actions/hoes_on_crops/start
+execute if score #SearchFor Temp matches 2 if block ~ ~ ~ minecraft:beetroots[age=3] run function bcsmp:right_click/actions/hoes_on_crops/start
 execute if score #SearchFor Temp matches 3 if block ~ ~ ~ minecraft:piston run function bcsmp:right_click/actions/slimeball_on_piston/start
 execute if score #SearchFor Temp matches 4 if block ~ ~ ~ minecraft:sticky_piston run function bcsmp:right_click/actions/axes_on_piston/start
 #------------------------------------------#
-

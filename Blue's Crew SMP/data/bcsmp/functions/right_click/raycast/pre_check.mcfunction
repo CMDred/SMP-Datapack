@@ -27,6 +27,6 @@ execute if predicate bcsmp:right_click/axes run scoreboard players set #SearchFo
 # reach in blocks / 0.25 = #Reach
 scoreboard players set #Reach Temp 20
 tag @s add ThisPlayer
-execute anchored eyes run function bcsmp:right_click/raycast/raycast
+execute anchored eyes positioned ^ ^ ^ run function bcsmp:right_click/raycast/raycast
 tag @s remove ThisPlayer
 #------------------------------------------#

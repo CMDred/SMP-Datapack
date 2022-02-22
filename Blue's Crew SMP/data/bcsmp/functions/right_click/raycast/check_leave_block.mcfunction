@@ -11,8 +11,8 @@
 execute if score #SearchFor Temp matches 1 unless block ~ ~ ~ #minecraft:concrete_powders run tag @s remove SugarOnConcrete
 execute if score #SearchFor Temp matches 1 unless block ~ ~ ~ #minecraft:concrete_powders run function bcsmp:right_click/raycast/raycast_leave_with_right_item
 
-execute if score #SearchFor Temp matches 2 unless block ~ ~ ~ #minecraft:crops[age=7] run tag @s remove HoesOnCrop
-execute if score #SearchFor Temp matches 2 unless block ~ ~ ~ #minecraft:crops[age=7] run function bcsmp:right_click/raycast/raycast_leave_with_right_item
+execute if score #SearchFor Temp matches 2 unless block ~ ~ ~ #bcsmp:crops[age=7] run tag @s remove HoesOnCrop
+execute if score #SearchFor Temp matches 2 unless block ~ ~ ~ #bcsmp:crops[age=7] run function bcsmp:right_click/raycast/raycast_leave_with_right_item
 
 execute if score #SearchFor Temp matches 3 unless block ~ ~ ~ minecraft:piston run tag @s remove SlimeballOnPiston
 execute if score #SearchFor Temp matches 3 unless block ~ ~ ~ minecraft:piston run function bcsmp:right_click/raycast/raycast_leave_with_right_item

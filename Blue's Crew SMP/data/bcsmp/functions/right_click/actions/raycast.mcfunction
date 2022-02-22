@@ -10,4 +10,3 @@ scoreboard players remove #Reach Temp 1
 execute if score #Reach Temp matches 1.. if score #CurrentBlockAcceptable Temp matches 1 run function bcsmp:right_click/actions/check_block
 execute if score #Reach Temp matches 1.. if score #CurrentBlockAcceptable Temp matches 0 positioned ^ ^ ^0.25 run function bcsmp:right_click/actions/raycast
 #------------------------------------------#
-
