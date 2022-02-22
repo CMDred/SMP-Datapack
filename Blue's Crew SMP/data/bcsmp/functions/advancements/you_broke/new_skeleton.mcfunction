@@ -3,12 +3,11 @@
 # Please don't claim this as your own work #
 #     Youtube : Blue's Production Team     #
 #==========================================#
-#-------------------TICK-------------------#
-#Modules
-function bcsmp:right_click/main
-function bcsmp:advancements/main
-function bcsmp:mobs/main
-
-# Events
-execute as @a[scores={RightClick=1..}] at @s run function bcsmp:keyboard_event/right_click
+#-------------------INIT-------------------#
+scoreboard players set in RandMath 120
+scoreboard players set in1 RandMath 200
+function bcsmp:random/range_lcg
+scoreboard players operation @s YB_ArrowsLeft = out RandMath
+tag @s add YB_Registered
 #------------------------------------------#
+

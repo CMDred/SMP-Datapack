@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "nbt": "{RightClickItem:1b}"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "nbt": "{RightClickItem:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:right_click/turn_wfoas_back"
+  }
+}
