@@ -10,5 +10,5 @@ execute if score #ChargeTime Temp matches 1 run tag @r[distance=..60,gamemode=!c
 execute if score #ChargeTime Temp matches 1 at @a[tag=LaserTarget,limit=1] run summon marker ~ ~ ~ {Tags:["LaserTargetMarker"]}
 
 particle flash ~ ~ ~ 1 1 1 0.10 20 force
-execute if score #ChargeTime Temp matches 80.. run function bcsmp:mobs/ai/ender_dragon_fight/attacks/laser/shoot
+execute if score #ChargeTime Temp matches 80.. run function bcsmp:mobs/ai/ender_dragon_fight/abilities/laser/shoot
 #------------------------------------------#

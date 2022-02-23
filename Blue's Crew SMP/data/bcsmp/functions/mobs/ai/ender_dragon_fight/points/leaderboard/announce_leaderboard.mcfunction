@@ -14,4 +14,9 @@ tellraw @a ["",{"text":"4. ","color": "yellow","bold": true},{"selector":"@a[tag
 tellraw @a ["",{"text":"5. ","color": "yellow","bold": true},{"selector":"@a[tag=FifthPlace,limit=1]","bold": false},{"text":" - ","color":"yellow","bold": true},{"score":{"name": "@a[tag=FifthPlace,limit=1]","objective": "EndPoints"},"color": "blue"},{"text":" pts\n","color":"yellow","bold": true}]
 tellraw @a ["",{"text":"Final Hit - ","color": "aqua","bold": true},{"selector":"@a[tag=FinalHit,limit=1]","bold": false},{"text":" (+5 pts)","color": "aqua","bold": true}]
 tellraw @a ["",{"text":"==============================","color": "gold","bold": true}]
+tag @a remove FirstPlace
+tag @a remove SecondPlace
+tag @a remove ThirdPlace
+tag @a remove FourthPlace
+tag @a remove FifthPlace
 #------------------------------------------#

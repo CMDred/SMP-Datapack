@@ -22,5 +22,9 @@ scoreboard objectives add EndPoints dummy
 scoreboard objectives add AddEndPoints dummy
 scoreboard objectives add PlacedEyes dummy
 scoreboard objectives add End_PtsRanking dummy
+team add ProtectiveTotem_Melee
+team add ProtectiveTotem_Ranged
+team modify ProtectiveTotem_Melee color red
+team modify ProtectiveTotem_Ranged color blue
 #------------------------------------------#
 

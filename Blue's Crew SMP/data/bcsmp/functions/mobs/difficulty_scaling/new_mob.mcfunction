@@ -76,12 +76,6 @@ execute if entity @s[tag=!IgnoreStatScaling] run function bcsmp:mobs/difficulty_
 # prevent it from dropping armor
 data modify entity @s ArmorDropChances set value [0f,0f,0f,0f]
 
-
-
-
-# special cases
-execute if entity @s[type=slime] if predicate bcsmp:mobs/is_in_end unless data entity @s {Size:3} at @s run tp @s ~ ~-300 ~
-
 # Register the mob
 tag @s add Registered
 tag @s add NewMobDelay

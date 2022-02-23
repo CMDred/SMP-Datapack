@@ -19,5 +19,6 @@ scoreboard players set #DragonFightSeconds Temp 0
 scoreboard players set #DragonFightMinutes Temp 0
 scoreboard players set @a EndPoints 0
 tag @a remove FinalHit
+tp @e[tag=ProtectiveTotem] ~ ~-300 ~ 
 schedule function bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/kill_stands 120s
 #------------------------------------------#
