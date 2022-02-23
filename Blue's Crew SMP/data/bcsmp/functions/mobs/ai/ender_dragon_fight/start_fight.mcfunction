@@ -42,6 +42,9 @@ advancement revoke @a only bcsmp:mobs/ender_dragon_fight/placed_crystal
 # Summon leaderboard armor stands
 function bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/summon_stands
 
+# Clear the scheduled "kill_stands" function so that leaderboard armor stands don't get removed if another dragon was spawned
+schedule clear bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/kill_stands
+
 # Dragon abilities
 scoreboard players set #LaserTime Temp 500
 scoreboard players set #TPTime Temp 200
