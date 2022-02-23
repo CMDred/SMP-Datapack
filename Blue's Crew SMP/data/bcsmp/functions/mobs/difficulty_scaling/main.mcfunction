@@ -6,6 +6,7 @@
 #-----------------PLAYTIME-----------------#
 execute as @a run function bcsmp:mobs/difficulty_scaling/playtime/tick
 #-----------------NEW MOB------------------#
+execute as @e[type=#bcsmp:hostile,tag=NewMobDelay] run function bcsmp:mobs/difficulty_scaling/new_mob_delay
 execute as @e[type=#bcsmp:hostile,tag=!Registered] run function bcsmp:mobs/difficulty_scaling/new_mob
 #--------------GET PLAYTIME----------------#
 execute as @a[scores={GetPlaytime=1..}] run function bcsmp:mobs/difficulty_scaling/playtime/get_playtime

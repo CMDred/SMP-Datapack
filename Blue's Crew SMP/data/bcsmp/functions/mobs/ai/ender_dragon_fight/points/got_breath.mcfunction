@@ -4,10 +4,6 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------------AI TICK------------------#
-# Shulker
-execute as @e[type=shulker,tag=Named,name=!"jeb_"] run function bcsmp:mobs/ai/shulker_color/reset
-execute as @e[type=shulker,tag=Named] run function bcsmp:mobs/ai/shulker_color/main
-
-# Dragon Fight
-function bcsmp:mobs/ai/ender_dragon_fight/main
+execute if score #FightOnGoing Temp matches 1.. run scoreboard players set @s AddEndPoints 1
+advancement revoke @s only bcsmp:mobs/ender_dragon_fight/get_breath
 #------------------------------------------#
