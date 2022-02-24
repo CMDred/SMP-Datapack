@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:deepslate_coal_ore"
+    },
+    "title": "Oh, Shiny! Wait...",
+    "description": "Find a deepslate coal ore, the rarest ore",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "bcsmp:custom_advancements/mine_all",
+  "criteria": {
+    "find_deepslate_coal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:deepslate_coal_ore"
+          ]
+        }
+      }
+    }
+  }
+}

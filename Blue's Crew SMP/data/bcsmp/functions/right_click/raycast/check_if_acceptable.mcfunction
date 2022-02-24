@@ -16,7 +16,4 @@ execute if score #SearchFor Temp matches 2 if block ~ ~ ~ minecraft:beetroots[ag
 execute if score #SearchFor Temp matches 3 if block ~ ~ ~ minecraft:piston run scoreboard players set #CurrentBlockAcceptable Temp 1
 
 execute if score #SearchFor Temp matches 4 if block ~ ~ ~ minecraft:sticky_piston run scoreboard players set #CurrentBlockAcceptable Temp 1
-
-
-# execute if score #SearchFor Temp matches 3 if block ~ ~ ~ minecraft:... run tag @s add ...On...
 #------------------------------------------#
