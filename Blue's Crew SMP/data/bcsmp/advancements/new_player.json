@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "new_player": {
+        "trigger": "minecraft:tick"
+      }
+    },
+    "rewards": {
+      "function": "bcsmp:new_player"
+    }
+  }
+  

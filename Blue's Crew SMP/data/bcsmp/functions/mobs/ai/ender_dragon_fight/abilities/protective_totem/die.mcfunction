@@ -4,6 +4,7 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #---------------DRAGON FIGHT---------------#
+bossbar set bcsmp:totem_health visible false
 execute as @e[type=ender_dragon] run data modify entity @s NoAI set value 0b
 tag @e[type=ender_dragon] remove IsProtected
 particle flash ~ ~ ~ 2 2 2 0.01 30 force

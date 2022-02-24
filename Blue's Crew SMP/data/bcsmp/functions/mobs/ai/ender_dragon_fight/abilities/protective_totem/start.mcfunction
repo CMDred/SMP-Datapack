@@ -4,6 +4,10 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #---------------DRAGON FIGHT---------------#
+bossbar set bcsmp:totem_health max 100
+bossbar set bcsmp:totem_health value 100
+bossbar set bcsmp:totem_health visible true
+bossbar set bcsmp:totem_health players @a[predicate=bcsmp:mobs/is_in_end,distance=..150]
 scoreboard players set in RandMath 80
 scoreboard players set in1 RandMath 100
 function bcsmp:random/range_lcg

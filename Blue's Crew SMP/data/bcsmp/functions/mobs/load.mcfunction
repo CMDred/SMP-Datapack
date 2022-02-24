@@ -26,5 +26,6 @@ team add ProtectiveTotem_Melee
 team add ProtectiveTotem_Ranged
 team modify ProtectiveTotem_Melee color red
 team modify ProtectiveTotem_Ranged color blue
+bossbar add bcsmp:totem_health {"text":"Totem"}
 #------------------------------------------#
 
