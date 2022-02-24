@@ -10,6 +10,7 @@
 ## 4 = sticky_piston (axes)
 execute if score #SearchFor Temp matches 1 if block ~ ~ ~ #minecraft:concrete_powders run function bcsmp:right_click/actions/sugar_on_concrete/start
 execute if score #SearchFor Temp matches 2 if block ~ ~ ~ #minecraft:crops[age=7] run function bcsmp:right_click/actions/hoes_on_crops/start
+execute if score #SearchFor Temp matches 2 if block ~ ~ ~ minecraft:beetroots[age=3] run function bcsmp:right_click/actions/hoes_on_crops/start
 execute if score #SearchFor Temp matches 3 if block ~ ~ ~ minecraft:piston run function bcsmp:right_click/actions/slimeball_on_piston/start
 execute if score #SearchFor Temp matches 4 if block ~ ~ ~ minecraft:sticky_piston run function bcsmp:right_click/actions/axes_on_piston/start
 function bcsmp:right_click/slot_changed

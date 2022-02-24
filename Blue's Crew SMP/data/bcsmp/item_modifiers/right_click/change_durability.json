@@ -6,8 +6,8 @@
   },
   "ops": [
     {
-      "source": "Damage",
-      "target": "Damage",
+      "source": "ItemDamage",
+      "target": "ItemDamage",
       "op": "replace"
     }
   ]

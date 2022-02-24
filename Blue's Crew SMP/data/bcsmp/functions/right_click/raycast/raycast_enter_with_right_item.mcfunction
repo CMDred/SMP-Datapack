@@ -44,6 +44,22 @@ execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 11 run dat
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 12 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.golden_axe","italic":"false"}'
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 13 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.diamond_axe","italic":"false"}'
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 14 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.netherite_axe","italic":"false"}'
+
+scoreboard players reset #MaxDurability Temp
+execute if score #CMM Temp matches 2 run scoreboard players set #MaxDurability Temp 59
+execute if score #CMM Temp matches 3 run scoreboard players set #MaxDurability Temp 131
+execute if score #CMM Temp matches 4 run scoreboard players set #MaxDurability Temp 250
+execute if score #CMM Temp matches 5 run scoreboard players set #MaxDurability Temp 32
+execute if score #CMM Temp matches 6 run scoreboard players set #MaxDurability Temp 1561
+execute if score #CMM Temp matches 7 run scoreboard players set #MaxDurability Temp 2031
+execute if score #CMM Temp matches 9 run scoreboard players set #MaxDurability Temp 59
+execute if score #CMM Temp matches 10 run scoreboard players set #MaxDurability Temp 131
+execute if score #CMM Temp matches 11 run scoreboard players set #MaxDurability Temp 250
+execute if score #CMM Temp matches 12 run scoreboard players set #MaxDurability Temp 32
+execute if score #CMM Temp matches 13 run scoreboard players set #MaxDurability Temp 1561
+execute if score #CMM Temp matches 14 run scoreboard players set #MaxDurability Temp 2031
+execute if score #MaxDurability Temp matches 1.. run function bcsmp:right_click/raycast/set_new_durability
+
 item replace entity @s weapon.mainhand from block 29999977 1 29832 container.0
 setblock 29999977 1 29832 air
 tag @s add AimsAtRightBlockWithRightItem
