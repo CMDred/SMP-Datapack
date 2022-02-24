@@ -5,4 +5,6 @@
 #==========================================#
 #------------DIFFICULTY SCALER-------------#
 function bcsmp:mobs/difficulty_scaling/main
+#----------------CUSTOM AI-----------------#
+function bcsmp:mobs/ai/main
 #------------------------------------------#

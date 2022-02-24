@@ -1,8 +1,8 @@
-#==========================================#
+##
 #          Created by Blue's Crew          #
 # Please don't claim this as your own work #
 #     Youtube : Blue's Production Team     #
-#==========================================#
+##
 #-------------------TICK-------------------#
 #Modules
 function bcsmp:right_click/main

@@ -6,6 +6,8 @@
 
 #-------------------INIT-------------------#
 execute in minecraft:overworld run forceload add 29999977 29832
+# forceload end's 0 0 or else the Armor Stands for the leaderboard won't spawn
+execute in minecraft:the_end run forceload add 0 0
 
 scoreboard players set #lcg Constant 1103515245
 scoreboard objectives add RandMath dummy

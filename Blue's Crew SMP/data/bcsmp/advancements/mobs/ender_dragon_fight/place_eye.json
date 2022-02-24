@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:ender_eye"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:end_portal_frame"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:mobs/ai/ender_dragon_fight/points/placed_eye"
+  }
+}

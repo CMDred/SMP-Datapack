@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:trident"
+    },
+    "title": "Very Very Very Frightening",
+    "description": "Strike lightning on a creeper using channeling.",
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/very_very_frightening",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:channeled_lightning",
+      "conditions": {
+        "victims": [
+          {
+            "type": "minecraft:creeper"
+          }
+        ]
+      }
+    }
+  }
+}

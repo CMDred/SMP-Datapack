@@ -9,6 +9,11 @@
 # 2 = crops (hoes)
 ## 3 = piston (slime_ball)
 ## 4 = sticky_piston (axes)
+tag @s remove SugarOnConcrete
+tag @s remove HoesOnCrops
+tag @s remove SlimeballOnPiston
+tag @s remove AxesOnStickyPiston
+
 
 scoreboard players set #SearchFor Temp 0
 execute store result score #CMM Temp run data get entity @s SelectedItem.tag.CustomModelData
@@ -26,7 +31,5 @@ execute if predicate bcsmp:right_click/axes run scoreboard players set #SearchFo
 # #Reach * 0.25 = reach in blocks
 # reach in blocks / 0.25 = #Reach
 scoreboard players set #Reach Temp 20
-tag @s add ThisPlayer
 execute at @s anchored eyes positioned ^ ^ ^ run function bcsmp:right_click/raycast/raycast
-tag @s remove ThisPlayer
 #------------------------------------------#
