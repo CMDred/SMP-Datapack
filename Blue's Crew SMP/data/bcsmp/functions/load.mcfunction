@@ -20,6 +20,7 @@ scoreboard objectives add RightClick minecraft.used:minecraft.warped_fungus_on_a
 function bcsmp:right_click/load
 function bcsmp:advancements/load
 function bcsmp:mobs/load
+function bcsmp:factions/load
 #-----------------MESSAGE------------------#
 tellraw @a ["",{"text":"BlueSMP =>","color":"green","bold":true},{"text":" Reload Successful.","color":"gray","italic":true}]
 #------------------------------------------#

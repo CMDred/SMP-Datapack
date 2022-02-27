@@ -1,0 +1,21 @@
+{
+    "structures": [
+      {
+        "structure": "bcsmp:faction_outpost",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "spread_type": "triangular",
+      "spacing": 30,
+      "separation": 15,
+      "salt": 0,
+      "locate_offset": [
+        0,
+        0,
+        0
+      ]
+    }
+  }
+  

@@ -15,11 +15,13 @@
     "find_deepslate_coal": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "item": {
-          "items": [
-            "minecraft:deepslate_coal_ore"
-          ]
-        }
+        "items": [
+          {
+            "items": [
+              "minecraft:deepslate_coal_ore"
+            ]
+          }
+        ]
       }
     }
   }
