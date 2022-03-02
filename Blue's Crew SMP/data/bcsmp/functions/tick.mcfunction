@@ -11,4 +11,6 @@ function bcsmp:mobs/main
 
 # Events
 execute as @a[scores={RightClick=1..}] at @s run function bcsmp:keyboard_event/right_click
+# Lightning upgrading Brewing Stands
+execute at @e[type=lightning_bolt] run function bcsmp:check_brewing
 #------------------------------------------#
