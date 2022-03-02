@@ -29,6 +29,9 @@ execute if block ~ ~ ~ sticky_piston[facing=south] run setblock ~ ~ ~ piston[fac
 execute if block ~ ~ ~ sticky_piston[facing=east] run setblock ~ ~ ~ piston[facing=east]
 execute if block ~ ~ ~ sticky_piston[facing=west] run setblock ~ ~ ~ piston[facing=west]
 
+#give advancement
+advancement grant @s only bcsmp:custom_advancements/slime_off
+
 #play sound
 playsound minecraft:item.axe.scrape master @s ~ ~ ~ 1 1.3 1
 
