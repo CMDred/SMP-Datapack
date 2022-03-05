@@ -4,6 +4,7 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------------FACTIONS-----------------#
-tag @s add FactionBanner
-execute as @e[type=item,tag=!FactionBanner,tag=!FactionPaper,distance=..0.8] at @s if predicate bcsmp:factions/check_if_wool run function bcsmp:factions/villager/got_all_data
+data modify storage bcsmp:factions FactionToJoin set from entity @e[tag=InviteManager,distance=..1.5,limit=1] ArmorItems[0].tag.ManagerOf
+function bcsmp:factions/join_faction/start
+item modify entity @s weapon.mainhand bcsmp:right_click/consume_item
 #------------------------------------------#

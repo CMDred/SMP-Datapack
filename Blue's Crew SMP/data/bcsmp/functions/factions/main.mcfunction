@@ -5,8 +5,12 @@
 #==========================================#
 #-----------------FACTIONS-----------------#
 # Outpost villager AI
-execute as @e[tag=FactionOutpostVillager,tag=!Converted] at @s run function bcsmp:factions/villager/convert
+execute as @e[tag=FactionOutpostVillager,tag=!Converted,tag=!InviteManager] at @s run function bcsmp:factions/villager/convert
 execute as @e[tag=FactionOutpostVillager,tag=Converted,tag=!FactionCreated] at @s run function bcsmp:factions/villager/main
 execute as @e[tag=FactionOutpostVillager,tag=Converted] at @s run tp @s ~ ~ ~ facing entity @p feet
-# tp @s 1267 70 -1800 -90 5
+
+execute as @a at @s run function bcsmp:factions/area_of_effect/main
+
+execute as @a[scores={GetFactionList=1..}] run function bcsmp:factions/get_list/start
+scoreboard players enable @a GetFactionList
 #------------------------------------------#

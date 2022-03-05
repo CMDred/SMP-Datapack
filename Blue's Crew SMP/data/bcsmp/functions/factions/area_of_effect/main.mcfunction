@@ -4,6 +4,6 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------------FACTIONS-----------------#
-tag @s add FactionBanner
-execute as @e[type=item,tag=!FactionBanner,tag=!FactionPaper,distance=..0.8] at @s if predicate bcsmp:factions/check_if_wool run function bcsmp:factions/villager/got_all_data
+execute unless entity @e[tag=FactionCenter,distance=..200] if entity @s[tag=IsInFactionArea] run function bcsmp:factions/area_of_effect/leave_area
+execute if entity @e[tag=FactionCenter,distance=..200] if entity @s[tag=!IsInFactionArea] run function bcsmp:factions/area_of_effect/enter_area
 #------------------------------------------#

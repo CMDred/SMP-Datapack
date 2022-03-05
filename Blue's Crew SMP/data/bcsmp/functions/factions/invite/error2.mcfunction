@@ -4,6 +4,6 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------------FACTIONS-----------------#
-tag @s add FactionBanner
-execute as @e[type=item,tag=!FactionBanner,tag=!FactionPaper,distance=..0.8] at @s if predicate bcsmp:factions/check_if_wool run function bcsmp:factions/villager/got_all_data
+tellraw @s ["",{"text":"The Invite Token does not belong to this faction!","color":"red"}]
+playsound entity.villager.no master @s ~ ~ ~ 1 1 1
 #------------------------------------------#

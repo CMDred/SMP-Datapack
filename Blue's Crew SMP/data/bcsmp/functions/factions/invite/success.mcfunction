@@ -4,6 +4,6 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------------FACTIONS-----------------#
-tag @s add FactionBanner
-execute as @e[type=item,tag=!FactionBanner,tag=!FactionPaper,distance=..0.8] at @s if predicate bcsmp:factions/check_if_wool run function bcsmp:factions/villager/got_all_data
+scoreboard players set #Reach Temp 25
+execute anchored eyes positioned ^ ^ ^ run function bcsmp:factions/invite/find_villager_raycast 
 #------------------------------------------#

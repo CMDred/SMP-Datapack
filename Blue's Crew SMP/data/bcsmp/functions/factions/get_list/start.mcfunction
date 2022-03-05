@@ -4,9 +4,10 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------------FACTIONS-----------------#
-tag @s remove ColorAvailable
-data modify storage bcsmp:factions ColorLookingFor set from storage bcsmp:factions NewFaction.Color
-data modify storage bcsmp:factions CheckIfTaken set from storage bcsmp:factions Factions
+tellraw @p {"text":"--------FACTIONS LIST-------","color":"gray","bold":true}
+playsound block.note_block.flute master @s ~ ~ ~ 1 1 1
 execute store result score #AmountOfIterations Temp run data get storage bcsmp:factions Factions
-function bcsmp:factions/check_if_color_taken/cycle
+function bcsmp:factions/get_list/cycle
+tellraw @p {"text":"---------------------------","color":"gray","bold":true}
+scoreboard players reset @s GetFactionList
 #------------------------------------------#

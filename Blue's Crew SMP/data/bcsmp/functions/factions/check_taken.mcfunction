@@ -4,6 +4,8 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------------FACTIONS-----------------#
-tag @s add FactionBanner
-execute as @e[type=item,tag=!FactionBanner,tag=!FactionPaper,distance=..0.8] at @s if predicate bcsmp:factions/check_if_wool run function bcsmp:factions/villager/got_all_data
+tag @s remove FactionAvailable
+function bcsmp:factions/check_if_color_taken/start
+function bcsmp:factions/check_if_name_taken/start
+execute if entity @s[tag=ColorAvailable,tag=NameAvailable] run tag @s add FactionAvailable
 #------------------------------------------#

@@ -4,6 +4,8 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------------FACTIONS-----------------#
-data modify entity @s Motion set value [0.0,0.8,0.2]
-tellraw @p {"text":"That color is already taken!","color":"red"}
+execute store result score #AmountOfIterations Temp run data get storage bcsmp:factions Factions
+execute store result score #UUID0 Temp run data get entity @s UUID[0]
+execute store result score #UUID1 Temp run data get entity @s UUID[1]
+function bcsmp:factions/check_if_in/cycle_factions
 #------------------------------------------#
