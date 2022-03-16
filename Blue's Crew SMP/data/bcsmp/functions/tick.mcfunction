@@ -8,6 +8,7 @@
 function bcsmp:right_click/main
 function bcsmp:advancements/main
 function bcsmp:mobs/main
+function bcsmp:temperature/main
 
 # Events
 execute as @a[scores={RightClick=1..}] at @s run function bcsmp:keyboard_event/right_click

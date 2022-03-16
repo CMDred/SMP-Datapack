@@ -17,11 +17,19 @@ scoreboard objectives add Temp dummy
 scoreboard objectives add JoinGame minecraft.custom:minecraft.leave_game
 scoreboard objectives add RightClick minecraft.used:minecraft.warped_fungus_on_a_stick
 
+scoreboard players set #Constant-1 Temp -1
+scoreboard players set #Constant10 Temp 10
+scoreboard players set #Constant13 Temp 13
+scoreboard players set #Constant33 Temp 33
+scoreboard players set #Constant50 Temp 50
 scoreboard players set #Constant100 Temp 100
+scoreboard players set #Constant400 Temp 400
+scoreboard players set #Constant10000 Temp 10000
 #--------------MODULE RELOADS--------------#
 function bcsmp:right_click/load
 function bcsmp:advancements/load
 function bcsmp:mobs/load
+function bcsmp:temperature/load
 #-----------------MESSAGE------------------#
 tellraw @a ["",{"text":"BlueSMP =>","color":"green","bold":true},{"text":" Reload Successful.","color":"gray","italic":true}]
 #------------------------------------------#

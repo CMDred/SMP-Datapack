@@ -1,0 +1,31 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "enchantments": [
+              {
+                "enchantment": "minecraft:fire_aspect"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "tag": "bcsmp:temperature_items"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "biome": "minecraft:savanna_plateau"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:temperature/enter_biome/savanna_plateau"
+  }
+}
