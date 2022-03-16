@@ -6,7 +6,7 @@
 #-----------------RAYCAST------------------#
 data modify storage bcsmp:inventory OldItem set from entity @s SelectedItem
 data remove storage bcsmp:inventory OldItem.Slot
-execute if data storage bcsmp:inventory OldItem{id:"minecraft:sugar"} run scoreboard players set #CMM Temp 1
+#execute if data storage bcsmp:inventory OldItem{id:"minecraft:sugar"} run scoreboard players set #CMM Temp 1
 execute if data storage bcsmp:inventory OldItem{id:"minecraft:wooden_hoe"} run scoreboard players set #CMM Temp 2
 execute if data storage bcsmp:inventory OldItem{id:"minecraft:stone_hoe"} run scoreboard players set #CMM Temp 3
 execute if data storage bcsmp:inventory OldItem{id:"minecraft:iron_hoe"} run scoreboard players set #CMM Temp 4
@@ -30,7 +30,7 @@ execute store result block 29999977 1 29832 Items[0].tag.CustomModelData int 1 r
 scoreboard players set #HadNoName Temp 0
 execute unless data storage bcsmp:inventory OldItem.tag.display.Name run scoreboard players set #HadNoName Temp 1
 execute if score #HadNoName Temp matches 1 run data modify block 29999977 1 29832 Items[0].tag.HadNoName set value 1b
-execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 1 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.sugar","italic":"false"}'
+#execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 1 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.sugar","italic":"false"}'
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 2 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.wooden_hoe","italic":"false"}'
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 3 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.stone_hoe","italic":"false"}'
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 4 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.iron_hoe","italic":"false"}'

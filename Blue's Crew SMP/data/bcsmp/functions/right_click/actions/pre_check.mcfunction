@@ -4,7 +4,7 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------BIND SCORES TO ITEMS-----------#
-execute if entity @s[tag=SugarOnConcrete] run scoreboard players set #SearchFor Temp 1
+#execute if entity @s[tag=SugarOnConcrete] run scoreboard players set #SearchFor Temp 1
 execute if entity @s[tag=HoesOnCrop] run scoreboard players set #SearchFor Temp 2
 execute if entity @s[tag=SlimeballOnPiston] run scoreboard players set #SearchFor Temp 3
 execute if entity @s[tag=AxesOnStickyPiston] run scoreboard players set #SearchFor Temp 4
