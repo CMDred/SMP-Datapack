@@ -9,4 +9,5 @@ execute if score @s TooHot matches 1000..1499 run title @s actionbar ["",{"text"
 execute if score @s TooHot matches 1500.. run title @s actionbar ["",{"text":"☀ ","color":"yellow"},{"score":{"name":"#BeforeComma","objective":"DisplayTemperature"},"color":"#FF6D2E"},{"text":".","color":"#FF6D2E"},{"score":{"name":"#AfterComma","objective":"DisplayTemperature"},"color":"#FF6D2E"},{"text":"°","color":"#FF6D2E"}]
 
 execute unless entity @s[tag=ExtremeTemperature] run function bcsmp:temperature/deal_damage/enter_extreme_temperature
+execute if score @s DisplayTemperature matches 8500.. run advancement grant @s only bcsmp:custom_advancements/ahh_thats_hot
 #------------------------------------------#
