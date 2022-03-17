@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"First to obtain a full set of Netherite Armor!\",\"color\":\"green\",\"italic\":false}'},SkullOwner:{Id:[I;0,0,0,14],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY0NzUyMTc2NzY0NywKICAicHJvZmlsZUlkIiA6ICIzMWIxNzQ2ZjI2ZTI0YmYwODZjZDc2ZTY5NTQ2MDdiYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJuZXRoZXJpdGVfYmxvY2siLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjc5NTdmODk1ZDdiYzUzNDIzYTM1YWFjNTlkNTg0YjQxY2MzMGUwNDAyNjljOTU1ZTQ1MWZlNjgwYTFjYzA0OSIKICAgIH0KICB9Cn0=\"}]},Name:\"Placeholder\"},Trophy_netherite_armor:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Awarded to: ",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "selector": "@s",
+                    "color": "aqua"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "bcsmp:playername"
+              },
+              "ops": [
+                {
+                  "source": "Name",
+                  "target": "SkullOwner.Name",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

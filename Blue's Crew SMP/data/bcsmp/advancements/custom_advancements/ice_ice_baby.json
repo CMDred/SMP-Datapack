@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    "title": "Ice Ice Baby!",
+    "description": "Reach a temperature of -25°C!",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:end/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:advancements/trophies/ice_ice_baby_check"
+  }
+}

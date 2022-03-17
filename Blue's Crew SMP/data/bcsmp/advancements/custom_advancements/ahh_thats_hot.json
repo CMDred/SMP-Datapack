@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:lava_bucket"
+    },
+    "title": "Aah, That's Hot!",
+    "description": "Reach a temperature of 85°C!",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:advancements/trophies/aah_thats_hot_check"
+  }
+}

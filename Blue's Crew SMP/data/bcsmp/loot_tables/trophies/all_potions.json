@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"First to have every potion effect applied at the same time!\",\"color\":\"green\",\"italic\":false}'},SkullOwner:{Id:[I;0,0,0,34],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU4Yzk3NTY2MWMzZTk0ZmMzNTExNTY0ODE1OGUzZWU5ZjgwZGY3NGE0Mzk5ZTRkMzFjYTVkYmJjYWYyOWI2In19fQ==\"}]},Name:\"Placeholder\"},Trophy_all_potions:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Awarded to: ",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "selector": "@s",
+                    "color": "aqua"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "bcsmp:playername"
+              },
+              "ops": [
+                {
+                  "source": "Name",
+                  "target": "SkullOwner.Name",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:copy_nbt",
+              "source": "this",
+              "ops": [
+                {
+                  "source": "Item.tag",
+                  "target": "{}",
+                  "op": "merge"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Awarded to: ",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "nbt": "AwardedPlayerName",
+                    "storage": "bcsmp:trophy",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              ],
+              "replace": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
