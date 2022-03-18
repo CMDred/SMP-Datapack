@@ -22,6 +22,8 @@ execute if score #RemoveWFOASName Temp matches 1 run data remove block 29999977 
 execute store result score #HasDisplayNBT Temp run data get block 29999977 1 29832 Items[0].tag.display
 execute if score #HasDisplayNBT Temp matches 0 run data remove block 29999977 1 29832 Items[0].tag.display
 
+execute if data block 29999977 1 29832 Items[0].tag.ItemDamage run function bcsmp:right_click/turn_wfoas_back/set_new_durability
+
 execute store result score #HasNBT Temp run data get block 29999977 1 29832 Items[0].tag
 execute if score #HasNBT Temp matches 0 run data remove block 29999977 1 29832 Items[0].tag
 #------------------------------------------#

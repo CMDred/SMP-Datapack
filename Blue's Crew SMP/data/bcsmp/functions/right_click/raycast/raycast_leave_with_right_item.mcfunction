@@ -14,5 +14,5 @@ tag @s remove AimsAtRightBlockWithRightItem
 tag @s remove HoesOnCrops
 tag @s remove SlimeballOnPiston
 tag @s remove AxesOnStickyPiston
-tag @s remove SugarOnConcrete
+#tag @s remove SugarOnConcrete
 #------------------------------------------#

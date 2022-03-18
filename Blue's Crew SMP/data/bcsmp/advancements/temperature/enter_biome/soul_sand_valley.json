@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "biome": "minecraft:soul_sand_valley"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:temperature/enter_biome/soul_sand_valley"
+  }
+}

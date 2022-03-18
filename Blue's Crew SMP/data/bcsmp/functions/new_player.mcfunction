@@ -6,6 +6,9 @@
 #-------------------INIT-------------------#
 scoreboard players set @s PlacedEyes 0
 scoreboard players set @s AddEndPoints 0
+
+scoreboard players enable @s ToggleTemperatureDisplay
+scoreboard players set @s TemperatureDisplay 1
 #-----------------MESSAGE------------------#
 execute as @a at @s run playsound entity.wither.spawn master @s ~ ~ ~ 1 1 1
 execute as @a at @s run playsound entity.lightning_bolt.thunder master @s ~ ~ ~ 1 1 1

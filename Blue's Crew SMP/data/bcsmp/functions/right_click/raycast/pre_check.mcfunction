@@ -22,7 +22,7 @@ execute if score #CMM Temp matches 2..7 run scoreboard players set #SearchFor Te
 execute if score #CMM Temp matches 8 run scoreboard players set #SearchFor Temp 3
 execute if score #CMM Temp matches 9..14 run scoreboard players set #SearchFor Temp 4
 
-execute if predicate bcsmp:right_click/sugar run scoreboard players set #SearchFor Temp 1
+#execute if predicate bcsmp:right_click/sugar run scoreboard players set #SearchFor Temp 1
 execute if predicate bcsmp:right_click/hoes run scoreboard players set #SearchFor Temp 2
 execute if predicate bcsmp:right_click/slime_ball run scoreboard players set #SearchFor Temp 3
 execute if predicate bcsmp:right_click/axes run scoreboard players set #SearchFor Temp 4

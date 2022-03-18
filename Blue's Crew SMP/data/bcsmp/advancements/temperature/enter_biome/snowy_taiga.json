@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "biome": "minecraft:snowy_taiga"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:temperature/enter_biome/snowy_taiga"
+  }
+}

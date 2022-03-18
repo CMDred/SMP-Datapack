@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "biome": "minecraft:crimson_forest"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:temperature/enter_biome/crimson_forest"
+  }
+}

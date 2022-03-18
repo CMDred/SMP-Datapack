@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"First to kill 5 unique mobs with 1 crossbow shot!\",\"color\":\"green\",\"italic\":false}'},SkullOwner:{Id:[I;0,0,0,18],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY0NzUyODUwNzgxNiwKICAicHJvZmlsZUlkIiA6ICIyNmUxOGJkMGM4ZDM0YWIzYmM0ZmU0NzNmNGYyNTMzNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJQaWxsYWdlciIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kM2ZjZDM3ZTg0YzdiZmZhNmZhMDhlYWVhMDgwN2NjMDNhMjhiYTFiMzFjMWJkMTAzMzdkNzA1MDQ5ZjZlNjEzIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM0MGMwZTAzZGQyNGExMWIxNWE4YjMzYzJhN2U5ZTMyYWJiMjA1MWIyNDgxZDBiYTdkZWZkNjM1Y2E3YTkzMyIKICAgIH0KICB9Cn0=\"}]},Name:\"Placeholder\"},Trophy_arbalistic:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Awarded to: ",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "selector": "@s",
+                    "color": "aqua"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "bcsmp:playername"
+              },
+              "ops": [
+                {
+                  "source": "Name",
+                  "target": "SkullOwner.Name",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

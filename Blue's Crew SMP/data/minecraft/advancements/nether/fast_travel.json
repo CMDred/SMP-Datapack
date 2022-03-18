@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:map"
+    },
+    "title": {
+      "translate": "advancements.nether.fast_travel.title"
+    },
+    "description": {
+      "translate": "advancements.nether.fast_travel.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/root",
+  "criteria": {
+    "travelled": {
+      "trigger": "minecraft:nether_travel",
+      "conditions": {
+        "distance": {
+          "horizontal": {
+            "min": 7000
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "travelled"
+    ]
+  ],
+  "rewards": {
+    "function": "bcsmp:advancements/trophies/fast_travel_check",
+    "experience": 100
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"First to kill a Skeleton from 50m away!\",\"color\":\"green\",\"italic\":false}'},SkullOwner:{Id:[I;0,0,0,23],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY0NzUyODg4MDE4OCwKICAicHJvZmlsZUlkIiA6ICJhM2Y0MjdhODE4YzU0OWM1YTRmYjY0YzZlMGUxZTBhOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNSEZfU2tlbGV0b24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjI3OTVjM2M2ZjM2ZDY3ZGVjZjlhMzE5NWUxMjgwNDBiZWM1MjI2YjA1NWYyYjE2ZDQ2ZmExOWE5MTgwZTAyMyIKICAgIH0KICB9Cn0=\"}]},Name:\"Placeholder\"},Trophy_sniper_duel:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "Awarded to: ",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "selector": "@s",
+                    "color": "aqua"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "bcsmp:playername"
+              },
+              "ops": [
+                {
+                  "source": "Name",
+                  "target": "SkullOwner.Name",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

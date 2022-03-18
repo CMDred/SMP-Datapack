@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:arrow"
+    },
+    "title": {
+      "translate": "advancements.adventure.sniper_duel.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.sniper_duel.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/shoot_arrow",
+  "criteria": {
+    "killed_skeleton": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:skeleton",
+              "distance": {
+                "horizontal": {
+                  "min": 50
+                }
+              }
+            }
+          }
+        ],
+        "killing_blow": {
+          "is_projectile": true
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "killed_skeleton"
+    ]
+  ],
+  "rewards": {
+    "function": "bcsmp:advancements/trophies/sniper_duel_check",
+    "experience": 50
+  }
+}

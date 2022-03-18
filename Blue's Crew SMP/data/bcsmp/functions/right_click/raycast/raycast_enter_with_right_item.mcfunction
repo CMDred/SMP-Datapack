@@ -6,7 +6,7 @@
 #-----------------RAYCAST------------------#
 data modify storage bcsmp:inventory OldItem set from entity @s SelectedItem
 data remove storage bcsmp:inventory OldItem.Slot
-execute if data storage bcsmp:inventory OldItem{id:"minecraft:sugar"} run scoreboard players set #CMM Temp 1
+#execute if data storage bcsmp:inventory OldItem{id:"minecraft:sugar"} run scoreboard players set #CMM Temp 1
 execute if data storage bcsmp:inventory OldItem{id:"minecraft:wooden_hoe"} run scoreboard players set #CMM Temp 2
 execute if data storage bcsmp:inventory OldItem{id:"minecraft:stone_hoe"} run scoreboard players set #CMM Temp 3
 execute if data storage bcsmp:inventory OldItem{id:"minecraft:iron_hoe"} run scoreboard players set #CMM Temp 4
@@ -30,7 +30,7 @@ execute store result block 29999977 1 29832 Items[0].tag.CustomModelData int 1 r
 scoreboard players set #HadNoName Temp 0
 execute unless data storage bcsmp:inventory OldItem.tag.display.Name run scoreboard players set #HadNoName Temp 1
 execute if score #HadNoName Temp matches 1 run data modify block 29999977 1 29832 Items[0].tag.HadNoName set value 1b
-execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 1 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.sugar","italic":"false"}'
+#execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 1 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.sugar","italic":"false"}'
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 2 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.wooden_hoe","italic":"false"}'
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 3 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.stone_hoe","italic":"false"}'
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 4 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.iron_hoe","italic":"false"}'
@@ -44,6 +44,22 @@ execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 11 run dat
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 12 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.golden_axe","italic":"false"}'
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 13 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.diamond_axe","italic":"false"}'
 execute if score #HadNoName Temp matches 1 if score #CMM Temp matches 14 run data modify block 29999977 1 29832 Items[0].tag.display.Name set value '{"translate":"item.minecraft.netherite_axe","italic":"false"}'
+
+scoreboard players reset #MaxDurability Temp
+execute if score #CMM Temp matches 2 run scoreboard players set #MaxDurability Temp 59
+execute if score #CMM Temp matches 3 run scoreboard players set #MaxDurability Temp 131
+execute if score #CMM Temp matches 4 run scoreboard players set #MaxDurability Temp 250
+execute if score #CMM Temp matches 5 run scoreboard players set #MaxDurability Temp 32
+execute if score #CMM Temp matches 6 run scoreboard players set #MaxDurability Temp 1561
+execute if score #CMM Temp matches 7 run scoreboard players set #MaxDurability Temp 2031
+execute if score #CMM Temp matches 9 run scoreboard players set #MaxDurability Temp 59
+execute if score #CMM Temp matches 10 run scoreboard players set #MaxDurability Temp 131
+execute if score #CMM Temp matches 11 run scoreboard players set #MaxDurability Temp 250
+execute if score #CMM Temp matches 12 run scoreboard players set #MaxDurability Temp 32
+execute if score #CMM Temp matches 13 run scoreboard players set #MaxDurability Temp 1561
+execute if score #CMM Temp matches 14 run scoreboard players set #MaxDurability Temp 2031
+execute if score #MaxDurability Temp matches 1.. run function bcsmp:right_click/raycast/set_new_durability
+
 item replace entity @s weapon.mainhand from block 29999977 1 29832 container.0
 setblock 29999977 1 29832 air
 tag @s add AimsAtRightBlockWithRightItem

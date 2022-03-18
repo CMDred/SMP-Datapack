@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "feet": {
+        "enchantments": [
+          {
+            "enchantment": "minecraft:frost_walker",
+            "levels": 2
+          }
+        ]
+      }
+    }
+  }
+}
