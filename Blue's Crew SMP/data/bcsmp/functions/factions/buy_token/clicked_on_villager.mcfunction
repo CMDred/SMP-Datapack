@@ -4,6 +4,7 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------------FACTIONS-----------------#
-schedule function bcsmp:factions/area_of_effect/main 1s
-execute as @a at @s run function bcsmp:factions/area_of_effect/main_fixed
+advancement revoke @s only bcsmp:factions/click_on_villager_with_emerald
+scoreboard players set #Reach Temp 25
+execute anchored eyes positioned ^ ^ ^ run function bcsmp:factions/buy_token/find_villager_raycast 
 #------------------------------------------#

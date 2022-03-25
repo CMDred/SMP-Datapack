@@ -25,5 +25,8 @@ team add red {"text":"Red"}
 team add black {"text":"Black"}
 
 scoreboard objectives add GetFactionList trigger
+
+schedule clear bcsmp:factions/area_of_effect/main
+schedule function bcsmp:factions/area_of_effect/main 1s
 #------------------------------------------#
 

@@ -26,7 +26,7 @@ execute if data entity @s Item{id:"minecraft:green_wool"} run data modify storag
 execute if data entity @s Item{id:"minecraft:red_wool"} run data modify storage bcsmp:factions NewFaction.Color set value '{"text":"","color":"#ff1c1c"}'
 execute if data entity @s Item{id:"minecraft:black_wool"} run data modify storage bcsmp:factions NewFaction.Color set value '{"text":"","color":"#0d0d0d"}'
 function bcsmp:factions/check_taken
-execute if entity @s[tag=FactionAvailable] run function bcsmp:factions/villager/success
+execute if entity @s[tag=FactionAvailable] at @e[tag=FactionOutpostVillager,sort=nearest,limit=1] run function bcsmp:factions/villager/success
 execute if entity @s[tag=!ColorAvailable] run function bcsmp:factions/villager/error1
 execute if entity @s[tag=!NameAvailable] as @e[tag=FactionPaper,distance=..1.5,limit=1] run function bcsmp:factions/villager/error2
 tag @e remove ColorAvailable

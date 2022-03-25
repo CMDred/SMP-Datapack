@@ -4,6 +4,6 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------------FACTIONS-----------------#
-schedule function bcsmp:factions/area_of_effect/main 1s
-execute as @a at @s run function bcsmp:factions/area_of_effect/main_fixed
+tellraw @s ["",{"text":"You are not the leader of this faction, you cannot buy Invite Tokens.","color":"red"}]
+playsound entity.villager.no master @s ~ ~ ~ 1 1 1
 #------------------------------------------#
