@@ -13,6 +13,4 @@ execute if score #DragonFightTicks Temp matches 20.. run function bcsmp:mobs/ai/
 
 
 execute as @a[tag=HitAPlayer] run function bcsmp:mobs/ai/ender_dragon_fight/points/steal_points
-tag @a remove WasHurtByPlayer
-tag @a remove HitAPlayer
 #------------------------------------------#
