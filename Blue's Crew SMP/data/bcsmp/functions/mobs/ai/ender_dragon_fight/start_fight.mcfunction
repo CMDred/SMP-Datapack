@@ -39,6 +39,10 @@ execute if entity @s[advancements={bcsmp:mobs/ender_dragon_fight/respawn_dragon=
 advancement revoke @a only bcsmp:mobs/ender_dragon_fight/respawn_dragon
 advancement revoke @a only bcsmp:mobs/ender_dragon_fight/placed_crystal
 
+# Reset time 
+scoreboard players set #DragonFightSeconds Temp 0
+scoreboard players set #DragonFightMinutes Temp 0
+
 # Summon leaderboard armor stands
 function bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/summon_stands
 

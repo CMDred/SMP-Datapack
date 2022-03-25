@@ -20,4 +20,7 @@ scoreboard players enable @a TpToEnd
 execute as @a[scores={TpToEnd=1..}] run function bcsmp:mobs/ai/ender_dragon_fight/tp_to_fight
 
 execute if score #FightOnGoing Temp matches 1.. run function bcsmp:mobs/ai/ender_dragon_fight/points/main
+
+tag @a remove WasHurtByPlayer
+tag @a remove HitAPlayer
 #------------------------------------------#
