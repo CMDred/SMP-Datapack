@@ -1,0 +1,19 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Item:{tag:{display:{Name:'{\"text\":\"Enter Faction Name...\",\"color\":\"white\",\"italic\":false}'}}}}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Item:{id:\"minecraft:paper\",tag:{FactionPaper:1b}}}"
+    }
+  }
+]
