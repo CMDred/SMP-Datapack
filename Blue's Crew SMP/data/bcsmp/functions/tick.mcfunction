@@ -8,7 +8,7 @@
 function bcsmp:right_click/main
 function bcsmp:advancements/main
 function bcsmp:mobs/main
-function bcsmp:temperature/main
+execute if score #UseTemperature GameRules matches 1 run function bcsmp:temperature/main
 function bcsmp:factions/main
 
 # Events

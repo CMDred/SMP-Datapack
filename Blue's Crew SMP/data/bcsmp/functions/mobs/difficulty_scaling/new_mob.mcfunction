@@ -70,11 +70,11 @@ scoreboard players operation @s MobTier = #Tier Temp
 
 
 # apply tier effects
-execute if entity @s[tag=!IgnoreStatScaling] run function bcsmp:mobs/difficulty_scaling/calculate_stats
-execute if entity @s[tag=!IgnoreStatScaling] run function bcsmp:mobs/difficulty_scaling/set_armor
+execute if score #UseMobScaling GameRules matches 1 if entity @s[tag=!IgnoreStatScaling] run function bcsmp:mobs/difficulty_scaling/calculate_stats
+execute if score #UseMobScaling GameRules matches 1 if entity @s[tag=!IgnoreStatScaling] run function bcsmp:mobs/difficulty_scaling/set_armor
 
 # prevent it from dropping armor
-data modify entity @s ArmorDropChances set value [0f,0f,0f,0f]
+execute if score #UseMobScaling GameRules matches 1 run data modify entity @s ArmorDropChances set value [0f,0f,0f,0f]
 
 # Register the mob
 tag @s add Registered

@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:emerald"
+          ]
+        },
+        "entity": {
+          "nbt": "{Tags:[\"InviteManager\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:factions/buy_token/clicked_on_villager"
+  }
+}
