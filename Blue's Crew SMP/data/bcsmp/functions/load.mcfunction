@@ -31,6 +31,7 @@ function bcsmp:advancements/load
 function bcsmp:mobs/load
 function bcsmp:temperature/load
 function bcsmp:factions/load
+function bcsmp:wither_fight/load
 #-----------------MESSAGE------------------#
 tellraw @a ["",{"text":"BlueSMP =>","color":"green","bold":true},{"text":" Reload Successful.","color":"gray","italic":true}]
 #------------------------------------------#
