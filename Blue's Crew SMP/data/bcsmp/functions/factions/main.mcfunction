@@ -11,4 +11,6 @@ execute as @e[tag=FactionOutpostVillager,tag=Converted] at @s run tp @s ~ ~ ~ fa
 
 execute as @a[scores={GetFactionList=1..}] run function bcsmp:factions/get_list/start
 scoreboard players enable @a GetFactionList
+execute as @a[scores={LeaveFaction=1..}] run function bcsmp:factions/leave_faction/any_faction/start
+scoreboard players enable @a LeaveFaction
 #------------------------------------------#

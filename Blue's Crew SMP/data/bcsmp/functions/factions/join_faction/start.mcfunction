@@ -8,4 +8,5 @@ data modify storage bcsmp:factions NameLookingFor set from storage bcsmp:faction
 execute store result score #AmountOfIterations Temp run data get storage bcsmp:factions Factions
 function bcsmp:factions/join_faction/cycle
 function bcsmp:factions/join_faction/join_team
+tag @a remove ElectLeader
 #------------------------------------------#

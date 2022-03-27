@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:slime_ball"
+      "item": "minecraft:sticky_piston"
     },
     "title": "Slime On",
     "description": "Apply a Slimeball to a Piston!",

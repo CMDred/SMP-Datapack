@@ -1,9 +1,9 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:slime_ball"
+      "item": "minecraft:piston"
     },
-    "title": "Slime On",
+    "title": "Slime Off",
     "description": "Scape Slime off of a Piston!",
     "frame": "task",
     "show_toast": true,

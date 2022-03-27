@@ -4,6 +4,6 @@
 #     Youtube : Blue's Production Team     #
 ##
 #-------------------INIT-------------------#
-tag @s add SettingUpSMP
+playsound block.note_block.pling master @s ~ ~ ~ 1 2 1
 function bcsmp:setup_smp/text
 #------------------------------------------#

@@ -5,6 +5,8 @@
 #==========================================#
 #-----------------FACTIONS-----------------#
 team leave @s
+scoreboard players reset @s LeaveFaction
+tag @s remove Found
 execute store result score #AmountOfIterations Temp run data get storage bcsmp:factions Factions
 execute store result score #UUID0 Temp run data get entity @s UUID[0] 
 execute store result score #UUID1 Temp run data get entity @s UUID[1] 

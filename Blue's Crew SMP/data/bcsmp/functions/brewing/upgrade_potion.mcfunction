@@ -4,6 +4,8 @@
 #     Youtube : Blue's Production Team     #
 ##
 #-------------------POTIONS----------------#
+particle effect ~ ~0.5 ~ 0.3 0.3 0.3 0.1 30 normal
+
 execute if block ~ ~ ~ brewing_stand{Items:[{Slot:0b,tag:{Potion:"minecraft:leaping"}}]} run data modify block ~ ~ ~ Items[{Slot:0b}].tag.Potion set value "minecraft:strong_leaping"
 execute if block ~ ~ ~ brewing_stand{Items:[{Slot:1b,tag:{Potion:"minecraft:leaping"}}]} run data modify block ~ ~ ~ Items[{Slot:1b}].tag.Potion set value "minecraft:strong_leaping"
 execute if block ~ ~ ~ brewing_stand{Items:[{Slot:2b,tag:{Potion:"minecraft:leaping"}}]} run data modify block ~ ~ ~ Items[{Slot:2b}].tag.Potion set value "minecraft:strong_leaping"
