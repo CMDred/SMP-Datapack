@@ -20,6 +20,9 @@ execute if block ~ ~ ~ piston[facing=south] run setblock ~ ~ ~ sticky_piston[fac
 execute if block ~ ~ ~ piston[facing=east] run setblock ~ ~ ~ sticky_piston[facing=east] 
 execute if block ~ ~ ~ piston[facing=west] run setblock ~ ~ ~ sticky_piston[facing=west]
 
+#give advancement
+advancement grant @s only bcsmp:custom_advancements/slime_on
+
 #play sound
 playsound entity.slime.jump master @s ~ ~ ~ 1 1.3 1
 
