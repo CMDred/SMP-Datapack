@@ -27,5 +27,16 @@ team add ProtectiveTotem_Ranged
 team modify ProtectiveTotem_Melee color red
 team modify ProtectiveTotem_Ranged color blue
 bossbar add bcsmp:totem_health {"text":"Totem"}
+
+# Wither
+scoreboard objectives add WitherTime dummy
+scoreboard objectives add MotionX dummy
+scoreboard objectives add MotionY dummy
+scoreboard objectives add MotionZ dummy
+scoreboard players set #One Temp 1
+scoreboard players set #RunCycle Temp 100
+scoreboard players set #WitherCycle Temp 14
+scoreboard players set #WitherCycle WitherTime 0
+function bcsmp:mobs/ai/wither_fight/run
 #------------------------------------------#
 
