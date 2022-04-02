@@ -10,4 +10,5 @@ particle block light_blue_concrete ~ ~ ~ 3 3 3 0.01 300 force
 playsound block.beacon.activate hostile @a ~ ~ ~ 10 1 1
 team join ProtectiveTotem_Ranged
 scoreboard players set #CurrentType Temp 2
+data modify entity @e[tag=ProtectiveTotem_Visual,limit=1] HandItems[0] set value {id:"minecraft:bow",Count:1b}
 #------------------------------------------#
