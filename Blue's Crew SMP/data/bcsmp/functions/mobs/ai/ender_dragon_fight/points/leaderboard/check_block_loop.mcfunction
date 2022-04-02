@@ -4,6 +4,6 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-----------------AI TICK------------------#
-kill @e[tag=End_Leaderboard]
-execute in the_end positioned 4 60 0 run function bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/check_block_loop
+execute if block ~ ~ ~ air positioned ~ ~4 ~ run function bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/summon
+execute unless block ~ ~ ~ air positioned ~ ~1 ~ run function bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/check_block_loop
 #------------------------------------------#
