@@ -7,8 +7,8 @@
 title @a times 5 30 12
 title @a title ["",{"text":"Dragon Killed","color":"dark_purple","bold":true,"underlined": true}]
 title @a subtitle ["",{"text":"Well Played!","color":"light_purple","bold":true,"underlined": true}]
-execute as @a at @s run playsound entity.wither.spawn master @s ~ ~ ~ 10 1 1
-execute as @a at @s run playsound entity.ender_dragon.growl master @s ~ ~ ~ 10 1 1
+execute as @a[tag=IsInEnd] at @s run playsound entity.wither.spawn master @s ~ ~ ~ 10 1 1
+execute as @a[tag=IsInEnd] at @s run playsound entity.ender_dragon.growl master @s ~ ~ ~ 10 1 1
 scoreboard players set #FightOnGoing Temp 0
 scoreboard players set #DragonDefeatedOnce Temp 1
 kill @e[type=end_crystal]

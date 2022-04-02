@@ -5,7 +5,7 @@
 #==========================================#
 #---------------DRAGON FIGHT---------------#
 scoreboard players add #ChargeTime Temp 1
-execute if score #ChargeTime Temp matches 1 run playsound block.beacon.power_select hostile @a ~ ~ ~ 0.01 1 1
+execute if score #ChargeTime Temp matches 1 run playsound block.beacon.power_select hostile @a[tag=IsInEnd] ~ ~ ~ 0.01 1 1
 execute if score #ChargeTime Temp matches 1 run tag @r[distance=..60,gamemode=!creative,gamemode=!spectator] add LaserTarget
 execute if score #ChargeTime Temp matches 1 at @a[tag=LaserTarget,limit=1] run summon marker ~ ~ ~ {Tags:["LaserTargetMarker"]}
 

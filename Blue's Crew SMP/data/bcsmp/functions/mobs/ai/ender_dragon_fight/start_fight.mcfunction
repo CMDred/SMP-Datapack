@@ -10,8 +10,8 @@ title @a title ["",{"text":"Fight!","color":"dark_purple","bold":true,"underline
 title @a subtitle ["",{"text":"Have Fun!","color":"light_purple","bold":true,"underlined": true}]
 
 # Sounds
-execute as @a at @s run playsound entity.wither.spawn master @s ~ ~ ~ 10 1 1
-execute as @a at @s run playsound entity.ender_dragon.growl master @s ~ ~ ~ 10 1 1
+execute as @a[tag=IsInEnd] at @s run playsound entity.wither.spawn master @s ~ ~ ~ 10 1 1
+execute as @a[tag=IsInEnd] at @s run playsound entity.ender_dragon.growl master @s ~ ~ ~ 10 1 1
 
 # Message to teleport
 tellraw @a ["",{"text":"The fight started! ","color":"dark_purple"},{"text":"[CLICK HERE TO TELEPORT]","color":"light_purple","bold": true,"clickEvent": {"action": "run_command","value": "/trigger TpToEnd"}}]

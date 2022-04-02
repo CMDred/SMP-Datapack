@@ -5,7 +5,7 @@
 #==========================================#
 #---------------DRAGON FIGHT---------------#
 tag @s add Phase2
-playsound entity.wither.spawn master @a ~ ~ ~ 10 1 1
+playsound entity.wither.spawn master @a[tag=IsInEnd] ~ ~ ~ 10 1 1
 tellraw @a [{"text":"The Dragon is now","color":"red"},{"text":" enraged","color":"dark_red"},{"text":"!"}]
 
 # Summon Protective Totem
