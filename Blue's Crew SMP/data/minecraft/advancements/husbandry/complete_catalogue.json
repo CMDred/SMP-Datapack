@@ -23,7 +23,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            "predicate": {}
+            "predicate": {
+              "nbt": "{CatType:0}"
+            }
           }
         ]
       }
@@ -35,7 +37,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            "predicate": {}
+            "predicate": {
+              "nbt": "{CatType:1}"
+            }
           }
         ]
       }
@@ -47,7 +51,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            "predicate": {}
+            "predicate": {
+              "nbt": "{CatType:2}"
+            }
           }
         ]
       }
@@ -59,7 +65,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            "predicate": {}
+            "predicate": {
+              "nbt": "{CatType:3}"
+            }
           }
         ]
       }
@@ -71,7 +79,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            "predicate": {}
+            "predicate": {
+              "nbt": "{CatType:4}"
+            }
           }
         ]
       }
@@ -83,7 +93,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            "predicate": {}
+            "predicate": {
+              "nbt": "{CatType:5}"
+            }
           }
         ]
       }
@@ -95,7 +107,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            "predicate": {}
+            "predicate": {
+              "nbt": "{CatType:6}"
+            }
           }
         ]
       }
@@ -107,7 +121,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            "predicate": {}
+            "predicate": {
+              "nbt": "{CatType:7}"
+            }
           }
         ]
       }
@@ -119,7 +135,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            "predicate": {}
+            "predicate": {
+              "nbt": "{CatType:8}"
+            }
           }
         ]
       }
@@ -131,7 +149,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            "predicate": {}
+            "predicate": {
+              "nbt": "{CatType:9}"
+            }
           }
         ]
       }
@@ -143,7 +163,9 @@
           {
             "condition": "minecraft:entity_properties",
             "entity": "this",
-            "predicate": {}
+            "predicate": {
+              "nbt": "{CatType:10}"
+            }
           }
         ]
       }
