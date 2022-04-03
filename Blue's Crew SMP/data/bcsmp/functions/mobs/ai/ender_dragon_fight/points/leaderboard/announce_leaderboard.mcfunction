@@ -14,6 +14,15 @@ tellraw @a ["",{"text":"4. ","color": "yellow","bold": true},{"selector":"@a[tag
 tellraw @a ["",{"text":"5. ","color": "yellow","bold": true},{"selector":"@a[tag=FifthPlace,limit=1]","bold": false},{"text":" - ","color":"yellow","bold": true},{"score":{"name": "@a[tag=FifthPlace,limit=1]","objective": "EndPoints"},"color": "blue"},{"text":" pts\n","color":"yellow","bold": true}]
 tellraw @a ["",{"text":"Final Hit - ","color": "aqua","bold": true},{"selector":"@a[tag=FinalHit,limit=1]","bold": false},{"text":" (+5 pts)","color": "aqua","bold": true}]
 tellraw @a ["",{"text":"==============================","color": "gold","bold": true}]
+
+advancement grant @a[tag=FirstPlace] only bcsmp:custom_advancements/get_first_place_dragon
+
+loot give @a[tag=FirstPlace] loot bcsmp:mobs/ender_dragon_fight/rewards/first
+loot give @a[tag=SecondPlace] loot bcsmp:mobs/ender_dragon_fight/rewards/second
+loot give @a[tag=ThirdPlace] loot bcsmp:mobs/ender_dragon_fight/rewards/third
+loot give @a[tag=FourthPlace] loot bcsmp:mobs/ender_dragon_fight/rewards/fourth
+loot give @a[tag=FifthPlace] loot bcsmp:mobs/ender_dragon_fight/rewards/fifth
+
 tag @a remove FirstPlace
 tag @a remove SecondPlace
 tag @a remove ThirdPlace

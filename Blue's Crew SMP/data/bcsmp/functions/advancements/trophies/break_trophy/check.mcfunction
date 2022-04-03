@@ -47,5 +47,6 @@ data merge entity @e[type=item,distance=..10,limit=1,nbt={Item:{id:"minecraft:pl
 data merge entity @e[type=item,distance=..10,limit=1,nbt={Item:{id:"minecraft:player_head",tag:{SkullOwner:{Id:[I;0,0,0,37]}}}}] {Tags:["TrophyItem"],Item:{tag:{display:{Name:'{"text":"First to kill a Ghast in the overworld!","color":"green","italic":false}'}}}}
 data merge entity @e[type=item,distance=..10,limit=1,nbt={Item:{id:"minecraft:player_head",tag:{SkullOwner:{Id:[I;0,0,0,38]}}}}] {Tags:["TrophyItem"],Item:{tag:{display:{Name:'{"text":"First to reach a temperature of 85°C!","color":"green","italic":false}'}}}}
 data merge entity @e[type=item,distance=..10,limit=1,nbt={Item:{id:"minecraft:player_head",tag:{SkullOwner:{Id:[I;0,0,0,39]}}}}] {Tags:["TrophyItem"],Item:{tag:{display:{Name:'{"text":"First to reach a temperature of -25°C!","color":"green","italic":false}'}}}}
+data merge entity @e[type=item,distance=..10,limit=1,nbt={Item:{id:"minecraft:player_head",tag:{SkullOwner:{Id:[I;0,0,0,40]}}}}] {Tags:["TrophyItem"],Item:{tag:{display:{Name:'{"text":"First to get First Place in a Dragon Fight!","color":"green","italic":false}'}}}}
 execute as @e[tag=TrophyItem] at @s run function bcsmp:advancements/trophies/break_trophy/get_name
 #------------------------------------------#
