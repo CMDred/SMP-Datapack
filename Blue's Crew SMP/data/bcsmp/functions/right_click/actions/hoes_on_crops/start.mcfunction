@@ -17,7 +17,7 @@ execute if block ~ ~ ~ potatoes run setblock ~ ~ ~ potatoes[age=0]
 execute if block ~ ~ ~ beetroots run setblock ~ ~ ~ beetroots[age=0]
 
 #play sound
-playsound minecraft:block.crop.break block @a ~ ~ ~ 1 1 1
+playsound minecraft:block.crop.break block @s ~ ~ ~ 1 1 1
 
 #take durability
 function bcsmp:right_click/actions/consume/take_durability
