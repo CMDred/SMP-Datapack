@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "minecraft:item/warped_fungus_on_a_stick"
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 1}, "model": "item/sugar"},
+    { "predicate": { "custom_model_data": 2}, "model": "item/wooden_hoe"},
+    { "predicate": { "custom_model_data": 3}, "model": "item/stone_hoe"},
+    { "predicate": { "custom_model_data": 4}, "model": "item/iron_hoe"},
+    { "predicate": { "custom_model_data": 5}, "model": "item/golden_hoe"},
+    { "predicate": { "custom_model_data": 6}, "model": "item/diamond_hoe"},
+    { "predicate": { "custom_model_data": 7}, "model": "item/netherite_hoe"},
+    { "predicate": { "custom_model_data": 8}, "model": "item/slime_ball"},
+    { "predicate": { "custom_model_data": 9}, "model": "item/wooden_axe"},
+    { "predicate": { "custom_model_data": 10}, "model": "item/stone_axe"},
+    { "predicate": { "custom_model_data": 11}, "model": "item/iron_axe"},
+    { "predicate": { "custom_model_data": 12}, "model": "item/golden_axe"},
+    { "predicate": { "custom_model_data": 13}, "model": "item/diamond_axe"},
+    { "predicate": { "custom_model_data": 14}, "model": "item/netherite_axe"}
+  ]
+}
