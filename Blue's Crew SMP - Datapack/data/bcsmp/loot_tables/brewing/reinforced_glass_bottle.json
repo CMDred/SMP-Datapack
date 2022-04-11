@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reinforced Glass Bottle\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"Can hold lava and powder snow\",\"color\":\"gray\",\"italic\":false}']},HideFlags:127,Unbreakable:1b,CustomModelData:15,ReinforcedGlassBottle:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

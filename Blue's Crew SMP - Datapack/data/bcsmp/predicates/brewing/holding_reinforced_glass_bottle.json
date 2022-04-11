@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "bcsmp:brewing/holding_reinforced_glass_bottle_mainhand"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "bcsmp:brewing/holding_reinforced_glass_bottle_offhand"
+    }
+  ]
+}

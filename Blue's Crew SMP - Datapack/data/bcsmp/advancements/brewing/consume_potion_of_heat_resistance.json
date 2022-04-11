@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:potion"
+          ],
+          "nbt": "{Potion:\"minecraft:heat_resistance\"}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:brewing/custom_potions/reinforced_glass_bottle/consume/potion_of_heat_resistance"
+  }
+}

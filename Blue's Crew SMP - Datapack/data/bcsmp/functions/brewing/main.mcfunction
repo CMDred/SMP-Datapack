@@ -5,4 +5,5 @@
 #==========================================#
 #-------------------TICK-------------------#
 execute at @e[type=lightning_bolt] run function bcsmp:brewing/check_brewing
+execute as @a[scores={ViewPotionEffects=1..}] run function bcsmp:brewing/custom_potions/effects/view_potion_effects
 #------------------------------------------#

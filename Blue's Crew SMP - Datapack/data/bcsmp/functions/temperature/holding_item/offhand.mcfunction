@@ -15,10 +15,12 @@ execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/ho
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/glowstone run function bcsmp:temperature/holding_item/item/glowstone
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/ice run function bcsmp:temperature/holding_item/item/ice
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/lantern run function bcsmp:temperature/holding_item/item/lantern
+execute unless score #ItemFound Temp matches 1 if predicate bcsmp:brewing/holding_lava_bottle_offhand run function bcsmp:temperature/holding_item/item/lava_bottle
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/lava_bucket run function bcsmp:temperature/holding_item/item/lava_bucket
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/magma_block run function bcsmp:temperature/holding_item/item/magma_block
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/magma_cream run function bcsmp:temperature/holding_item/item/magma_cream
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/packed_ice run function bcsmp:temperature/holding_item/item/packed_ice
+execute unless score #ItemFound Temp matches 1 if predicate bcsmp:brewing/holding_powder_snow_bottle_offhand run function bcsmp:temperature/holding_item/item/powder_snow_bottle
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/powder_snow_bucket run function bcsmp:temperature/holding_item/item/powder_snow_bucket
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/shroomlight run function bcsmp:temperature/holding_item/item/shroomlight
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/snow run function bcsmp:temperature/holding_item/item/snow

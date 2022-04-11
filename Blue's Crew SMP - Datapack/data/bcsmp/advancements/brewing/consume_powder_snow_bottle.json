@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:potion"
+          ],
+          "nbt": "{Potion:\"minecraft:powder_snow\"}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:brewing/custom_potions/reinforced_glass_bottle/consume/powder_snow_bottle"
+  }
+}

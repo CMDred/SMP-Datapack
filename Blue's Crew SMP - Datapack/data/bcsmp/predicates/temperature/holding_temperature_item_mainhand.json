@@ -7,6 +7,34 @@
       "predicate": {
         "equipment": {
           "mainhand": {
+            "items": [
+              "minecraft:potion"
+            ],
+            "nbt": "{Potion:\"minecraft:powder_snow\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:potion"
+            ],
+            "nbt": "{Potion:\"minecraft:lava\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
             "enchantments": [
               {
                 "enchantment": "minecraft:fire_aspect"

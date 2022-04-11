@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:powder_snow\",display:{Name:'{\"text\":\"Powder Snow Bottle\",\"color\":\"yellow\",\"italic\":false}'},CustomModelData:1,CustomPotionColor:16777215}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
