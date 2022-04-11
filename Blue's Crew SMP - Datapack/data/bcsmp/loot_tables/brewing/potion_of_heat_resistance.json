@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Potion of Heat Resistance\",\"color\":\"light_purple\",\"italic\":false}',Lore:['{\"text\":\"Heat Resistance (20:00)\",\"color\":\"blue\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"When applied:\",\"color\":\"dark_purple\",\"italic\":false}','{\"text\":\"+15° Burning Temperature\",\"color\":\"blue\",\"italic\":false}']},HideFlags:32,Enchantments:[{}],Potion:\"minecraft:heat_resistance\",CustomPotionColor:16728842}"
+              "tag": "{display:{Name:'{\"text\":\"Potion of Heat Resistance\",\"color\":\"light_purple\",\"italic\":false}',Lore:['{\"text\":\"Heat Resistance (20:00)\",\"color\":\"blue\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"When applied:\",\"color\":\"dark_purple\",\"italic\":false}','{\"text\":\"+15° Burning Temperature\",\"color\":\"blue\",\"italic\":false}']},CustomPotionID:5,HideFlags:32,Enchantments:[{}],Potion:\"minecraft:heat_resistance\",CustomPotionColor:16728842}"
             }
           ]
         }

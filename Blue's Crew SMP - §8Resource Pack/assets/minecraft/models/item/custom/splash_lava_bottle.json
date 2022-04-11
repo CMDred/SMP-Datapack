@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures": {
       "layer0": "item/lava_overlay",
-      "layer1": "item/potion"
+      "layer1": "item/splash_potion"
   }
 }

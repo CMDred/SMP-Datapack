@@ -3,7 +3,7 @@
 # Please don't claim this as your own work #
 #     Youtube : Blue's Production Team     #
 #==========================================#
-#---------------TEMPERATURE----------------#
-execute as @a at @s run function bcsmp:temperature/being_wet/check
-execute as @a[scores={ToggleTemperatureDisplay=1..}] run function bcsmp:temperature/display_temperature/toggle_temperature_display
+#---------------CHECK BLOCK----------------#
+setblock ~ ~ ~ brewing_stand
+execute align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[type=marker,tag=BrewingStand,distance=..0.1] run summon marker ~ ~ ~ {Tags:["BrewingStand"]}
 #------------------------------------------#

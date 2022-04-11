@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:brewing_stand"
+      }
+    }
+  },
+  "rewards": {
+    "function": "bcsmp:brewing/custom_potions/brewing_stand/place"
+  }
+}

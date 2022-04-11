@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:lava\",display:{Name:'{\"text\":\"Lava Bottle\",\"color\":\"yellow\",\"italic\":false}'},CustomModelData:2,CustomPotionColor:16777215}"
+              "tag": "{Potion:\"minecraft:lava\",display:{Name:'{\"text\":\"Lava Bottle\",\"color\":\"yellow\",\"italic\":false}'},CustomPotionID:1,CustomModelData:2,CustomPotionColor:16777215}"
             }
           ]
         }
