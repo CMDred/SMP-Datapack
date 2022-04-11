@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bee_nest"
+    },
+    "title": {
+      "translate": "advancements.husbandry.silk_touch_nest.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.silk_touch_nest.description"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bcsmp:trophy_page/husbandry/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

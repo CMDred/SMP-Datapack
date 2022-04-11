@@ -16,4 +16,5 @@ execute in overworld run setblock 29999977 -64 29832 bedrock
 loot give @s loot bcsmp:trophies/create_full_beacon
 execute store success score #Calc Temp run clear @s player_head{Trophy_create_full_beacon:1b} 0
 execute unless score #Calc Temp matches 1 run loot spawn ~ ~1.62 ~ loot bcsmp:trophies/create_full_beacon
+advancement grant @a only bcsmp:trophy_page/nether/create_full_beacon
 #------------------------------------------#

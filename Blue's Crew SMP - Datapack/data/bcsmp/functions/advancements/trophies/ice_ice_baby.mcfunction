@@ -16,4 +16,5 @@ execute in overworld run setblock 29999977 -64 29832 bedrock
 loot give @s loot bcsmp:trophies/ice_ice_baby
 execute store success score #Calc Temp run clear @s player_head{Trophy_ice_ice_baby:1b} 0
 execute unless score #Calc Temp matches 1 run loot spawn ~ ~1.62 ~ loot bcsmp:trophies/ice_ice_baby
+advancement grant @a only bcsmp:trophy_page/end/ice_ice_baby
 #------------------------------------------#

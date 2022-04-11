@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_boots"
+    },
+    "title": {
+      "translate": "advancements.adventure.adventuring_time.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.adventuring_time.description"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bcsmp:trophy_page/adventure/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

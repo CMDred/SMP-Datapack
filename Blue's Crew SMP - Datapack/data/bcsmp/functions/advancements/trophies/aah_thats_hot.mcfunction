@@ -16,4 +16,5 @@ execute in overworld run setblock 29999977 -64 29832 bedrock
 loot give @s loot bcsmp:trophies/aah_thats_hot
 execute store success score #Calc Temp run clear @s player_head{Trophy_aah_thats_hot:1b} 0
 execute unless score #Calc Temp matches 1 run loot spawn ~ ~1.62 ~ loot bcsmp:trophies/aah_thats_hot
+advancement grant @a only bcsmp:trophy_page/nether/aah_thats_hot
 #------------------------------------------#

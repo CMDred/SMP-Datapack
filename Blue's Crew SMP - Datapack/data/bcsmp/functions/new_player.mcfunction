@@ -11,6 +11,8 @@ scoreboard players enable @s ToggleTemperatureDisplay
 scoreboard players set @s TemperatureDisplay 1
 
 scoreboard players enable @s ViewPotionEffects
+
+function bcsmp:keyboard_event/join
 #-----------------MESSAGE------------------#
 execute as @a at @s run playsound entity.wither.spawn master @s ~ ~ ~ 1 1 1
 execute as @a at @s run playsound entity.lightning_bolt.thunder master @s ~ ~ ~ 1 1 1

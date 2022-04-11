@@ -16,4 +16,5 @@ execute in overworld run setblock 29999977 -64 29832 bedrock
 loot give @s loot bcsmp:trophies/obtain_ancient_debris
 execute store success score #Calc Temp run clear @s player_head{Trophy_obtain_ancient_debris:1b} 0
 execute unless score #Calc Temp matches 1 run loot spawn ~ ~1.62 ~ loot bcsmp:trophies/obtain_ancient_debris
+advancement grant @a only bcsmp:trophy_page/nether/obtain_ancient_debris
 #------------------------------------------#

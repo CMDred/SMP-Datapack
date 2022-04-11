@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_chestplate"
+    },
+    "title": {
+      "translate": "advancements.story.shiny_gear.title"
+    },
+    "description": {
+      "translate": "advancements.story.shiny_gear.description"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bcsmp:trophy_page/story/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

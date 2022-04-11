@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:polished_blackstone_bricks"
+    },
+    "title": {
+      "translate": "advancements.nether.find_bastion.title"
+    },
+    "description": {
+      "translate": "advancements.nether.find_bastion.description"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bcsmp:trophy_page/nether/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
