@@ -13,4 +13,7 @@ execute as @e[distance=..3.5,type=!potion] run data modify entity @s Fire set va
 effect give @e[distance=..3.5] instant_damage
 scoreboard players set @a[distance=..3.5] ConsumedItemTimer 13
 scoreboard players set @a[distance=..3.5] ConsumedItemType 2
+
+execute if block ~ ~ ~ water[level=0] run setblock ~ ~ ~ obsidian
+execute if block ~ ~ ~ water unless block ~ ~ ~ water[level=0] run setblock ~ ~ ~ cobblestone
 #------------------------------------------#

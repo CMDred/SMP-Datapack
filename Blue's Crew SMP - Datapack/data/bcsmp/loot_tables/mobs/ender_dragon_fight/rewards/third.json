@@ -1,21 +1,151 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:diamond",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 16,
-                "add": false
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 7
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 0,
+              "add": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 9,
+                "max": 16
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "bcsmp:other/stronger_enchantments/golden_sword"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "bcsmp:other/stronger_enchantments/golden_helmet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "name": "bcsmp:other/stronger_enchantments/golden_chestplate"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "name": "bcsmp:other/stronger_enchantments/golden_leggings"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "name": "bcsmp:other/stronger_enchantments/golden_boots"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "bcsmp:other/stronger_enchantments/iron_sword"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "bcsmp:other/stronger_enchantments/iron_helmet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "bcsmp:other/stronger_enchantments/iron_chestplate"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "bcsmp:other/stronger_enchantments/iron_leggings"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "bcsmp:other/stronger_enchantments/iron_boots"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:other/stronger_enchantments/diamond_sword"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:other/stronger_enchantments/diamond_helmet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:other/stronger_enchantments/diamond_chestplate"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:other/stronger_enchantments/diamond_leggings"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:other/stronger_enchantments/diamond_boots"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "bcsmp:other/stronger_enchantments/bow"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 0,
+          "add": false,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.87
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

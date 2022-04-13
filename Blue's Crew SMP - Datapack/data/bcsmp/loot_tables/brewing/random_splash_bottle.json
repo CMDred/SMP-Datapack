@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "bcsmp:brewing/splash_lava_bottle"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "bcsmp:brewing/splash_powder_snow_bottle"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:brewing/splash_potion_of_heat_resistance"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:brewing/splash_potion_of_frost_resistance"
+        }
+      ]
+    }
+  ]
+}

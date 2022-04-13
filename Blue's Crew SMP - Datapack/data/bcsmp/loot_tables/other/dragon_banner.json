@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:orange_banner",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Dragon Banner\",\"color\":\"gold\",\"italic\":false}'},HideFlags:32,BlockEntityTag:{Patterns:[{Pattern:sc,Color:15},{Pattern:bt,Color:15},{Pattern:flo,Color:14},{Pattern:flo,Color:15},{Pattern:tt,Color:14},{Pattern:cbo,Color:14},{Pattern:gra,Color:14}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
