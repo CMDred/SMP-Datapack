@@ -7,7 +7,7 @@
 # Laser
 scoreboard players add #BeforeLaser Temp 1
 execute if score #BeforeLaser Temp >= #LaserTime Temp run function bcsmp:mobs/ai/ender_dragon_fight/abilities/laser/charge
-execute as @e[tag=LaserTargetMarker] at @s run function bcsmp:mobs/ai/ender_dragon_fight/abilities/laser/marker_main
+execute as @e[type=marker,tag=LaserTargetMarker] at @s run function bcsmp:mobs/ai/ender_dragon_fight/abilities/laser/marker_main
 
 
 # Raise Spikes

@@ -5,8 +5,8 @@
 #==========================================#
 
 #------------------ATTACK------------------#
-execute unless entity @e[tag=PlayerTarget,distance=..50] run function bcsmp:mobs/ai/wither_fight/attack
-execute unless entity @e[tag=PlayerTarget,distance=..3] run function bcsmp:mobs/ai/wither_fight/move
-execute if entity @e[tag=PlayerTarget,distance=..3] run function bcsmp:mobs/ai/wither_fight/attack
+execute unless entity @e[type=marker,tag=PlayerTarget,distance=..50] run function bcsmp:mobs/ai/wither_fight/attack
+execute unless entity @e[type=marker,tag=PlayerTarget,distance=..3] run function bcsmp:mobs/ai/wither_fight/move
+execute if entity @e[type=marker,tag=PlayerTarget,distance=..3] run function bcsmp:mobs/ai/wither_fight/attack
 schedule function bcsmp:mobs/ai/wither_fight/check_attack 1
 #------------------------------------------#
