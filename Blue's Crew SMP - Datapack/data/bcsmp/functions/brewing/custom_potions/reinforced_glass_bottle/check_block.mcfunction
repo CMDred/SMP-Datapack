@@ -4,6 +4,7 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #---------------CHECK BLOCK----------------#
+scoreboard players set #Reach Temp 0
 execute if block ~ ~ ~ lava run function bcsmp:brewing/custom_potions/reinforced_glass_bottle/check_block/lava
 execute unless score #Reach Temp matches 0 if block ~ ~ ~ powder_snow run function bcsmp:brewing/custom_potions/reinforced_glass_bottle/check_block/powder_snow
 execute unless score #Reach Temp matches 0 if block ~ ~ ~ lava_cauldron run function bcsmp:brewing/custom_potions/reinforced_glass_bottle/check_block/lava_cauldron

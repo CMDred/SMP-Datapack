@@ -8,5 +8,4 @@ execute if predicate bcsmp:brewing/holding_reinforced_glass_bottle_offhand run l
 execute if predicate bcsmp:brewing/holding_reinforced_glass_bottle_mainhand run loot replace entity @s weapon.mainhand loot bcsmp:brewing/lava_bottle
 setblock ~ ~ ~ cauldron
 execute at @s run playsound minecraft:item.bucket.fill_lava master @s ~ ~ ~
-scoreboard players set #Reach Temp 0
 #------------------------------------------#
