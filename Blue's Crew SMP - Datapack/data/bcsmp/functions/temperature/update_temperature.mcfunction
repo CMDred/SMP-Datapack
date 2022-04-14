@@ -26,6 +26,6 @@ execute if score @s HeatResistanceDuration matches 1.. run scoreboard players ad
 scoreboard players set @s FreezeTemperature -10
 execute if score @s DisplayTemperature matches ..-10 run function bcsmp:temperature/freeze_temperature/check
 #-----------DISPLAY TEMPERATURE------------#
-execute if score @s TemperatureDisplay matches 1 run function bcsmp:temperature/display_temperature/display_temperature
+execute if score @s TemperatureDisplay matches 1 unless predicate bcsmp:holding_clock run function bcsmp:temperature/display_temperature/display_temperature
 execute if score @s TemperatureDisplay matches 0 run function bcsmp:temperature/display_temperature/disabled/temperature_check
 #------------------------------------------#

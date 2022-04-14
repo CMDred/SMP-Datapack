@@ -14,6 +14,4 @@ scoreboard objectives add BrewingStandPotion3 dummy
 
 scoreboard objectives add HeatResistanceDuration dummy
 scoreboard objectives add FrostResistanceDuration dummy
-
-function bcsmp:brewing/custom_potions/effects/main_1s
 #------------------------------------------#
