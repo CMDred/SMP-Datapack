@@ -8,6 +8,5 @@ scoreboard players set #UseTemperature GameRules 1
 playsound ui.button.click master @s ~ ~ ~ 1 1 1
 tellraw @s {"text":"Temperature is now enabled!","color":"green"}
 schedule function bcsmp:temperature/main_10t 10t
-schedule function bcsmp:temperature/main_1s 1s
 function bcsmp:setup_smp/text
 #------------------------------------------#
