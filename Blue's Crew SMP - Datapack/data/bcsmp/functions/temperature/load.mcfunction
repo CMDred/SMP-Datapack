@@ -18,8 +18,8 @@ scoreboard objectives add TooHot dummy
 scoreboard objectives add FreezeTemperature dummy
 scoreboard objectives add TooCold dummy
 scoreboard objectives add TemperatureDamageTimer dummy
-#Start Main_1s
-function bcsmp:temperature/main_1s
+scoreboard objectives add ConsumedItemTimer dummy
+scoreboard objectives add ConsumedItemType dummy
 #Start Main_10t
 function bcsmp:temperature/main_10t
 #------------------------------------------#

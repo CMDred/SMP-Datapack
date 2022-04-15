@@ -17,6 +17,6 @@ playsound entity.generic.explode hostile @a[tag=IsInEnd] ~ ~ ~ 10 1 1
 playsound block.beacon.deactivate hostile @a[tag=IsInEnd] ~ ~ ~ 10 1 1
 playsound entity.ender_dragon.shoot hostile @a[tag=IsInEnd] ~ ~ ~ 10 1 1
 
-execute anchored eyes positioned ^ ^ ^ facing entity @e[tag=LaserTargetMarker,limit=1] feet run function bcsmp:mobs/ai/ender_dragon_fight/abilities/laser/raycast
-kill @e[tag=LaserTargetMarker]
+execute anchored eyes positioned ^ ^ ^ facing entity @e[type=marker,tag=LaserTargetMarker,limit=1] feet run function bcsmp:mobs/ai/ender_dragon_fight/abilities/laser/raycast
+kill @e[type=marker,tag=LaserTargetMarker]
 #------------------------------------------#

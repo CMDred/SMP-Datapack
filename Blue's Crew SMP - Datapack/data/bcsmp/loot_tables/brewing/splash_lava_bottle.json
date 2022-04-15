@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:lava\",display:{Name:'{\"text\":\"Splash Lava Bottle\",\"color\":\"yellow\",\"italic\":false}'},CustomPotionID:3,CustomModelData:2,CustomPotionColor:16777215}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

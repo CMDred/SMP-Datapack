@@ -1,36 +1,173 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:emerald",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 4
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:diamond",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 24,
-                "add": false
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 12
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 11
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 0,
+              "add": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "bcsmp:brewing/random_splash_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 0,
+              "add": false,
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "bcsmp:other/stronger_enchantments/golden_sword"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "name": "bcsmp:other/stronger_enchantments/golden_helmet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "bcsmp:other/stronger_enchantments/golden_chestplate"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "bcsmp:other/stronger_enchantments/golden_leggings"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "name": "bcsmp:other/stronger_enchantments/golden_boots"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "bcsmp:other/stronger_enchantments/iron_sword"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "bcsmp:other/stronger_enchantments/iron_helmet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "bcsmp:other/stronger_enchantments/iron_chestplate"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "bcsmp:other/stronger_enchantments/iron_leggings"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "bcsmp:other/stronger_enchantments/iron_boots"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:other/stronger_enchantments/diamond_sword"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:other/stronger_enchantments/diamond_helmet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:other/stronger_enchantments/diamond_chestplate"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:other/stronger_enchantments/diamond_leggings"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bcsmp:other/stronger_enchantments/diamond_boots"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "bcsmp:other/stronger_enchantments/bow"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 0,
+          "add": false,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.75
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

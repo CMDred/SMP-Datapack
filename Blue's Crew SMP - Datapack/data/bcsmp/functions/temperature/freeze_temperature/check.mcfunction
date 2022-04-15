@@ -8,4 +8,5 @@ execute if predicate bcsmp:temperature/freeze_temperature/leather_helmet run sco
 execute if predicate bcsmp:temperature/freeze_temperature/leather_chestplate run scoreboard players remove @s FreezeTemperature 300
 execute if predicate bcsmp:temperature/freeze_temperature/leather_leggings run scoreboard players remove @s FreezeTemperature 200
 execute if predicate bcsmp:temperature/freeze_temperature/leather_boots run scoreboard players remove @s FreezeTemperature 100
+execute if score @s FrostResistanceDuration matches 1.. run scoreboard players remove @s FreezeTemperature 1500
 #------------------------------------------#

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Potion of Frost Resistance\",\"color\":\"light_purple\",\"italic\":false}',Lore:['{\"text\":\"Frost Resistance (20:00)\",\"color\":\"blue\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"When applied:\",\"color\":\"dark_purple\",\"italic\":false}','{\"text\":\"-15° Freezing Temperature\",\"color\":\"blue\",\"italic\":false}']},CustomPotionID:6,HideFlags:32,Enchantments:[{}],Potion:\"minecraft:frost_resistance\",CustomPotionColor:7733238}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

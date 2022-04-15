@@ -12,5 +12,5 @@ execute if score @p[tag=End_RankingTestCurrent] EndPoints < Current End_PtsRanki
 
 tag @a[tag=End_RankingTestCurrent] remove End_RankingTest
 tag @a[tag=End_RankingTestCurrent] remove End_RankingTestCurrent
-execute if entity @e[tag=End_RankingTest] run function bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/ranking/loop2
+execute if entity @a[tag=End_RankingTest] run function bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/ranking/loop2
 #------------------------------------------#

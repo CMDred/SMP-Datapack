@@ -5,5 +5,5 @@
 #==========================================#
 
 #-------------------TIME-------------------#
-execute as @e[tag=WitherStasis] at @s run function bcsmp:mobs/ai/wither_fight/throw_attack
+execute as @e[type=wither,tag=WitherStasis] at @s run function bcsmp:mobs/ai/wither_fight/throw_attack
 #------------------------------------------#

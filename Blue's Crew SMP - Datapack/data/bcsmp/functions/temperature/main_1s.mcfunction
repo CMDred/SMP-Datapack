@@ -6,5 +6,4 @@
 #---------------TEMPERATURE----------------#
 execute as @a run function bcsmp:temperature/update_temperature
 execute as @a[scores={WetTimer=1..}] at @s run function bcsmp:temperature/being_wet/dripping_sounds
-execute if score #UseTemperature GameRules matches 1 run schedule function bcsmp:temperature/main_1s 1s
 #------------------------------------------#

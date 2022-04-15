@@ -8,10 +8,10 @@ tag @s add FactionCreated
 
 summon villager ~ ~ ~1 {NoAI:1b,Tags:["FactionOutpostVillager","InviteManager","Converted"],Invulnerable:1b}
 
-effect give @e[tag=InviteManager,sort=nearest,limit=1] resistance 999999 5 true
+effect give @e[type=villager,tag=InviteManager,sort=nearest,limit=1] resistance 999999 5 true
 
-data modify entity @e[tag=InviteManager,sort=nearest,limit=1] ArmorItems[0] set value {id:"minecraft:scute",Count:1b}
-data modify entity @e[tag=InviteManager,sort=nearest,limit=1] ArmorItems[0].tag.ManagerOf set from storage bcsmp:factions FactionToCreate
+data modify entity @e[type=villager,tag=InviteManager,sort=nearest,limit=1] ArmorItems[0] set value {id:"minecraft:scute",Count:1b}
+data modify entity @e[type=villager,tag=InviteManager,sort=nearest,limit=1] ArmorItems[0].tag.ManagerOf set from storage bcsmp:factions FactionToCreate
 
 execute in overworld run setblock 29999977 1 29832 oak_sign{Text1:'[{"nbt":"NewFaction.Color","storage":"bcsmp:factions","interpret":true,"italic":false},{"nbt":"NewFaction.Name","storage":"bcsmp:factions","interpret":true},{"text":"\'s banner","color":"white"}]',Text2:'[{"nbt":"NewFaction.Color","storage":"bcsmp:factions","interpret":true,"italic":false},{"nbt":"NewFaction.Name","storage":"bcsmp:factions","interpret":true},{"text":" advisor","color":"white"}]',Text3:'[{"nbt":"NewFaction.Color","storage":"bcsmp:factions","interpret":true,"italic":false},{"nbt":"NewFaction.Name","storage":"bcsmp:factions","interpret":true},{"text":" invite manager","color":"white"}]'}
 
@@ -22,8 +22,7 @@ data modify entity @s Offers.Recipes[0].sell set from storage bcsmp:factions New
 data modify entity @s Offers.Recipes[0].sell.tag.display.Name set from block 29999977 1 29832 Text1
 
 execute in overworld run data modify entity @s CustomName set from block 29999977 1 29832 Text2
-execute in overworld run data modify entity @e[tag=InviteManager,sort=nearest,limit=1] CustomName set from block 29999977 1 29832 Text3
+execute in overworld run data modify entity @e[type=villager,tag=InviteManager,sort=nearest,limit=1] CustomName set from block 29999977 1 29832 Text3
 
 execute in overworld run setblock 29999977 1 29832 air
 #------------------------------------------#
-

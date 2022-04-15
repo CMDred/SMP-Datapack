@@ -5,5 +5,5 @@
 #==========================================#
 
 #------------------ATTACK------------------#
-execute as @e[tag=WitherAttacking] at @s run function bcsmp:mobs/ai/wither_fight/go_attack
+execute as @e[type=wither,tag=WitherAttacking] at @s run function bcsmp:mobs/ai/wither_fight/go_attack
 #------------------------------------------#

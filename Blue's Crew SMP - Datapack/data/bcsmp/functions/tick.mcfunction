@@ -14,4 +14,6 @@ function bcsmp:brewing/main
 
 # Events
 execute as @a[scores={RightClick=1..}] at @s run function bcsmp:keyboard_event/right_click
+execute as @a[scores={Death=1..}] at @s run function bcsmp:keyboard_event/death
+execute as @a[scores={JoinGame=1..}] at @s run function bcsmp:keyboard_event/join
 #------------------------------------------#

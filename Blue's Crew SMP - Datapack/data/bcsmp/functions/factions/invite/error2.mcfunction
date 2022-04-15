@@ -5,5 +5,4 @@
 #==========================================#
 #-----------------FACTIONS-----------------#
 tellraw @s ["",{"text":"The Invite Token does not belong to this faction!","color":"red"}]
-playsound entity.villager.no master @s ~ ~ ~ 1 1 1
 #------------------------------------------#

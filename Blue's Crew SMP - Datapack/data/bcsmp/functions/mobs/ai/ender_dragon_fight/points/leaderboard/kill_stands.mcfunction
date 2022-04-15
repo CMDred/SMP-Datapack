@@ -4,5 +4,5 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #---------------DRAGON FIGHT---------------#
-kill @e[tag=End_Leaderboard]
+kill @e[type=armor_stand,tag=End_Leaderboard]
 #------------------------------------------#

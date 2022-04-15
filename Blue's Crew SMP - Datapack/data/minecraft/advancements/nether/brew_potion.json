@@ -27,6 +27,6 @@
     ]
   ],
   "rewards": {
-    "function": "bcsmp:advancements/trophies/bew_potion_check"
+    "function": "bcsmp:advancements/trophies/brew_potion_check"
   }
 }
