@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "red_sand",
+  "ingredient": {
+    "tag": "minecraft:red_sandstones"
+  },
+  "result": "minecraft:red_sand",
+  "count": 1
+}
