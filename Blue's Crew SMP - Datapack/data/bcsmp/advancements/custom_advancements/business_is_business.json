@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:emerald"
+    },
+    "title": "Business is Business",
+    "description": "Place a shop",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/trade",
+  "criteria": {
+    "place_shop": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
