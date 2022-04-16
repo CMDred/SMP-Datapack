@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:item/template_spawn_egg",
+  "overrides": [
+    { "predicate": { "custom_model_data": 1}, "model": "block/bricks"},
+    { "predicate": { "custom_model_data": 2}, "model": "block/barrel"}
+
+  ]
+}
