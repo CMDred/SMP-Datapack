@@ -11,7 +11,7 @@ particle flash ~ ~ ~ 2 2 2 0.01 30 force
 playsound entity.wither.ambient master @a[tag=IsInEnd] ~ ~ ~ 10 2 1
 playsound entity.enderman.scream master @a[tag=IsInEnd] ~ ~ ~ 10 2 1
 tp @s ~ ~-300 ~
-tp @e[tag=ProtectiveTotem_Visual] ~ ~-300 ~
+tp @e[type=giant,tag=ProtectiveTotem_Visual] ~ ~-300 ~
 execute at @e[type=marker,tag=CrystalPlace] if block ~ ~-2 ~ obsidian run summon end_crystal
 execute as @e[type=marker,tag=CrystalPlace] at @s as @e[type=end_crystal,distance=..3] run function bcsmp:mobs/ai/ender_dragon_fight/spawn_crystal_slime
 tellraw @a [{"text":"Crystals have respawned!","color":"red"}]
