@@ -4,8 +4,8 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #---------------TEMPERATURE----------------#
-#Item Temperature: -500
-scoreboard players remove #ItemTemperature Temp 16000
-scoreboard players add #ItemWeight Temp 32
+#Item Temperature: -700
+scoreboard players remove #ItemTemperature Temp 24500
+scoreboard players add #ItemWeight Temp 35
 scoreboard players set #ItemFound Temp 1
 #------------------------------------------#
