@@ -6,12 +6,10 @@
 #-----------------FACTIONS-----------------#
 function bcsmp:factions/create_faction
 
-# get item thrower and make them join the faction and be the leader
-execute as @e[type=item,tag=FactionPaper,distance=..1.5,limit=1] store result score #UUID0 Temp run data get entity @s Thrower[0]
-execute as @e[type=item,tag=FactionPaper,distance=..1.5,limit=1] store result score #UUID1 Temp run data get entity @s Thrower[1]
-
 data modify storage bcsmp:factions FactionToJoin set from storage bcsmp:factions NewFaction
-execute as @a[distance=..10] run function bcsmp:factions/villager/check_if_owner
+execute as @a[tag=Thrower] run function bcsmp:factions/join_faction/start
+execute as @a[tag=Thrower] run function bcsmp:factions/join_faction/elect_as_leader
+
 kill @e[type=item,tag=FactionPaper,distance=..1.5,limit=1]
 kill @e[type=item,tag=FactionBanner,distance=..1.5,limit=1]
 
@@ -39,5 +37,6 @@ execute as @e[type=villager,tag=FactionOutpostVillager,sort=nearest,limit=1] run
 
 data remove storage bcsmp:factions NewFaction
 
+tag @a remove Thrower
 kill @s
 #------------------------------------------#
