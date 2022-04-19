@@ -20,6 +20,7 @@ data modify entity @s Offers.Recipes set value [                            {rew
 execute in overworld run data modify entity @s Offers.Recipes[0].sell.tag.display.Name set from block 29999977 1 29832 Text1
 data modify entity @s Offers.Recipes[0].sell set from storage bcsmp:factions NewFaction.Banner
 data modify entity @s Offers.Recipes[0].sell.tag.display.Name set from block 29999977 1 29832 Text1
+data modify entity @s Offers.Recipes[0].sell.Count set value 1b
 
 execute in overworld run data modify entity @s CustomName set from block 29999977 1 29832 Text2
 execute in overworld run data modify entity @e[type=villager,tag=InviteManager,sort=nearest,limit=1] CustomName set from block 29999977 1 29832 Text3
