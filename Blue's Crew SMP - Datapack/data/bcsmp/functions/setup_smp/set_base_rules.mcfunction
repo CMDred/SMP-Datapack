@@ -15,4 +15,5 @@ function bcsmp:setup_smp/set_rules/mob_griefing/true
 # Custom Rules
 function bcsmp:setup_smp/set_rules/use_mob_scaling/true
 function bcsmp:setup_smp/set_rules/use_temperature/true
+function bcsmp:setup_smp/set_rules/blocks_affect_temperature/true
 #------------------------------------------#

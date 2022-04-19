@@ -45,6 +45,7 @@
 	"minecraft:beetroots",
 	"minecraft:cocoa",
 	"minecraft:nether_wart",
-	"#minecraft:coral_plants"
+	"#minecraft:coral_plants",
+  "minecraft:fire"
     ]
 }

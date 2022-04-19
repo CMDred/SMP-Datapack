@@ -1,18 +1,12 @@
 {
     "values": [
-        "minecraft:fire_charge",
         "minecraft:torch",
         "minecraft:soul_torch",
         "minecraft:glowstone",
-        "minecraft:glowstone_dust",
-        "minecraft:blaze_rod",
-        "minecraft:blaze_powder",
-        "minecraft:lava_bucket",
-        "minecraft:powder_snow_bucket",
-        "minecraft:snowball",
+        "minecraft:lava",
+        "minecraft:powder_snow",
         "minecraft:snow",
         "minecraft:snow_block",
-        "minecraft:magma_cream",
         "minecraft:lantern",
         "minecraft:soul_lantern",
         "minecraft:campfire",
@@ -22,6 +16,14 @@
         "minecraft:ice",
         "minecraft:packed_ice",
         "minecraft:blue_ice",
-        "minecraft:jack_o_lantern"
+        "minecraft:jack_o_lantern",
+        "minecraft:lava_cauldron",
+        "minecraft:powder_snow_cauldron",
+        "minecraft:fire",
+        "minecraft:furnace",
+        "minecraft:blast_furnace",
+        "minecraft:smoker",
+        "#minecraft:candles",
+        "#minecraft:candle_cakes"
     ]
 }
