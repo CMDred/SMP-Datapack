@@ -11,7 +11,7 @@ scoreboard players operation #StorageID Temp = @s StorageID
 execute as @e[type=marker,tag=Storage] if score @s LinkID = @a[tag=Clicker,limit=1] LinkID run tag @s add ThisStorage
 scoreboard players reset @e[type=marker,tag=ThisStorage] LinkID
 
-execute at @e[tag=ThisStorage] run particle explosion
+execute at @e[type=marker,tag=ThisStorage] run particle explosion
 
 execute if entity @e[type=marker,tag=ThisStorage,tag=IncomeStorage] as @e[type=marker,tag=IncomeStorage] if score @s StorageID = #StorageID Temp run scoreboard players reset @s StorageID
 execute if entity @e[type=marker,tag=ThisStorage,tag=OutcomeStorage] as @e[type=marker,tag=OutcomeStorage] if score @s StorageID = #StorageID Temp run scoreboard players reset @s StorageID
