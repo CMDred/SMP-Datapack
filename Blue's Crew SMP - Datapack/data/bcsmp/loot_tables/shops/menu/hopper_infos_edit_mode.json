@@ -1,0 +1,55 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:hopper",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{ContainerMenu:1b}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Selling",
+                  "color": "gray",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Shop Slot",
+                    "color": "yellow",
+                    "italic": false
+                  },
+                  {
+                    "text": "",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Price",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

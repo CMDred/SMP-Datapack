@@ -11,6 +11,7 @@ function bcsmp:mobs/main
 execute if score #UseTemperature GameRules matches 1 run function bcsmp:temperature/main
 function bcsmp:factions/main
 function bcsmp:brewing/main
+function bcsmp:shops/main
 
 # Events
 execute as @a[scores={RightClick=1..}] at @s run function bcsmp:keyboard_event/right_click

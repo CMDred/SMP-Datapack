@@ -1,0 +1,40 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:warped_fungus_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:5,Linker:1b,ShopTool:1b}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Storage Linker",
+                  "color": "green",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "Lets you link shop storages to shop containers",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,45 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:barrier",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{ContainerMenu:1b}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Empty Cost Slot",
+                  "color": "gray",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "Replace this item with anything",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "to set it as the cost!",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

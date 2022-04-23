@@ -1,0 +1,40 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:barrier",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{ContainerMenu:1b}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Empty!",
+                  "color": "red",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "The vendor has not set any price!",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

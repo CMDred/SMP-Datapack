@@ -1,0 +1,50 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:warped_fungus_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:6,ContainerSwitcher:1b,ShopTool:1b}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Shop Container Mode Switcher",
+                  "color": "green",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "Lets you switch a shop container's mode",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "from edit mode to working mode by",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "shift right clicking on it.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

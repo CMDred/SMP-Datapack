@@ -44,6 +44,7 @@ function bcsmp:mobs/load
 function bcsmp:temperature/load
 function bcsmp:factions/load
 function bcsmp:setup_smp/load
+function bcsmp:shops/load
 #-----------------MESSAGE------------------#
 tellraw @a ["",{"text":"BlueSMP =>","color":"green","bold":true},{"text":" Reload Successful.","color":"gray","italic":true}]
 #------------------------------------------#

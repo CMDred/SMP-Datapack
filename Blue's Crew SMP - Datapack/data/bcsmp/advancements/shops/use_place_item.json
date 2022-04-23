@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "item": {
+            "nbt": "{Placer:1b}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "bcsmp:shops/place/clicked"
+    }
+  }
