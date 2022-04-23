@@ -5,19 +5,14 @@
 #==========================================#
 #-------------------INIT-------------------#
 execute in minecraft:overworld run forceload add 29999977 29832
-execute in minecraft:the_nether run forceload add 29999977 29832
-execute in minecraft:the_end run forceload add 29999977 29832
-
-execute in minecraft:overworld run fill 29999976 0 29831 29999978 2 29833 bedrock
-execute in minecraft:the_nether run fill 29999976 0 29831 29999978 2 29833 bedrock
-execute in minecraft:the_end run fill 29999976 0 29831 29999978 2 29833 bedrock
-
 # forceload end's 0 0 or else the Armor Stands for the leaderboard won't spawn
 execute in minecraft:the_end run forceload add 0 0
 
 scoreboard players set #lcg Constant 1103515245
 scoreboard objectives add RandMath dummy
 execute unless score #lcg RandMath matches ..0 unless score #lcg RandMath matches 1.. run function bcsmp:random/uuid_reset
+
+scoreboard objectives add PlayerID dummy
 
 scoreboard objectives add Temp dummy
 scoreboard objectives add JoinGame minecraft.custom:minecraft.leave_game
