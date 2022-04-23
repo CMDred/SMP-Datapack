@@ -4,7 +4,7 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #---------------TEMPERATURE----------------#
-scoreboard players set #ThisBlockTemperature Temp -500
-scoreboard players set #ThisBlockWeight Temp 10
+scoreboard players set #ThisBlockTemperature Temp -1000
+scoreboard players set #ThisBlockWeight Temp 15
 scoreboard players set #BlockFound Temp 1
 #------------------------------------------#
