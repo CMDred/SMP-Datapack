@@ -4,10 +4,16 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-------------------INIT-------------------#
-execute as @e[type=villager,tag=FactionOutpostVillager,tag=FactionCreated,tag=!InviteManager,sort=nearest,limit=1] run tp @s @e[type=marker,tag=MoveAdvisor,limit=1]
-kill @e[type=marker,tag=MoveAdvisor]
+scoreboard players operation #Search Temp = @s MoveEggID
+execute as @e[type=villager,tag=FactionOutpostVillager,tag=Converted] if score @s VillagerID = #Search Temp run tag @s add WillBeMoved
 
-execute as @e[type=villager,tag=FactionOutpostVillager,tag=InviteManager,sort=nearest,limit=1] run tp @s @e[type=marker,tag=MoveManager,limit=1]
-kill @e[type=marker,tag=MoveManager]
+execute if entity @e[type=villager,tag=WillBeMoved] run function bcsmp:factions/villager/move_success
+execute unless entity @e[type=villager,tag=WillBeMoved] run function bcsmp:factions/villager/move_fail
+
+kill @e[type=marker,tag=MoveAdvisor]
+kill @e[type=marker,tag=MoveInviteManager]
+kill @e[type=marker,tag=MoveShopManager]
+tag @e remove WillBeMoved
+
 advancement revoke @s only bcsmp:factions/place_move_egg
 #------------------------------------------#

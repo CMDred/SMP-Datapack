@@ -10,4 +10,10 @@ tag @s remove IsHoldingRCItem
 function bcsmp:right_click/turn_wfoas_back
 execute if predicate bcsmp:right_click/check_rightclickable run function bcsmp:right_click/is_holding_rightclickable
 scoreboard players operation @s PreviousSlot = #CurrentSlot Temp
+
+# Move Egg ID score
+scoreboard players reset @s MoveEggID
+execute if predicate bcsmp:factions/holding_move_egg store result score @s MoveEggID run data get entity @s SelectedItem.tag.MoveID
+
+scoreboard players operation @s PreviousSlot = #CurrentSlot Temp
 #------------------------------------------#
