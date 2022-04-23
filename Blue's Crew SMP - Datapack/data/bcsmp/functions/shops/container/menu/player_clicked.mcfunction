@@ -4,6 +4,6 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #------------------SHOPS-------------------#
-execute at @s as @e[tag=Container,distance=..7] if score @s PlayerID = @p PlayerID at @s run function bcsmp:shops/container/menu/container_main
+execute at @s as @e[type=marker,tag=Container,distance=..7] if score @s PlayerID = @p PlayerID at @s run function bcsmp:shops/container/menu/container_main
 scoreboard players reset @s ContainerItems
 #------------------------------------------#

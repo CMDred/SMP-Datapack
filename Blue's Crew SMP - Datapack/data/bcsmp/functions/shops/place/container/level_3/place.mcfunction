@@ -8,12 +8,13 @@ playsound minecraft:block.note_block.pling master @a[tag=Placing] ~ ~ ~ 1 2 1
 tellraw @a[tag=Placing] ["",{"text":"You","color":"red"},{"text":" placed a","color":"gold"},{"text":" Level 1","color":"red"},{"text":" Shop Container","color":"gold"},{"text":"! ","color":"red"},{"text":"(","color":"gray"},{"score":{"name": "#CurrentContainersAmount","objective": "Temp"},"color":"gold"},{"text":"/","color":"gray"},{"score":{"name": "#ContainerLimit","objective": "Temp"},"color":"red"},{"text":")","color":"gray"}]
 particle dust 0.243 0.765 0.016 1 ~ ~ ~ 0.3 0.15 0.3 0.1 20 normal
 summon marker ~ ~ ~ {Tags:["Container","Level3","NewContainer","EditMode"]}
-setblock ~ ~ ~ barrel[facing=up]
-execute as @e[tag=NewContainer] run scoreboard players operation @s ShopID = @e[tag=ContainerPlace,sort=nearest,limit=1] IsInShopID
-execute as @e[tag=NewContainer] run data modify entity @s data.Owner set from entity @a[tag=Placing,limit=1] UUID
-execute as @e[tag=NewContainer] run data modify entity @s data.MaxSlots set value 6
-execute as @e[tag=NewContainer] run data modify entity @s data.Trades set value [{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}}]
-execute as @e[tag=NewContainer] run scoreboard players operation @s PlayerID = @a[tag=Placing] PlayerID
-execute as @e[tag=NewContainer] store result score @s StorageID run scoreboard players add #Global Temp 1
-execute at @s as @e[tag=Shop,distance=..20] if score @s ShopID = @e[tag=ContainerPlace,sort=nearest,limit=1] IsInShopID run scoreboard players add @s CurrentContainersAmount 1
+setblock ~ ~ ~ barrel[facing=up]{CustomName:'{"text":"Shop Level 3"}'}
+scoreboard players operation #Search IsInShopID = @s IsInShopID
+execute as @e[type=marker,tag=NewContainer] run scoreboard players operation @s ShopID = #Search IsInShopID
+execute as @e[type=marker,tag=NewContainer] run data modify entity @s data.Owner set from entity @a[tag=Placing,limit=1] UUID
+execute as @e[type=marker,tag=NewContainer] run data modify entity @s data.MaxSlots set value 6
+execute as @e[type=marker,tag=NewContainer] run data modify entity @s data.Trades set value [{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}}]
+execute as @e[type=marker,tag=NewContainer] run scoreboard players operation @s PlayerID = @a[tag=Placing] PlayerID
+execute as @e[type=marker,tag=NewContainer] store result score @s StorageID run scoreboard players add #Global Temp 1
+execute at @s as @e[type=marker,tag=Shop,distance=..20] if score @s ShopID = #Search IsInShopID run scoreboard players add @s CurrentContainersAmount 1
 #------------------------------------------#
