@@ -21,7 +21,12 @@ execute store success score #IsDifferent Temp run data modify storage bcsmp:shop
 execute if score #IsDifferent Temp matches 1 run data modify storage bcsmp:shops PlayerInv append from storage bcsmp:shops PlayerInv[0]
 execute if score #IsDifferent Temp matches 1 run data remove storage bcsmp:shops PlayerInv[0]
 execute if score #IsDifferent Temp matches 0 run function bcsmp:shops/container/buy/id_match
+
 execute if score #AmountOfIterations Temp matches 1.. run function bcsmp:shops/container/buy/cycle
-execute if score #AmountOfIterations Temp matches 0 run function bcsmp:shops/container/buy/buy_fail
-execute if score #AmountOfIterations Temp matches -1 run function bcsmp:shops/container/buy/buy_success
+
+execute if entity @s[tag=!EnoughOutcomeChecking] if score #AmountOfIterations Temp matches 0 run function bcsmp:shops/container/buy/buy_fail
+execute if entity @s[tag=!EnoughOutcomeChecking] if score #AmountOfIterations Temp matches -1 run function bcsmp:shops/container/buy/buy_success
+
+execute if entity @s[tag=EnoughOutcomeChecking] if score #AmountOfIterations Temp matches -1 run function bcsmp:shops/container/buy/modify_outcome_storage
+execute if entity @s[tag=EnoughOutcomeChecking] if score #AmountOfIterations Temp matches 0 run function bcsmp:shops/container/buy/error3
 #------------------------------------------#

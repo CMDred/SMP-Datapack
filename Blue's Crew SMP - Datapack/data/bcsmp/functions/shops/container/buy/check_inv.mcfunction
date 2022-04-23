@@ -4,17 +4,12 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #------------------SHOPS-------------------#
-data remove storage bcsmp:shops PlayerInv[{Slot:-106b}]
-execute store result score #AmountOfIterations Temp run data get storage bcsmp:shops PlayerInv
-execute store result score #NeededCount Temp run data get storage bcsmp:shops PriceItem.Count
-data remove storage bcsmp:shops PriceItem.tag.ContainerMenu
-#tellraw @s ["",{"text":"Cycling started!"}]
-#tellraw @s [{"text":"Iterations: "},{"score":{"name": "#AmountOfIterations","objective": "Temp"},"color":"light_purple"}]
-#tellraw @s [{"text":"Price Item: "}]
-#tellraw @s [{"text":"   ID: "},{"nbt":"PriceItem.id","storage":"bcsmp:shops","color":"light_purple"}]
-#tellraw @s [{"text":"   Count: "},{"nbt":"PriceItem.Count","storage":"bcsmp:shops","color":"light_purple"}]
-#tellraw @s [{"text":"   NBT: "},{"nbt":"PriceItem.tag","storage":"bcsmp:shops","color":"light_purple"}]
-
-scoreboard players set #FoundCount Temp 0
-execute if score #AmountOfIterations Temp matches 1.. run function bcsmp:shops/container/buy/cycle
+scoreboard players set #IncomeStorageSlots Temp 0
+execute as @e[type=marker,tag=IncomeStorage] if score @s StorageID = @e[tag=Container,sort=nearest,limit=1] StorageID run tag @s add ThisIncome
+execute at @e[type=marker,tag=ThisIncome] store result score #IncomeStorageSlots Temp run data get block ~ ~ ~ Items
+execute if entity @e[type=marker,tag=ThisIncome] unless score #IncomeStorageSlots Temp matches 27.. run function bcsmp:shops/container/buy/check_if_enough_outcome
+execute if score #IncomeStorageSlots Temp matches 27.. run function bcsmp:shops/container/buy/error2
+execute unless entity @e[type=marker,tag=ThisIncome] run function bcsmp:shops/container/buy/error4
+tag @e remove ThisIncome
+tag @e remove ThisOutcome
 #------------------------------------------#

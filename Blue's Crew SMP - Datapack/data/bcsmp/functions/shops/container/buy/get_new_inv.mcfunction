@@ -34,11 +34,18 @@ data modify storage bcsmp:shops PlayerInv[{Slot:34b}].Slot set value 7b
 data modify storage bcsmp:shops PlayerInv[{Slot:35b}].Slot set value 8b
 data modify block 29999977 2 29832 Items set from storage bcsmp:shops PlayerInv
 
-data modify storage bcsmp:shops SoldItem.Slot set value 0b
+data remove storage bcsmp:shops SoldItem.Slot
 data remove storage bcsmp:shops SoldItem.tag.ContainerMenu
-execute if data storage bcsmp:shops SoldItem{tag:{}} run data remove storage bcsmp:shops SoldItem.tag
+execute store result score #HasNBT Temp run data get storage bcsmp:shops SoldItem.tag
+execute if score #HasNBT Temp matches 0 run data remove storage bcsmp:shops SoldItem.tag
+
+data modify storage bcsmp:shops PriceItem.Slot set value 0b
+data remove storage bcsmp:shops PriceItem.tag.ContainerMenu
+execute store result score #HasNBT Temp run data get storage bcsmp:shops PriceItem.tag
+execute if score #HasNBT Temp matches 0 run data remove storage bcsmp:shops PriceItem.tag
+
 item replace block 29999977 3 29832 container.0 with wheat_seeds
-data modify block 29999977 3 29832 Items[{Slot:0b}] set from storage bcsmp:shops SoldItem
+data modify block 29999977 3 29832 Items[{Slot:0b}] set from storage bcsmp:shops PriceItem
 
 item replace entity @s hotbar.0 from block 29999977 1 29832 container.0
 item replace entity @s hotbar.1 from block 29999977 1 29832 container.1
@@ -82,7 +89,11 @@ item replace entity @s inventory.26 from block 29999977 2 29832 container.8
 
 execute at @s run summon item ~ ~0.5 ~ {Tags:["BoughtItem"],Item:{id:"minecraft:stone",Count:1b}}
 data modify entity @e[tag=BoughtItem,limit=1] Item set from storage bcsmp:shops SoldItem
+tag @e remove BoughtItem
+
+execute at @e[type=marker,tag=ThisIncome,sort=nearest,limit=1] run loot insert ~ ~ ~ mine 29999977 3 29832 air{drop_contents:true}
 
 setblock 29999977 1 29832 air
 setblock 29999977 2 29832 air
+setblock 29999977 3 29832 air
 #------------------------------------------#

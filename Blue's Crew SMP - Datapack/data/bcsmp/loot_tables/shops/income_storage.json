@@ -1,0 +1,29 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cod_spawn_egg",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:2,Placer:1b,Place:\"IncStorage\",EntityTag:{id:\"minecraft:marker\",Tags:[\"Placer\",\"IncomeStorage\",\"StoragePlace\"]}}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Shop Income Storage Placer",
+                  "color": "yellow",
+                  "italic": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

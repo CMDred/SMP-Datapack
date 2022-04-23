@@ -14,5 +14,6 @@ execute as @e[tag=NewContainer] run data modify entity @s data.Owner set from en
 execute as @e[tag=NewContainer] run data modify entity @s data.MaxSlots set value 6
 execute as @e[tag=NewContainer] run data modify entity @s data.Trades set value [{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}}]
 execute as @e[tag=NewContainer] run scoreboard players operation @s PlayerID = @a[tag=Placing] PlayerID
+execute as @e[tag=NewContainer] store result score @s StorageID run scoreboard players add #Global Temp 1
 execute at @s as @e[tag=Shop,distance=..20] if score @s ShopID = @e[tag=ContainerPlace,sort=nearest,limit=1] IsInShopID run scoreboard players add @s CurrentContainersAmount 1
 #------------------------------------------#

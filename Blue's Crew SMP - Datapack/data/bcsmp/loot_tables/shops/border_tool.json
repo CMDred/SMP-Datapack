@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomModelData:4,BorderTool:1b}"
+                "tag": "{CustomModelData:4,BorderTool:1b,ShopTool:1b}"
               },
               {
                 "function": "minecraft:set_name",
