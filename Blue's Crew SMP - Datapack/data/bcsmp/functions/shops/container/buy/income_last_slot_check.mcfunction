@@ -25,4 +25,7 @@ execute store success score #IsDifferent Temp run data modify storage bcsmp:shop
 execute if score #IsDifferent Temp matches 0 run function bcsmp:shops/container/buy/error2
 # loot insert has successfuly changed the container : the income storage CAN handle the arriving item
 execute if score #IsDifferent Temp matches 1 run function bcsmp:shops/container/buy/check_if_enough_outcome
+
+setblock 29999977 -64 29832 air
+setblock 29999977 -63 29832 air
 #------------------------------------------#

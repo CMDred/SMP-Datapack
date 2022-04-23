@@ -13,7 +13,6 @@ execute store result score #MaxStack Temp run data get block 29999977 -64 29832 
 setblock 29999977 -64 29832 air
 
 # store counts and calculate free space
-execute store result score #ArrivingItemCount Temp run data get storage bcsmp:shops PriceItem.Count
 execute at @e[type=marker,tag=ThisIncome] store result score #IncomeLastSlotCount Temp run data get block ~ ~ ~ Items[{Slot:26b}].Count
 execute store result score #FreeSpace Temp run scoreboard players operation #MaxStack Temp -= #IncomeLastSlotCount Temp
 

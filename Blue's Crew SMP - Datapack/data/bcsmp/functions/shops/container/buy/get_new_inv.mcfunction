@@ -88,7 +88,7 @@ item replace entity @s inventory.26 from block 29999977 2 29832 container.8
 
 
 execute at @s run summon item ~ ~0.5 ~ {Tags:["BoughtItem"],Item:{id:"minecraft:stone",Count:1b}}
-data modify entity @e[type=item,tag=BoughtItem,limit=1] Item set from storage bcsmp:shops SoldItem
+data modify entity @e[tag=BoughtItem,limit=1] Item set from storage bcsmp:shops SoldItem
 tag @e remove BoughtItem
 
 execute at @e[type=marker,tag=ThisIncome,sort=nearest,limit=1] run loot insert ~ ~ ~ mine 29999977 3 29832 air{drop_contents:true}

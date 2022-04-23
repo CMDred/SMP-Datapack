@@ -15,6 +15,7 @@ execute as @e[type=marker,tag=NewContainer] run data modify entity @s data.Owner
 execute as @e[type=marker,tag=NewContainer] run data modify entity @s data.MaxSlots set value 2
 execute as @e[type=marker,tag=NewContainer] run data modify entity @s data.Trades set value [{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}},{buy:{id:"minecraft:air",Count:1b,tag:{}},sell:{id:"minecraft:air",Count:1b,tag:{}}}]
 execute as @e[type=marker,tag=NewContainer] run scoreboard players operation @s PlayerID = @a[tag=Placing] PlayerID
+execute as @e[type=marker,tag=NewContainer] if entity @a[tag=Placing,team=!] run function bcsmp:shops/place/container/faction_set
 execute as @e[type=marker,tag=NewContainer] store result score @s StorageID run scoreboard players add #Global Temp 1
-execute at @s as @e[type=marker,tag=Shop,distance=..20] if score @s ShopID = #Search IsInShopID run scoreboard players add @s CurrentContainersAmount 1
+execute as @e[type=marker,tag=Shop,distance=..20] if score @s ShopID = #Search IsInShopID run scoreboard players add @s CurrentContainersAmount 1
 #------------------------------------------#
