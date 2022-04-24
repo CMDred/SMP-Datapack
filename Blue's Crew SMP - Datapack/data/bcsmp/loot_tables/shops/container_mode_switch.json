@@ -35,7 +35,7 @@
                     "italic": false
                   },
                   {
-                    "text": "shift right clicking on it.",
+                    "text": "shift-right-clicking on it.",
                     "color": "gray",
                     "italic": false
                   }
@@ -47,4 +47,3 @@
       }
     ]
   }
-  

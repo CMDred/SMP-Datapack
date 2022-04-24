@@ -25,10 +25,55 @@
                 "entity": "this",
                 "lore": [
                   {
-                    "text": "Lets you link shop storages to shop containers",
+                    "text": "Link Shop Storages to Shop Containers",
                     "color": "gray",
                     "italic": false
-                  }
+                  },
+                  {
+                    "text": "by shift-right-clicking them.",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "When held, Shop Container Links",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "are visible.",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "Green",
+                      "color": "green",
+                      "italic": false
+                    },
+                    {
+                      "text": " laser -> Income (What the vendor obtains)",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Red",
+                      "color": "red",
+                      "italic": false
+                    },
+                    {
+                      "text": " laser -> Stock (What the vendor sells)",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
                 ]
               }
             ]
@@ -37,4 +82,3 @@
       }
     ]
   }
-  

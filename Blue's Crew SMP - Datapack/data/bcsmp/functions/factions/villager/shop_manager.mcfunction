@@ -74,11 +74,6 @@ execute in overworld positioned 29999977 1 29832 run loot spawn ~ ~ ~ loot bcsmp
 execute in overworld positioned 29999977 1 29832 run data modify entity @s Offers.Recipes[10].sell set from entity @e[type=item,distance=..2,sort=nearest,limit=1] Item
 execute in overworld positioned 29999977 1 29832 run kill @e[type=item,distance=..2,sort=nearest,limit=1]
 
-data modify entity @s Offers.Recipes[11].buy set value {id:"minecraft:emerald",Count:6b}
-execute in overworld positioned 29999977 1 29832 run loot spawn ~ ~ ~ loot bcsmp:shops/link_sight_tool
-execute in overworld positioned 29999977 1 29832 run data modify entity @s Offers.Recipes[11].sell set from entity @e[type=item,distance=..2,sort=nearest,limit=1] Item
-execute in overworld positioned 29999977 1 29832 run kill @e[type=item,distance=..2,sort=nearest,limit=1]
-
 tag @s add Converted
 data modify entity @s CustomName set value '{"text":"Shop Manager","bold":true}'
 #------------------------------------------#
