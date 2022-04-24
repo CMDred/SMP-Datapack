@@ -10,5 +10,5 @@ execute as @a run function bcsmp:factions/check_if_in/start
 execute as @a[tag=InFaction,sort=random,limit=1] run tag @s add ElectLeader
 data modify storage bcsmp:factions FactionToJoin set from storage bcsmp:factions Factions[0]
 execute as @a[tag=ElectLeader] run function bcsmp:factions/join_faction/start
-tag @e remove InFaction
+tag @e[tag=InFaction] remove InFaction
 #------------------------------------------#

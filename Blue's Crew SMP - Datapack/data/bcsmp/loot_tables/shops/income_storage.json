@@ -15,7 +15,7 @@
                 "function": "minecraft:set_name",
                 "entity": "this",
                 "name": {
-                  "text": "Shop Income Storage Placer",
+                  "text": "Shop Income Storage",
                   "color": "yellow",
                   "italic": false
                 }
@@ -26,4 +26,3 @@
       }
     ]
   }
-  

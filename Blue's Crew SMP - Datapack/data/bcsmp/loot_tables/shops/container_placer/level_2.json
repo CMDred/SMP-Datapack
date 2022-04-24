@@ -15,7 +15,7 @@
                 "function": "minecraft:set_name",
                 "entity": "this",
                 "name": {
-                  "text": "Shop Container Placer",
+                  "text": "Shop Container",
                   "color": "gold",
                   "italic": false
                 }
@@ -37,4 +37,3 @@
       }
     ]
   }
-  

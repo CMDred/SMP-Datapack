@@ -23,5 +23,5 @@ execute if data entity @e[type=marker,tag=Container,sort=nearest,limit=1] data.F
 
 execute if entity @s[tag=ApplyIncrease] run scoreboard players operation #ArrivingItemCount Temp *= #Constant120 Temp
 execute if entity @s[tag=ApplyIncrease] run scoreboard players operation #ArrivingItemCount Temp /= #Constant100 Temp
-tag @e remove ApplyIncrease
+tag @e[tag=ApplyIncrease] remove ApplyIncrease
 #------------------------------------------#

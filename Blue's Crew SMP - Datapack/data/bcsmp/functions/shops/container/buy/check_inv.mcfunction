@@ -15,6 +15,6 @@ execute at @e[type=marker,tag=ThisIncome] store result score #IncomeStorageSlots
 execute if entity @e[type=marker,tag=ThisIncome] unless score #IncomeStorageSlots Temp matches 27.. in overworld run function bcsmp:shops/container/buy/check_if_enough_outcome
 execute if score #IncomeStorageSlots Temp matches 27.. run function bcsmp:shops/container/buy/income_last_slot_count
 execute unless entity @e[type=marker,tag=ThisIncome] run function bcsmp:shops/container/buy/error4
-tag @e remove ThisIncome
-tag @e remove ThisOutcome
+tag @e[tag=ThisIncome] remove ThisIncome
+tag @e[tag=ThisOutcome] remove ThisOutcome
 #------------------------------------------#

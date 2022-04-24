@@ -15,7 +15,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "Shop Stock Storage Placer",
+                "text": "Shop Stock Storage",
                 "color": "yellow",
                 "italic": false
               }

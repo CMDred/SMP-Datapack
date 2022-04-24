@@ -13,7 +13,7 @@ execute unless entity @e[type=villager,tag=WillBeMoved] run function bcsmp:facti
 kill @e[type=marker,tag=MoveAdvisor]
 kill @e[type=marker,tag=MoveInviteManager]
 kill @e[type=marker,tag=MoveShopManager]
-tag @e remove WillBeMoved
+tag @e[tag=WillBeMoved] remove WillBeMoved
 
 advancement revoke @s only bcsmp:factions/place_move_egg
 #------------------------------------------#

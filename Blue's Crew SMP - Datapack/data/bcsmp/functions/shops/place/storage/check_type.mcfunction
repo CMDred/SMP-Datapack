@@ -6,5 +6,5 @@
 #------------------SHOPS-------------------#
 execute if entity @s[tag=IncomeStorage] run function bcsmp:shops/place/storage/income/place
 execute if entity @s[tag=OutcomeStorage] run function bcsmp:shops/place/storage/outcome/place
-tag @e remove NewStorage
+tag @e[tag=NewStorage] remove NewStorage
 #------------------------------------------#

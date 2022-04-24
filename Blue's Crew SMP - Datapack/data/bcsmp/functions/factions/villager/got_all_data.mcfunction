@@ -29,6 +29,6 @@ function bcsmp:factions/check_taken
 execute if entity @s[tag=FactionAvailable] at @e[type=villager,tag=FactionOutpostVillager,sort=nearest,limit=1] run function bcsmp:factions/villager/check_if_thrower_not_in_faction
 execute if entity @s[tag=!ColorAvailable] run function bcsmp:factions/villager/error1
 execute if entity @s[tag=!NameAvailable] as @e[type=item,tag=FactionPaper,distance=..1.5,limit=1] run function bcsmp:factions/villager/error2
-tag @e remove ColorAvailable
-tag @e remove NameAvailable
+tag @e[tag=ColorAvailable] remove ColorAvailable
+tag @e[tag=NameAvailable] remove NameAvailable
 #------------------------------------------#
