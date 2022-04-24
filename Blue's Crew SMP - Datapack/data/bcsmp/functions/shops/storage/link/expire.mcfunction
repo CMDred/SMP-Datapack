@@ -6,7 +6,7 @@
 #------------------SHOPS-------------------#
 playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 0 1
 execute store result score @s LinkID run scoreboard players add #Global LinkID 1
-tellraw @s ["",{"text":"You","color":"red"},{"text":" ran out of time to link the","color":"gold"},{"text":" Shop Storage","color":"red"},{"text":"!","color":"gold"}]
+tellraw @s [{"text":"You ran out of time to link the ","color":"red"},{"text":"Shop Storage","color":"yellow"},{"text":"!","color":"red"}]
 scoreboard players reset @s LinkCD
 scoreboard players reset @s LinkID
 #------------------------------------------#

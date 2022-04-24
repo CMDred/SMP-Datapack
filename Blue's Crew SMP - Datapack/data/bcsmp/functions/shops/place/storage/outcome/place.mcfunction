@@ -5,7 +5,7 @@
 #==========================================#
 #------------------SHOPS-------------------#
 playsound minecraft:block.note_block.pling master @a[tag=Placing] ~ ~ ~ 1 2 1
-tellraw @a[tag=Placing] ["",{"text":"You","color":"red"},{"text":" placed a","color":"gold"},{"text":" Shop Stock Storage","color":"red"},{"text":"! ","color":"gold"}]
+tellraw @a[tag=Placing] [{"text":"You placed a ","color":"white"},{"text":"Shop Stock Storage","color":"yellow"},{"text":"! ","color":"white"}]
 particle dust 0.243 0.765 0.016 1 ~ ~ ~ 0.3 0.15 0.3 0.1 20 normal
 summon marker ~ ~ ~ {Tags:["OutcomeStorage","Storage","NewStorage"]}
 setblock ~ ~ ~ barrel[facing=up]{CustomName:'{"text":"Shop Stock"}'}

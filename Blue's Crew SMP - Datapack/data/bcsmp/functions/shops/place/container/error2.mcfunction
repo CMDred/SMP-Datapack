@@ -5,6 +5,6 @@
 #==========================================#
 #------------------SHOPS-------------------#
 playsound minecraft:block.barrel.open master @a[tag=Placing] ~ ~ ~ 1 2 1
-tellraw @a[tag=Placing] ["",{"text":"This","color":"gold"},{"text":" Shop","color":"red"},{"text":" has reached the maximum amount of containers","color":"gold"},{"text":"! ","color":"red"},{"text":"(","color":"gray"},{"score":{"name": "#ContainerLimit","objective": "Temp"},"color":"gold"},{"text":"/","color":"gray"},{"score":{"name": "#ContainerLimit","objective": "Temp"},"color":"red"},{"text":")","color":"gray"}]
+tellraw @a[tag=Placing] [{"text":"This Shop has reached the maximum amount of ","color":"red"},{"text":"Containers","color":"yellow"},{"text":"!","color":"red"}]
 particle dust 0.341 0.341 0.341 1 ~ ~ ~ 0.3 0.15 0.3 0.1 20 normal
 #------------------------------------------#

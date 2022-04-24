@@ -19,7 +19,7 @@ execute if entity @e[type=marker,tag=ThisStorage,tag=OutcomeStorage] as @e[type=
 scoreboard players operation @e[type=marker,tag=ThisStorage] StorageID = #StorageID Temp
 scoreboard players reset @a[tag=Clicker] LinkID
 scoreboard players reset @a[tag=Clicker] LinkCD
-tellraw @a[tag=Clicker] ["",{"text":"You","color":"red"},{"text":" linked the ","color":"gold"},{"text":"Shop Storage ","color":"red"},{"text":"to this","color":"gold"},{"text":" Shop Container","color":"red"},{"text":"!","color":"gold"}]
+tellraw @a[tag=Clicker] [{"text":"You linked the ","color":"white"},{"text":"Shop Storage","color":"yellow"},{"text":" to this ","color":"white"},{"text":"Shop Container","color":"yellow"},{"text":"!","color":"white"}]
 tag @e[type=marker] remove ThisStorage
 execute at @s run particle dust 0.008 0.898 0.925 1 ~ ~0.5 ~ 0.45 0.3 0.45 0.1 60 normal
 #------------------------------------------#

@@ -4,7 +4,7 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #------------------SHOPS-------------------#
-tellraw @a[tag=Clicker] ["",{"text":"You","color":"red"},{"text":" switched this","color":"gold"},{"text":" Shop Container","color":"red"},{"text":"'s mode to","color":"gold"},{"text":" EDIT","color":"red"},{"text":" mode","color":"gold"},{"text":"!","color":"gold"}]
+tellraw @a[tag=Clicker] [{"text":"You switched this ","color":"white"},{"text":"Shop Container","color":"yellow"},{"text":"'s mode to ","color":"white"},{"text":"EDIT","color":"green"},{"text":" mode!","color":"white"}]
 tag @s remove WorkingMode
 tag @s add EditMode
 function bcsmp:shops/container/menu/container_main

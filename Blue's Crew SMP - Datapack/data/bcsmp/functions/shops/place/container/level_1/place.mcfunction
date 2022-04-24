@@ -5,7 +5,7 @@
 #==========================================#
 #------------------SHOPS-------------------#
 playsound minecraft:block.note_block.pling master @a[tag=Placing] ~ ~ ~ 1 2 1
-tellraw @a[tag=Placing] ["",{"text":"You","color":"red"},{"text":" placed a","color":"gold"},{"text":" Level 1","color":"red"},{"text":" Shop Container","color":"gold"},{"text":"! ","color":"red"},{"text":"(","color":"gray"},{"score":{"name": "#CurrentContainersAmount","objective": "Temp"},"color":"gold"},{"text":"/","color":"gray"},{"score":{"name": "#ContainerLimit","objective": "Temp"},"color":"red"},{"text":")","color":"gray"}]
+tellraw @a[tag=Placing] [{"text":"You placed a ","color":"white"},{"text":"Level 1 Shop Container","color":"yellow"},{"text":"! ","color":"white"},{"text":"(","color":"gray"},{"score":{"name": "#CurrentContainersAmount","objective": "Temp"},"color":"gold"},{"text":"/","color":"gray"},{"score":{"name": "#ContainerLimit","objective": "Temp"},"color":"red"},{"text":")","color":"gray"}]
 particle dust 0.243 0.765 0.016 1 ~ ~ ~ 0.3 0.15 0.3 0.1 20 normal
 summon marker ~ ~ ~ {Tags:["Container","Level1","NewContainer","EditMode"]}
 setblock ~ ~ ~ barrel[facing=up]{CustomName:'{"text":"Shop Level 1"}'}

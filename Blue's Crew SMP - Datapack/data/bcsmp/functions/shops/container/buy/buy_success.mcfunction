@@ -7,8 +7,8 @@
 summon item ~ ~10 ~ {Tags:["NameGet"],Item:{id:"minecraft:stone",Count:1b}}
 data modify entity @e[type=item,tag=NameGet,limit=1] Item set from storage bcsmp:shops SoldItem
 execute store result score #Count Temp run data get storage bcsmp:shops SoldItem.Count
-execute unless data storage bcsmp:shops SoldItem.tag.display.Name run tellraw @s ["",{"text":"You bought ","color":"gold"},{"selector":"@e[type=item,tag=NameGet,limit=1]","color":"red"},{"text":" x","color":"gray"},{"score":{"name":"#Count","objective": "Temp"},"color":"gray"},{"text":"!","color":"gold"}]
-execute if data storage bcsmp:shops SoldItem.tag.display.Name run tellraw @s ["",{"text":"You bought ","color":"gold"},{"nbt":"SoldItem.tag.display.Name","interpret":true,"storage":"bcsmp:shops","color":"red"},{"text":" x","color":"gray"},{"score":{"name":"#Count","objective": "Temp"},"color":"gray"},{"text":"!","color":"gold"}]
+execute unless data storage bcsmp:shops SoldItem.tag.display.Name run tellraw @s ["",{"text":"You bought ","color":"white"},{"selector":"@e[type=item,tag=NameGet,limit=1]","color":"green"},{"text":" x","color":"gray"},{"score":{"name":"#Count","objective": "Temp"},"color":"gray"},{"text":"!","color":"white"}]
+execute if data storage bcsmp:shops SoldItem.tag.display.Name run tellraw @s ["",{"text":"You bought ","color":"white"},{"nbt":"SoldItem.tag.display.Name","interpret":true,"storage":"bcsmp:shops","color":"green"},{"text":" x","color":"gray"},{"score":{"name":"#Count","objective": "Temp"},"color":"gray"},{"text":"!","color":"white"}]
 kill @e[type=item,tag=NameGet]
 execute at @s run playsound block.note_block.pling master @s ~ ~ ~ 1 2 1
 execute as @e[type=marker,tag=Container,sort=nearest,limit=1] run scoreboard players set @s BuyCooldown 3

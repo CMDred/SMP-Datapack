@@ -5,6 +5,6 @@
 #==========================================#
 #------------------SHOPS-------------------#
 playsound minecraft:block.barrel.open master @a[tag=Placing] ~ ~ ~ 1 2 1
-tellraw @a[tag=Placing] ["",{"text":"You","color":"red"},{"text":" cannot place a","color":"gold"},{"text":" Level 1","color":"red"},{"text":" Shop there","color":"gold"},{"text":"!","color":"red"}]
+tellraw @a[tag=Placing] [{"text":"You cannot place a ","color":"red"},{"text":"Level 1 Shop","color":"yellow"},{"text":" there!","color":"red"}]
 particle dust 0.341 0.341 0.341 1 ~ ~ ~ 0.3 0.15 0.3 0.1 20 normal
 #------------------------------------------#

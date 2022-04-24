@@ -4,6 +4,6 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #------------------SHOPS-------------------#
-tellraw @a[scores={ContainerItems=1..}] ["",{"text":"You cannot do this, the vendor has not set any income storage!","color":"red"}]
+tellraw @a[scores={ContainerItems=1..}] ["",{"text":"You cannot do this, the vendor has not set an Income Storage!","color":"red"}]
 playsound entity.villager.no master @a[scores={ContainerItems=1..}] ~ ~ ~ 1 1 1
 #------------------------------------------#
