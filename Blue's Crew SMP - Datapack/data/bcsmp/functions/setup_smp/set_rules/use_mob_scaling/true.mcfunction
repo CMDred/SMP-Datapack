@@ -7,6 +7,5 @@
 scoreboard players set #UseMobScaling GameRules 1
 playsound ui.button.click master @s ~ ~ ~ 1 1 1
 tellraw @s {"text":"Mob difficulty scaling is now enabled!","color":"green"}
-gamerule doInsomnia false
 function bcsmp:setup_smp/text
 #------------------------------------------#

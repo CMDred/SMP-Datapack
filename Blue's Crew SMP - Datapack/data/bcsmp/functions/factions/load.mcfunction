@@ -45,6 +45,8 @@ team modify black prefix {"text":"[Black] ","color":"#0d0d0d"}
 scoreboard objectives add GetFactionList trigger
 scoreboard objectives add LeaveFaction trigger
 
+scoreboard objectives add MoveEggID dummy
+scoreboard objectives add VillagerID dummy
 
 schedule clear bcsmp:factions/area_of_effect/main
 schedule function bcsmp:factions/area_of_effect/main 1s

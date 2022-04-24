@@ -7,7 +7,7 @@
 scoreboard players operation @s PlayerTemperature = @s BiomeTemperature
 function bcsmp:temperature/daytime/check
 function bcsmp:temperature/height/check
-#execute at @s run function bcsmp:temperature/blocks/check
+execute if score #BlocksAffectTemperature GameRules matches 1 at @s align xyz positioned ~0.5 ~0.5 ~0.5 run function bcsmp:temperature/blocks/check
 execute if predicate bcsmp:temperature/frost_walker/frost_walker run function bcsmp:temperature/armor/frost_walker
 execute at @s run function bcsmp:temperature/being_wet/change_temperature
 execute if predicate bcsmp:temperature/burning at @s run function bcsmp:temperature/burning/change_temperature

@@ -12,13 +12,13 @@ execute as @a[tag=IsInEnd] at @s run playsound entity.ender_dragon.growl master 
 scoreboard players set #FightOnGoing Temp 0
 scoreboard players set #DragonDefeatedOnce Temp 1
 kill @e[type=end_crystal]
-tp @e[tag=DestroyChecker] ~ ~-50 ~
+tp @e[type=slime,tag=DestroyChecker] ~ ~-50 ~
 function bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/announce_leaderboard
 scoreboard players set #DragonFightTicks Temp 0
 scoreboard players set #DragonFightSeconds Temp 0
 scoreboard players set #DragonFightMinutes Temp 0
 scoreboard players set @a EndPoints 0
 tag @a remove FinalHit
-tp @e[tag=ProtectiveTotem] ~ ~-300 ~ 
+tp @e[type=slime,tag=ProtectiveTotem] ~ ~-300 ~ 
 schedule function bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/kill_stands 120s
 #------------------------------------------#

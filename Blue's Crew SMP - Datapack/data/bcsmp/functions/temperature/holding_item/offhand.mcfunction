@@ -14,6 +14,7 @@ execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/ho
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/fire_charge run function bcsmp:temperature/holding_item/item/fire_charge
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/glowstone run function bcsmp:temperature/holding_item/item/glowstone
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/ice run function bcsmp:temperature/holding_item/item/ice
+execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/jack_o_lantern run function bcsmp:temperature/holding_item/item/jack_o_lantern
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/lantern run function bcsmp:temperature/holding_item/item/lantern
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/lava_bottle run function bcsmp:temperature/holding_item/item/lava_bottle
 execute unless score #ItemFound Temp matches 1 if predicate bcsmp:temperature/holding_offhand/lava_bucket run function bcsmp:temperature/holding_item/item/lava_bucket

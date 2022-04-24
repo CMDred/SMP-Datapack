@@ -73,4 +73,7 @@ execute unless data entity @s data.Trades[1].sell{id:"minecraft:air"} run data m
 
 execute unless data entity @s data.Trades[1].buy{id:"minecraft:air"} run data modify entity @s data.Trades[1].buy.tag.ContainerMenu set value 1b 
 execute unless data entity @s data.Trades[1].buy{id:"minecraft:air"} run data modify block ~ ~ ~ Items[{Slot:23b}] set from entity @s data.Trades[1].buy
+
+# add "if not in faction X, +20% price increase rounded down" lore
+execute if entity @s[tag=WorkingMode] if data entity @s data.FactionOfTheVendor run function bcsmp:shops/container/menu/price_increase_lore
 #------------------------------------------#

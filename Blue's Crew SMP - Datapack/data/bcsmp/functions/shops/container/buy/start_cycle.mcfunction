@@ -6,7 +6,8 @@
 #------------------SHOPS-------------------#
 data remove storage bcsmp:shops PlayerInv[{Slot:-106b}]
 execute store result score #AmountOfIterations Temp run data get storage bcsmp:shops PlayerInv
-execute store result score #NeededCount Temp run data get storage bcsmp:shops PriceItem.Count
+execute if entity @s[tag=!EnoughOutcomeChecking] run scoreboard players operation #NeededCount Temp = #ArrivingItemCount Temp
+execute if entity @s[tag=EnoughOutcomeChecking] store result score #NeededCount Temp run data get storage bcsmp:shops PriceItem.Count
 data remove storage bcsmp:shops PriceItem.tag.ContainerMenu
 #tellraw @s ["",{"text":"Cycling started!"}]
 #tellraw @s [{"text":"Iterations: "},{"score":{"name": "#AmountOfIterations","objective": "Temp"},"color":"light_purple"}]

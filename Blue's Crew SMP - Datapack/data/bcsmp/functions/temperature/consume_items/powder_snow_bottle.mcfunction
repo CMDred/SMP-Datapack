@@ -8,7 +8,7 @@ scoreboard players operation #BaseTemperature Temp = @s PlayerTemperature
 scoreboard players set #BaseWeight Temp 100
 scoreboard players set #ItemWeight Temp 25
 scoreboard players operation #ItemWeight Temp *= @s ConsumedItemTimer
-scoreboard players set #ItemTemperature Temp -500
+scoreboard players set #ItemTemperature Temp -700
 scoreboard players operation #ItemTemperature Temp *= #ItemWeight Temp
 
 

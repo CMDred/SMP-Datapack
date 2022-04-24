@@ -9,7 +9,7 @@ scoreboard players set #Reach Temp 0
 scoreboard players reset #LeaderUUID0 Temp
 scoreboard players reset #LeaderUUID1 Temp
 
-data modify storage bcsmp:factions NameLookingFor set from entity @e[tag=InviteManager,distance=..1.5,limit=1] ArmorItems[0].tag.ManagerOf.Name
+data modify storage bcsmp:factions NameLookingFor set from entity @e[type=villager,tag=InviteManager,distance=..1.5,limit=1] ArmorItems[0].tag.ManagerOf.Name
 function bcsmp:factions/check_if_in/start
 
 execute store result score #ThisUUID0 Temp run data get entity @s UUID[0]

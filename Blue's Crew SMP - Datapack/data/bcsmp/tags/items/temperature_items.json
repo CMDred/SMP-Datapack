@@ -21,6 +21,7 @@
         "minecraft:magma_block",
         "minecraft:ice",
         "minecraft:packed_ice",
-        "minecraft:blue_ice"
+        "minecraft:blue_ice",
+        "minecraft:jack_o_lantern"
     ]
 }

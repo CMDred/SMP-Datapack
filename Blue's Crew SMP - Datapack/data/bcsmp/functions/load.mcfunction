@@ -12,6 +12,8 @@ scoreboard players set #lcg Constant 1103515245
 scoreboard objectives add RandMath dummy
 execute unless score #lcg RandMath matches ..0 unless score #lcg RandMath matches 1.. run function bcsmp:random/uuid_reset
 
+scoreboard objectives add PlayerID dummy
+
 scoreboard objectives add Temp dummy
 scoreboard objectives add JoinGame minecraft.custom:minecraft.leave_game
 scoreboard objectives add Death deathCount

@@ -1,0 +1,22 @@
+{
+    "values": [
+      "minecraft:torch",
+      "minecraft:soul_torch",
+      "minecraft:glowstone",
+      "minecraft:lava",
+      "minecraft:powder_snow",
+      "minecraft:snow",
+      "minecraft:snow_block",
+      "minecraft:lantern",
+      "minecraft:soul_lantern",
+      "minecraft:shroomlight",
+      "minecraft:magma_block",
+      "minecraft:ice",
+      "minecraft:packed_ice",
+      "minecraft:blue_ice",
+      "minecraft:jack_o_lantern",
+      "minecraft:lava_cauldron",
+      "minecraft:powder_snow_cauldron",
+      "minecraft:fire"
+    ]
+}
