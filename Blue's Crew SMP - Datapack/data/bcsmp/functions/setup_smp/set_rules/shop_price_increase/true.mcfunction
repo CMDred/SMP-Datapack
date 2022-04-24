@@ -4,8 +4,8 @@
 #     Youtube : Blue's Production Team     #
 ##
 #-------------------INIT-------------------#
-scoreboard players set #UseMobScaling GameRules 1
+scoreboard players set #ShopPriceIncrease GameRules 1
 playsound ui.button.click master @s ~ ~ ~ 1 1 1
-tellraw @s {"text":"Mob difficulty scaling is now enabled!","color":"green"}
+tellraw @s {"text":"Prices in shops will now be 20% higher for people who are not in the same faction as the vendor!","color":"green"}
 function bcsmp:setup_smp/text
 #------------------------------------------#
