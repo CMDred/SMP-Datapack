@@ -27,6 +27,7 @@ team add ProtectiveTotem_Ranged
 team modify ProtectiveTotem_Melee color red
 team modify ProtectiveTotem_Ranged color blue
 bossbar add bcsmp:totem_health {"text":"Totem"}
+scoreboard objectives add PointsObtainedWithDragonBreath dummy
 
 # Wither
 scoreboard objectives add WitherTime dummy
