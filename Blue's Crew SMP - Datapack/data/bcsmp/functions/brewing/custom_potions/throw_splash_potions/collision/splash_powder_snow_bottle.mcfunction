@@ -12,4 +12,12 @@ scoreboard players set @a[distance=..3.5] ConsumedItemType 1
 
 execute if block ~ ~ ~ lava[level=0] run setblock ~ ~ ~ obsidian
 execute if block ~ ~ ~ lava unless block ~ ~ ~ lava[level=0] run setblock ~ ~ ~ magma_block
+execute if block ~ ~ ~ campfire[lit=true,facing=east] run setblock ~ ~ ~ campfire[lit=false,facing=east]
+execute if block ~ ~ ~ campfire[lit=true,facing=south] run setblock ~ ~ ~ campfire[lit=false,facing=south]
+execute if block ~ ~ ~ campfire[lit=true,facing=west] run setblock ~ ~ ~ campfire[lit=false,facing=west]
+execute if block ~ ~ ~ campfire[lit=true,facing=north] run setblock ~ ~ ~ campfire[lit=false,facing=north]
+execute if block ~ ~ ~ soul_campfire[lit=true,facing=east] run setblock ~ ~ ~ soul_campfire[lit=false,facing=east]
+execute if block ~ ~ ~ soul_campfire[lit=true,facing=south] run setblock ~ ~ ~ soul_campfire[lit=false,facing=south]
+execute if block ~ ~ ~ soul_campfire[lit=true,facing=west] run setblock ~ ~ ~ soul_campfire[lit=false,facing=west]
+execute if block ~ ~ ~ soul_campfire[lit=true,facing=north] run setblock ~ ~ ~ soul_campfire[lit=false,facing=north]
 #------------------------------------------#
