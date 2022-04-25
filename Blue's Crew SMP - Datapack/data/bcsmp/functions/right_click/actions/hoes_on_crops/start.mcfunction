@@ -5,10 +5,13 @@
 #==========================================#
 #--RIGHT CLICKED WITH hoe ON STICKY PISTON-#
 #drop loot
-execute if block ~ ~ ~ wheat run loot spawn ~ ~ ~ loot bcsmp:right_click_hoe/wheat
-execute if block ~ ~ ~ carrots run loot spawn ~ ~ ~ loot bcsmp:right_click_hoe/carrots
-execute if block ~ ~ ~ potatoes run loot spawn ~ ~ ~ loot bcsmp:right_click_hoe/potatoes
-execute if block ~ ~ ~ beetroots run loot spawn ~ ~ ~ loot bcsmp:right_click_hoe/beetroots
+loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
+
+#reduce seeds count
+execute if block ~ ~ ~ wheat as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:wheat_seeds"}},limit=1] run function bcsmp:right_click/actions/hoes_on_crops/reduce_seeds_count
+execute if block ~ ~ ~ carrots as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:carrot"}},limit=1] run function bcsmp:right_click/actions/hoes_on_crops/reduce_seeds_count
+execute if block ~ ~ ~ potatoes as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:potato"}},limit=1] run function bcsmp:right_click/actions/hoes_on_crops/reduce_seeds_count
+execute if block ~ ~ ~ beetroots as @e[type=item,nbt={Age:0s,Item:{id:"minecraft:beetroot_seeds"}},limit=1] run function bcsmp:right_click/actions/hoes_on_crops/reduce_seeds_count
 
 #replace crops with seeds
 execute if block ~ ~ ~ wheat run setblock ~ ~ ~ wheat[age=0]
