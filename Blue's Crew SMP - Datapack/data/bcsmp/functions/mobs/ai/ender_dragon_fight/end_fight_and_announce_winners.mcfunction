@@ -20,5 +20,6 @@ scoreboard players set #DragonFightMinutes Temp 0
 scoreboard players set @a EndPoints 0
 tag @a remove FinalHit
 tp @e[type=slime,tag=ProtectiveTotem] ~ ~-300 ~ 
+execute as @a[scores={PointsObtainedWithDragonBreath=1..}] run function bcsmp:mobs/ai/ender_dragon_fight/points/give_dragon_breath_back
 schedule function bcsmp:mobs/ai/ender_dragon_fight/points/leaderboard/kill_stands 120s
 #------------------------------------------#

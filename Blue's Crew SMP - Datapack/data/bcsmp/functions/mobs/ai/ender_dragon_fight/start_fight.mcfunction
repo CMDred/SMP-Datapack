@@ -26,7 +26,8 @@ execute in the_end run fill 103 47 3 91 52 -3 air replace barrier
 scoreboard players set #FightOnGoing Temp 1
 
 # Reset everyone's points
-scoreboard players set @a EndPoints 0
+scoreboard players reset @a EndPoints
+scoreboard players reset @a PointsObtainedWithDragonBreath
 
 # Summon the slimes (only for crystals with obsidian under, to prevent the ones on the middle portal to be affected)
 execute as @e[type=end_crystal] at @s if block ~ ~-2 ~ obsidian run function bcsmp:mobs/ai/ender_dragon_fight/spawn_crystal_slime
