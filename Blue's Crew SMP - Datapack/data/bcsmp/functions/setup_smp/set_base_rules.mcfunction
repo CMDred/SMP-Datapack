@@ -17,4 +17,6 @@ function bcsmp:setup_smp/set_rules/use_mob_scaling/true
 function bcsmp:setup_smp/set_rules/use_temperature/true
 function bcsmp:setup_smp/set_rules/blocks_affect_temperature/true
 function bcsmp:setup_smp/set_rules/shop_price_increase/true
+
+scoreboard players set #BaseRules Temp 1
 #------------------------------------------#
