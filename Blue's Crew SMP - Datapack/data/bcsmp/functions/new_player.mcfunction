@@ -15,6 +15,9 @@ scoreboard players enable @s ViewPotionEffects
 function bcsmp:keyboard_event/join
 
 execute store result score @s PlayerID run scoreboard players add #Global PlayerID 1
+
+scoreboard players enable @s GetSMPManual
+loot give @s loot bcsmp:smp_guide
 #-----------------MESSAGE------------------#
 execute as @a at @s run playsound entity.wither.spawn master @s ~ ~ ~ 1 1 1
 execute as @a at @s run playsound entity.lightning_bolt.thunder master @s ~ ~ ~ 1 1 1

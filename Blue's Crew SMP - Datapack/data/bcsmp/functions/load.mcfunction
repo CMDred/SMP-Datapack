@@ -26,6 +26,7 @@ scoreboard objectives add JoinGame minecraft.custom:minecraft.leave_game
 scoreboard objectives add Death deathCount
 scoreboard objectives add JoinGame minecraft.custom:minecraft.leave_game
 scoreboard objectives add RightClick minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add GetSMPManual trigger
 
 scoreboard players set #Constant-1 Temp -1
 scoreboard players set #Constant10 Temp 10

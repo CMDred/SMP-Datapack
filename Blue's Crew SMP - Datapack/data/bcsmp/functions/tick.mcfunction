@@ -13,8 +13,11 @@ function bcsmp:factions/main
 function bcsmp:brewing/main
 function bcsmp:shops/main
 
-# Events
+#Events
 execute as @a[scores={RightClick=1..}] at @s run function bcsmp:keyboard_event/right_click
 execute as @a[scores={Death=1..}] at @s run function bcsmp:keyboard_event/death
 execute as @a[scores={JoinGame=1..}] at @s run function bcsmp:keyboard_event/join
+
+#SMP Manual
+execute as @a[scores={GetSMPManual=1..}] at @s run function bcsmp:get_smp_manual
 #------------------------------------------#
