@@ -38,5 +38,10 @@ scoreboard players set #RunCycle Temp 100
 scoreboard players set #WitherCycle Temp 14
 scoreboard players set #WitherCycle WitherTime 0
 function bcsmp:mobs/ai/wither_fight/run
+
+# Creeper Firework
+scoreboard objectives add KillerID0 dummy
+scoreboard objectives add KillerID1 dummy
+scoreboard objectives add KillerID2 dummy
 #------------------------------------------#
 

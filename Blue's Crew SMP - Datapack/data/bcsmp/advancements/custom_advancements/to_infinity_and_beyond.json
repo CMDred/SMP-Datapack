@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:firework_rocket"
+    },
+    "title": "To infinity, and beyond!",
+    "description": "Shoot a creeper with a firework rocket and watch the spectacle",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "creeper_firework": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

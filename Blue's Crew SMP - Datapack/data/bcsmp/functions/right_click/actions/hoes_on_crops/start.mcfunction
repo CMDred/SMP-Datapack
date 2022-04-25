@@ -3,7 +3,7 @@
 # Please don't claim this as your own work #
 #     Youtube : Blue's Production Team     #
 #==========================================#
-#--RIGHT CLICKED WITH HOE ON CROPS-#
+#------RIGHT CLICKED WITH HOE ON CROPS-----#
 #drop loot
 loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
 
