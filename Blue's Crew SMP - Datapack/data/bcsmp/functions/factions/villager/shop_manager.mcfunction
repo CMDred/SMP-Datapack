@@ -4,7 +4,7 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-------------------INIT-------------------#
-data modify entity @s Offers.Recipes set value [{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999}]
+data modify entity @s Offers.Recipes set value [{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999}]
 
 # SHOP PLACERS ===============================================================================
 data modify entity @s Offers.Recipes[0].buy set value {id:"minecraft:emerald_block",Count:2b}
