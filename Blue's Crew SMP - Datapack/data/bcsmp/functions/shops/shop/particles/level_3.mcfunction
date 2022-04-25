@@ -4,9 +4,9 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #------------------SHOPS-------------------#
-particle dust 0.835 0.176 0.027 1 ~6.6 ~5 ~ 0.01 5 2.6 0.1 300 force
-particle dust 0.835 0.176 0.027 1 ~-6.6 ~5 ~ 0.01 5 2.6 0.1 300 force
+particle dust 0.835 0.176 0.027 1 ~6.6 ~5 ~ 0.01 5 2.6 0.1 300 force @a[distance=..20,predicate=bcsmp:shops/holding_border_tool]
+particle dust 0.835 0.176 0.027 1 ~-6.6 ~5 ~ 0.01 5 2.6 0.1 300 force @a[distance=..20,predicate=bcsmp:shops/holding_border_tool]
 
-particle dust 0.835 0.176 0.027 1 ~ ~5 ~6.6 2.6 5 0.01 0.1 300 force
-particle dust 0.835 0.176 0.027 1 ~ ~5 ~-6.6 2.6 5 0.01 0.1 300 force
+particle dust 0.835 0.176 0.027 1 ~ ~5 ~6.6 2.6 5 0.01 0.1 300 force @a[distance=..20,predicate=bcsmp:shops/holding_border_tool]
+particle dust 0.835 0.176 0.027 1 ~ ~5 ~-6.6 2.6 5 0.01 0.1 300 force @a[distance=..20,predicate=bcsmp:shops/holding_border_tool]
 #------------------------------------------#

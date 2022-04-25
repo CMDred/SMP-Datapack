@@ -9,6 +9,5 @@ execute as @a[scores={ContainerItems=1..}] at @s run function bcsmp:shops/contai
 
 execute as @e[type=item,nbt={Item:{tag:{ContainerMenu:1b}}}] at @s run function bcsmp:shops/container/dropped_item
 
-execute as @e[type=marker,scores={BuyCooldown=1..},tag=Container] run scoreboard players remove @s BuyCooldown 1
-execute as @e[type=marker,tag=Container] at @s unless block ~ ~ ~ barrel run function bcsmp:shops/container/break
+execute as @e[type=marker,tag=Container] at @s run function bcsmp:shops/container/marker_main
 #------------------------------------------#

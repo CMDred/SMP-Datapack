@@ -4,15 +4,15 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #------------------SHOPS-------------------#
-execute if data block ~ ~ ~ Items[{Slot:1b}] unless data block ~ ~ ~ Items[{Slot:1b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_sell/slot_1
-execute if data block ~ ~ ~ Items[{Slot:3b}] unless data block ~ ~ ~ Items[{Slot:3b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_sell/slot_2
-execute if data block ~ ~ ~ Items[{Slot:5b}] unless data block ~ ~ ~ Items[{Slot:5b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_sell/slot_3
-execute if data block ~ ~ ~ Items[{Slot:7b}] unless data block ~ ~ ~ Items[{Slot:7b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_sell/slot_4
+execute if entity @s[tag=EditMode] if data block ~ ~ ~ Items[{Slot:1b}] unless data block ~ ~ ~ Items[{Slot:1b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_sell/slot_1
+execute if entity @s[tag=EditMode] if data block ~ ~ ~ Items[{Slot:3b}] unless data block ~ ~ ~ Items[{Slot:3b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_sell/slot_2
+execute if entity @s[tag=EditMode] if data block ~ ~ ~ Items[{Slot:5b}] unless data block ~ ~ ~ Items[{Slot:5b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_sell/slot_3
+execute if entity @s[tag=EditMode] if data block ~ ~ ~ Items[{Slot:7b}] unless data block ~ ~ ~ Items[{Slot:7b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_sell/slot_4
 
-execute if data block ~ ~ ~ Items[{Slot:19b}] unless data block ~ ~ ~ Items[{Slot:19b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_cost/slot_1
-execute if data block ~ ~ ~ Items[{Slot:21b}] unless data block ~ ~ ~ Items[{Slot:21b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_cost/slot_2
-execute if data block ~ ~ ~ Items[{Slot:23b}] unless data block ~ ~ ~ Items[{Slot:23b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_cost/slot_3
-execute if data block ~ ~ ~ Items[{Slot:25b}] unless data block ~ ~ ~ Items[{Slot:25b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_cost/slot_4
+execute if entity @s[tag=EditMode] if data block ~ ~ ~ Items[{Slot:19b}] unless data block ~ ~ ~ Items[{Slot:19b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_cost/slot_1
+execute if entity @s[tag=EditMode] if data block ~ ~ ~ Items[{Slot:21b}] unless data block ~ ~ ~ Items[{Slot:21b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_cost/slot_2
+execute if entity @s[tag=EditMode] if data block ~ ~ ~ Items[{Slot:23b}] unless data block ~ ~ ~ Items[{Slot:23b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_cost/slot_3
+execute if entity @s[tag=EditMode] if data block ~ ~ ~ Items[{Slot:25b}] unless data block ~ ~ ~ Items[{Slot:25b}].tag.ContainerMenu run function bcsmp:shops/container/menu/level_2/set_cost/slot_4
 
 execute unless data block ~ ~ ~ Items[{Slot:0b}].tag.ContainerMenu run function bcsmp:shops/container/menu/return_item/0 
 execute unless data block ~ ~ ~ Items[{Slot:1b}].tag.ContainerMenu run function bcsmp:shops/container/menu/return_item/1 

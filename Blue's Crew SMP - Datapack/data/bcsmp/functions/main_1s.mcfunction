@@ -13,4 +13,6 @@ scoreboard players set #CalculatedTime Temp 0
 execute if entity @a[predicate=bcsmp:holding_clock] run function bcsmp:clock/actionbar
 #---------------TEMPERATURE----------------#
 execute if score #UseTemperature GameRules matches 1 run function bcsmp:temperature/main_1s
-#------------------------------------------#
+#------------------SHOPS-------------------#
+execute as @e[type=marker,tag=Container] at @s if block ~ ~-1 ~ hopper run data modify block ~ ~-1 ~ TransferCooldown set value 40
+#------------------------------------------
