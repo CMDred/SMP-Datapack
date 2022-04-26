@@ -4,7 +4,7 @@
 #     Youtube : Blue's Production Team     #
 #==========================================#
 #-------------------INIT-------------------#
-data modify entity @s Offers.Recipes set value [{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999}]
+data modify entity @s Offers.Recipes set value [{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999},{rewardExp:0b,maxUses:99999}]
 
 # SHOP PLACERS ===============================================================================
 data modify entity @s Offers.Recipes[0].buy set value {id:"minecraft:emerald_block",Count:2b}
@@ -72,6 +72,11 @@ execute in overworld positioned 29999977 1 29832 run kill @e[type=item,distance=
 data modify entity @s Offers.Recipes[10].buy set value {id:"minecraft:emerald",Count:6b}
 execute in overworld positioned 29999977 1 29832 run loot spawn ~ ~ ~ loot bcsmp:shops/storage_linker
 execute in overworld positioned 29999977 1 29832 run data modify entity @s Offers.Recipes[10].sell set from entity @e[type=item,distance=..2,sort=nearest,limit=1] Item
+execute in overworld positioned 29999977 1 29832 run kill @e[type=item,distance=..2,sort=nearest,limit=1]
+
+data modify entity @s Offers.Recipes[11].buy set value {id:"minecraft:emerald",Count:6b}
+execute in overworld positioned 29999977 1 29832 run loot spawn ~ ~ ~ loot bcsmp:shops/shop_remover
+execute in overworld positioned 29999977 1 29832 run data modify entity @s Offers.Recipes[11].sell set from entity @e[type=item,distance=..2,sort=nearest,limit=1] Item
 execute in overworld positioned 29999977 1 29832 run kill @e[type=item,distance=..2,sort=nearest,limit=1]
 
 tag @s add Converted
