@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:village",
+    "biomes": "#bcsmp:has_structure/end_village",
+    "adapt_noise": true,
+    "spawn_overrides": {},
+    "config": {
+      "start_pool": "bcsmp:the_end/village/starts",
+      "size": 7
+    }
+  }

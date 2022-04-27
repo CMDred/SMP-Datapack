@@ -1,0 +1,33 @@
+{
+  "name": "bcsmp:nether/village/decor",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 20,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/decor/jailed_brute_piglin",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/decor/light",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 15,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/decor/stuck_piglin_in_tree",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

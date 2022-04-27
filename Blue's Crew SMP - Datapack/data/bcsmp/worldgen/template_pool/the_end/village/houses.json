@@ -1,0 +1,51 @@
+{
+  "name": "bcsmp:the_end/village/houses",
+  "fallback": "bcsmp:the_end/village/terminators",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:end/village/houses/small/1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:end/village/houses/small/2",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:end/village/houses/small/3",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:end/village/houses/small/4",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:end/village/houses/small/5",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

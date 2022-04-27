@@ -1,0 +1,24 @@
+{
+  "name": "bcsmp:nether/village/terminators",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/terminators/1",
+        "processors": "bcsmp:nether/village/path_randomize"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/terminators/2",
+        "processors": "bcsmp:nether/village/path_randomize"
+      }
+    }
+  ]
+}

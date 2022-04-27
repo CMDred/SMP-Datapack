@@ -1,0 +1,15 @@
+{
+  "name": "bcsmp:the_end/village/starts",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:end/village/starts/1",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

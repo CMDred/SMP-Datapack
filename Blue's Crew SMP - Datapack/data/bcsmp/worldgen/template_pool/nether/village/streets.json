@@ -1,0 +1,87 @@
+{
+  "name": "bcsmp:nether/village/streets",
+  "fallback": "bcsmp:nether/village/terminators",
+  "elements": [
+    {
+      "weight": 30,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/streets/straight/1",
+        "processors": "bcsmp:nether/village/path_randomize"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/streets/straight/2",
+        "processors": "bcsmp:nether/village/path_randomize"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/streets/straight/3",
+        "processors": "bcsmp:nether/village/path_randomize"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/streets/turn/1",
+        "processors": "bcsmp:nether/village/path_randomize"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/streets/turn/2",
+        "processors": "bcsmp:nether/village/path_randomize"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/streets/turn/3",
+        "processors": "bcsmp:nether/village/path_randomize"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/streets/crossroad/1",
+        "processors": "bcsmp:nether/village/path_randomize"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/streets/crossroad/2",
+        "processors": "bcsmp:nether/village/path_randomize"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/streets/crossroad/3",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
