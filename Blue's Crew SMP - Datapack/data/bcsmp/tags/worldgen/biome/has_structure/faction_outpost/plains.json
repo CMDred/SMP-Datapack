@@ -1,0 +1,10 @@
+{
+    "values" :[
+      "minecraft:plains",
+      "minecraft:mushroom_fields",
+      "minecraft:meadow",
+      "minecraft:swamp",
+      "minecraft:taiga",
+      "minecraft:jungle"
+      ]
+}

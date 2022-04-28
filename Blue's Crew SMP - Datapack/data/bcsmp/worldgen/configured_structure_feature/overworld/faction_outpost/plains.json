@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:village",
+  "biomes": "#bcsmp:has_structure/faction_outpost/plains",
+  "adapt_noise": true,
+  "spawn_overrides": {},
+  "config": {
+    "start_pool": "bcsmp:overworld/faction_outpost/plains",
+    "size": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:village",
+  "biomes": "#bcsmp:has_structure/faction_outpost/snow",
+  "adapt_noise": true,
+  "spawn_overrides": {},
+  "config": {
+    "start_pool": "bcsmp:overworld/faction_outpost/snow",
+    "size": 1
+  }
+}

@@ -1,0 +1,33 @@
+{
+    "structures": [
+      {
+        "structure": "bcsmp:overworld/faction_outpost/plains",
+        "weight": 1
+      },
+      {
+        "structure": "bcsmp:overworld/faction_outpost/desert",
+        "weight": 1
+      },
+      {
+        "structure": "bcsmp:overworld/faction_outpost/savanna",
+        "weight": 1
+      },
+      {
+        "structure": "bcsmp:overworld/faction_outpost/snow",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "spread_type": "triangular",
+      "spacing": 35,
+      "separation": 27,
+      "salt": 0,
+      "locate_offset": [
+        0,
+        0,
+        0
+      ]
+    }
+  }
+  
