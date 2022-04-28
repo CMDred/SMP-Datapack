@@ -20,4 +20,7 @@ execute as @a[scores={JoinGame=1..}] at @s run function bcsmp:keyboard_event/joi
 
 #SMP Manual
 execute as @a[scores={GetSMPManual=1..}] at @s run function bcsmp:get_smp_manual
+
+#Cosmetics
+execute as @a[scores={UseWritableBook=1..}] run function bcsmp:keyboard_event/use_writable_book
 #------------------------------------------#
