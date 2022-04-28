@@ -1,0 +1,173 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+          {
+              "location_predicate": {
+                "predicate_type": "minecraft:always_true"
+              },
+              "input_predicate": {
+                "predicate_type": "minecraft:random_blockstate_match",
+                "block_state": {
+                  "Name": "minecraft:blast_furnace",
+                  "Properties": {
+                    "facing": "west",
+                    "lit": "false"
+                  }
+                },
+                "probability": 0.3
+              },
+              "output_state": {
+                "Name": "minecraft:furnace",
+                "Properties": {
+                  "facing": "west",
+                  "lit": "false"
+                }
+              }
+            },
+          {
+              "location_predicate": {
+                "predicate_type": "minecraft:always_true"
+              },
+              "input_predicate": {
+                "predicate_type": "minecraft:random_blockstate_match",
+                "block_state": {
+                  "Name": "minecraft:blast_furnace",
+                  "Properties": {
+                    "facing": "east",
+                    "lit": "false"
+                  }
+                },
+                "probability": 0.3
+              },
+              "output_state": {
+                "Name": "minecraft:furnace",
+                "Properties": {
+                  "facing": "east",
+                  "lit": "false"
+                }
+              }
+            },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "Name": "minecraft:blast_furnace",
+              "Properties": {
+                "facing": "south",
+                "lit": "false"
+              }
+            },
+            "probability": 0.3
+          },
+          "output_state": {
+            "Name": "minecraft:furnace",
+            "Properties": {
+              "facing": "south",
+              "lit": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "Name": "minecraft:blast_furnace",
+              "Properties": {
+                "facing": "north",
+                "lit": "false"
+              }
+            },
+            "probability": 0.3
+          },
+          "output_state": {
+            "Name": "minecraft:furnace",
+            "Properties": {
+              "facing": "north",
+              "lit": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:blast_furnace",
+            "probability": 0.2
+          },
+          "output_state": {
+            "Name": "minecraft:crafting_table"
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:white_candle",
+            "probability": 0.3
+          },
+          "output_state": {
+            "Name": "minecraft:white_candle",
+            "Properties": {
+              "candles": "1",
+              "lit": "true",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:white_candle",
+            "probability": 0.3
+          },
+          "output_state": {
+            "Name": "minecraft:white_candle",
+            "Properties": {
+              "candles": "2",
+              "lit": "true",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:white_candle",
+            "probability": 0.3
+          },
+          "output_state": {
+            "Name": "minecraft:white_candle",
+            "Properties": {
+              "candles": "4",
+              "lit": "true",
+              "waterlogged": "false"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

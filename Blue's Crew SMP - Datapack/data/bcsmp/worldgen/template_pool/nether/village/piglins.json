@@ -1,0 +1,33 @@
+{
+  "name": "bcsmp:nether/village/piglins",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 6,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/piglins/unarmored",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/piglins/armored_sword",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/piglins/armored_crossbow",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

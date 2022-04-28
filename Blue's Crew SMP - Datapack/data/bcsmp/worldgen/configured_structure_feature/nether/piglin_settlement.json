@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:bastion_remnant",
+  "biomes": "#bcsmp:has_structure/piglin_settlement",
+  "adapt_noise": true,
+  "spawn_overrides": {},
+  "config": {
+    "start_pool": "bcsmp:nether/village/town_centers",
+    "size": 5
+  }
+}

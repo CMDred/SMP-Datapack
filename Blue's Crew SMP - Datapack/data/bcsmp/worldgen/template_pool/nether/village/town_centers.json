@@ -1,0 +1,33 @@
+{
+  "name": "bcsmp:nether/village/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 7,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/town_centers/1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/random_netherrack_on_nylium",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bcsmp:nether/village/town_centers/3",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
