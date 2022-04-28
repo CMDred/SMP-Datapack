@@ -9,13 +9,13 @@
           },
           "input_predicate": {
             "predicate_type": "minecraft:random_block_match",
-            "block": "minecraft:chipped_anvil",
-            "probability": 0.5
+            "block": "minecraft:damaged_anvil",
+            "probability": 0.35
           },
           "output_state": {
-            "Name": "minecraft:damaged_anvil",
+            "Name": "minecraft:chipped_anvil",
             "Properties": {
-              "facing": "north"
+              "facing": "east"
             }
           }
         }

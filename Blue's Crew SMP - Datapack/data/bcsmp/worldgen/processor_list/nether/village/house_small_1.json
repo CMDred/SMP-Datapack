@@ -16,7 +16,7 @@
                     "lit": "false"
                   }
                 },
-                "probability": 0.6
+                "probability": 0.3
               },
               "output_state": {
                 "Name": "minecraft:furnace",
@@ -39,7 +39,7 @@
                     "lit": "false"
                   }
                 },
-                "probability": 0.6
+                "probability": 0.3
               },
               "output_state": {
                 "Name": "minecraft:furnace",
@@ -62,7 +62,7 @@
                 "lit": "false"
               }
             },
-            "probability": 0.6
+            "probability": 0.3
           },
           "output_state": {
             "Name": "minecraft:furnace",
@@ -85,7 +85,7 @@
                 "lit": "false"
               }
             },
-            "probability": 0.6
+            "probability": 0.3
           },
           "output_state": {
             "Name": "minecraft:furnace",

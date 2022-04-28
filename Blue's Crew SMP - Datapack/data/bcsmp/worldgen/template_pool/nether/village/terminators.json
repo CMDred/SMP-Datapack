@@ -3,21 +3,21 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 50,
+      "weight": 5,
       "element": {
-        "element_type": "minecraft:single_pool_element",
+        "element_type": "minecraft:legacy_single_pool_element",
         "projection": "rigid",
         "location": "bcsmp:nether/village/terminators/1",
-        "processors": "bcsmp:nether/village/path_randomize"
+        "processors": "bcsmp:nether/village/streets"
       }
     },
     {
-      "weight": 50,
+      "weight": 5,
       "element": {
-        "element_type": "minecraft:single_pool_element",
+        "element_type": "minecraft:legacy_single_pool_element",
         "projection": "rigid",
         "location": "bcsmp:nether/village/terminators/2",
-        "processors": "bcsmp:nether/village/path_randomize"
+        "processors": "bcsmp:nether/village/streets"
       }
     }
   ]

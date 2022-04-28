@@ -10,7 +10,7 @@
           "input_predicate": {
             "predicate_type": "minecraft:random_block_match",
             "block": "minecraft:soul_soil",
-            "probability": 0.5
+            "probability": 0.3
           },
           "output_state": {
             "Name": "minecraft:soul_sand"
@@ -28,10 +28,10 @@
           "input_predicate": {
             "predicate_type": "minecraft:random_block_match",
             "block": "minecraft:soul_soil",
-            "probability": 0.2
+            "probability": 0.7
           },
           "output_state": {
-            "Name": "minecraft:crimson_nylium"
+            "Name": "minecraft:blackstone"
           }
         }
       ]
@@ -75,10 +75,10 @@
           },
           "input_predicate": {
             "predicate_type": "minecraft:block_match",
-            "block": "minecraft:crimson_nylium"
+            "block": "minecraft:blackstone"
           },
           "output_state": {
-            "Name": "minecraft:nether_bricks"
+            "Name": "minecraft:red_nether_bricks"
           }
         }
       ]

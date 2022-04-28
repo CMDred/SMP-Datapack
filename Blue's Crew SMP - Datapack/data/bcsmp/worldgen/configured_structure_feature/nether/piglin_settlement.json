@@ -5,6 +5,6 @@
   "spawn_overrides": {},
   "config": {
     "start_pool": "bcsmp:nether/village/town_centers",
-    "size": 6
+    "size": 5
   }
 }
