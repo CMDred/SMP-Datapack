@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "bcsmp:wandering_trader/dev_heads"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:5,buy:{id:\"minecraft:armor_stand\",Count:1b},buyB:{id:\"minecraft:emerald\",Count:4b},sell:{id:\"minecraft:armor_stand\",tag:{display:{Name:'{\"text\":\"Armed Armor Stand\",\"italic\":false}'},EntityTag:{ShowArms:1b}},Count:1b}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:1,buy:{id:\"minecraft:emerald\",Count:50b},sell:{id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;945555607,548031880,-1294435047,-446433014],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY0NTM4NjEzNDU3MSwKICAicHJvZmlsZUlkIiA6ICIzODVjMDg5NzIwYWE0ZDg4YjJkODdkMTllNTYzZjkwYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJMZWczbmRNYWdpY2lhbiIsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iYjZkNWI4OGRlMTlkZDUzOWE1Nzg3MTIwMTY2Y2JkMTUyNGFjNjQ4ZDY0N2Y1YTBhZTYyNDJhNmU0MTgxYzYyIgogICAgfSwKICAgICJDQVBFIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yMzQwYzBlMDNkZDI0YTExYjE1YThiMzNjMmE3ZTllMzJhYmIyMDUxYjI0ODFkMGJhN2RlZmQ2MzVjYTdhOTMzIgogICAgfQogIH0KfQ==\"}]},Name:\"Pruper\"}},Count:1b},buyB:{id:\"minecraft:air\",Count:1b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:1,buy:{id:\"minecraft:emerald\",Count:50b},sell:{id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-1413080487,759710719,-1295384904,1513355599],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY0NTQ2MzYyNzczNywKICAicHJvZmlsZUlkIiA6ICJhYmM2MWE1OTJkNDg0M2ZmYjJjOWZlYjg1YTMzZjk0ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGVDYXJvdHRlIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJhOTFmZTNiOTQ3MzkyODBhYzNlNTUzNzRhZGViMDFlOWIzNTkwZGRjMTc0N2NiMzEyMGVhNDEwM2Q0NjdhNzAiCiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIzNDBjMGUwM2RkMjRhMTFiMTVhOGIzM2MyYTdlOWUzMmFiYjIwNTFiMjQ4MWQwYmE3ZGVmZDYzNWNhN2E5MzMiCiAgICB9CiAgfQp9\"}]},Name:\"TheCarotte\"}},Count:1b},buyB:{id:\"minecraft:air\",Count:1b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:1,buy:{id:\"minecraft:emerald\",Count:50b},sell:{id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;1609233478,-601797236,-1167625457, 1386883492],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY0NTQ2MzY0MTg5MywKICAicHJvZmlsZUlkIiA6ICI1ZmVhZjQ0NmRjMjE0ZDhjYmE2NzczMGZhZDU1ZDY1YyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHYW1pbmdSZWRQYW5kYXMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY2YzQxZTZmODBiYjdhYzQ5YjNjM2M0Y2Q4MTQ0NzE4ZGM5MDJiNDQ1ZDZjN2NmMzlmN2EyMTM5ZWMxODRlZCIKICAgIH0KICB9Cn0=\"}]},Name:\"BananaRedPanda\"}},Count:1b},buyB:{id:\"minecraft:air\",Count:1b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:1,buy:{id:\"minecraft:emerald\",Count:50b},sell:{id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;1101629270,-853851629,-1258987245,63230154],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY0NTQ2MzYyOTQ4OCwKICAicHJvZmlsZUlkIiA6ICI0MWE5ODc1NmNkMWI0MjEzYjRmNTYxMTMwM2M0ZDBjYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJTaWxpY2F0WVQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjlmZGNjYWEyYTA2MGUxNDlhMmVkMTk1YzcxNGQ5OWFmMjhkYzRhMDkzMTU0OTBlNzQyNzVhZjIwN2NiM2M2YiIKICAgIH0KICB9Cn0=\"}]},Name:\"SilicatYT\"}},Count:1b},buyB:{id:\"minecraft:air\",Count:1b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:1,buy:{id:\"minecraft:emerald\",Count:50b},sell:{id:\"minecraft:player_head\",tag:{SkullOwner:{Id:[I;-119632950,-695516761,-1953569025, 1056184285],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY0NTU3Mjg4NjkxMSwKICAicHJvZmlsZUlkIiA6ICJmOGRlOGJjYWQ2OGI0MWE3OGI4ZWU2ZmZjMTBiZTgyMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJCZW5fT0IxIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU3ZWI1MThmOWI2MzdmMWQ2NTVhZDg3ZGE1MGMxYTAyM2RlNWRiZDYzMmY4YWNjNjdhZjA0NjMxZGM5MGZkZWUiCiAgICB9CiAgfQp9\"}]},Name:\"Raccoon\"}},Count:1b},buyB:{id:\"minecraft:air\",Count:1b}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

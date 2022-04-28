@@ -13,4 +13,7 @@ function bcsmp:mobs/ai/ender_dragon_fight/main
 
 # Creeper Firework
 execute as @e[type=firework_rocket,tag=!Registered] at @s run function bcsmp:mobs/ai/creeper_firework/register_firework
+
+# Wandering Trader
+execute as @e[type=wandering_trader,tag=!Registered] run function bcsmp:mobs/ai/wandering_trader/set_trades
 #------------------------------------------#

@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head"
+        },
+        "title": {
+            "text": "How Did You Get This?"
+        },
+        "description": {
+            "text": "Purchase a Player Head from a Wandering Trader"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "minecraft:adventure/trade",
+    "criteria": {
+        "traded": {
+            "trigger": "minecraft:villager_trade",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:player_head"
+                    ]
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "traded"
+        ]
+    ]
+}

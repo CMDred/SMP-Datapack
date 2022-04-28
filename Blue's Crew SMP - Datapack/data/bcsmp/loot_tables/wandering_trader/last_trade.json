@@ -1,0 +1,69 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:8,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:gunpowder\",Count:1b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:6,buy:{id:\"minecraft:emerald\",Count:3b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:podzol\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:6,buy:{id:\"minecraft:emerald\",Count:3b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:packed_ice\",Count:1b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:4,buy:{id:\"minecraft:emerald\",Count:5b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:pufferfish_bucket\",Count:1b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:4,buy:{id:\"minecraft:emerald\",Count:5b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:tropical_fish_bucket\",Count:1b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:6,buy:{id:\"minecraft:emerald\",Count:6b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:blue_ice\",Count:1b}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

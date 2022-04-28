@@ -1,0 +1,169 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:white_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:orange_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:magenta_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:light_blue_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:yellow_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:lime_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:pink_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:gray_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:light_gray_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:cyan_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:purple_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:blue_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:brown_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:green_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:red_dye\",Count:3b}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Trade:{maxUses:12,buy:{id:\"minecraft:emerald\",Count:1b},buyB:{id:\"minecraft:air\",Count:1b},sell:{id:\"minecraft:black_dye\",Count:3b}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
