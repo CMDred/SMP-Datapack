@@ -11,6 +11,7 @@ summon marker ~ ~ ~ {Tags:["Shop","Level3","NewShop"]}
 execute as @e[type=marker,tag=NewShop] run data modify entity @s data.Owner set from entity @a[tag=Placing,limit=1] UUID
 execute as @e[type=marker,tag=NewShop] run data modify entity @s data.Size set value 13
 execute as @e[type=marker,tag=NewShop] store result score @s ShopID run scoreboard players add #Global ShopID 1
+scoreboard players operation @e[type=marker,tag=NewShop] PlayerID = @a[tag=Placing] PlayerID
 tag @e[tag=NewShop] remove NewShop
 advancement grant @a[tag=Placing] only bcsmp:custom_advancements/business_is_business
 #------------------------------------------#
