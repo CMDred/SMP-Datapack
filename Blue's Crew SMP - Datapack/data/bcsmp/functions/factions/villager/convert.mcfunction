@@ -16,6 +16,7 @@ execute if predicate bcsmp:factions/villager_type/swamp run data modify entity @
 execute if predicate bcsmp:factions/villager_type/taiga run data modify entity @s VillagerData.type set value "minecraft:taiga"
 execute if predicate bcsmp:factions/villager_type/desert run data modify entity @s VillagerData.type set value "minecraft:desert"
 execute if predicate bcsmp:factions/villager_type/jungle run data modify entity @s VillagerData.type set value "minecraft:jungle"
+data modify entity @s CustomName set value '{"text":"Faction Outpost Manager","color":"red"}'
 data modify entity @s VillagerData.level set value 99
 #------------------------------------------#
 

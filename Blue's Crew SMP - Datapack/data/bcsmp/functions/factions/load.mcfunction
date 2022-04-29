@@ -46,7 +46,7 @@ scoreboard objectives add GetFactionList trigger
 scoreboard objectives add LeaveFaction trigger
 
 scoreboard objectives add MoveEggID dummy
-scoreboard objectives add VillagerID dummy
+scoreboard objectives add FactionID dummy
 
 schedule clear bcsmp:factions/area_of_effect/main
 schedule function bcsmp:factions/area_of_effect/main 1s

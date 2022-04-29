@@ -5,6 +5,7 @@
 #==========================================#
 #-----------------FACTIONS-----------------#
 schedule function bcsmp:factions/area_of_effect/main 1s
+execute as @e[type=marker,tag=NeedsToBeRemoved] run function bcsmp:factions/area_of_effect/marker_removed
 execute unless entity @e[type=marker,tag=FactionCenter,distance=..200] if entity @s[tag=IsInFactionArea] run function bcsmp:factions/area_of_effect/leave_area
 execute if entity @e[type=marker,tag=FactionCenter,distance=..200] if entity @s[tag=!IsInFactionArea] run function bcsmp:factions/area_of_effect/enter_area
 #------------------------------------------#

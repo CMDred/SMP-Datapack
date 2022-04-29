@@ -13,6 +13,7 @@ execute as @a[tag=Thrower] run function bcsmp:factions/join_faction/elect_as_lea
 kill @e[type=item,tag=FactionPaper,distance=..1.5,limit=1]
 kill @e[type=item,tag=FactionBanner,distance=..1.5,limit=1]
 
+forceload add ~ ~
 summon marker ~ ~ ~ {Tags:["FactionCenter"]}
 data modify entity @e[type=marker,tag=FactionCenter,sort=nearest,limit=1] data.Faction set from storage bcsmp:factions NewFaction
 

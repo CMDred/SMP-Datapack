@@ -10,5 +10,8 @@ execute as @a at @s run playsound entity.lightning_bolt.thunder master @s ~ ~ ~ 
 execute store result score #LeaderUUID0 Temp run data get storage bcsmp:factions Factions[0].Leader[0]
 execute store result score #LeaderUUID1 Temp run data get storage bcsmp:factions Factions[0].Leader[1]
 
-execute if score #LeaderUUID0 Temp = #UUID0 Temp if score #LeaderUUID1 Temp = #UUID1 Temp run function bcsmp:factions/find_new_leader
+execute store result score #Members Temp run data get storage bcsmp:factions Factions[0].Players
+execute if score #Members Temp matches 0 run function bcsmp:factions/disband_faction/start
+
+execute if score #Members Temp matches 1.. if score #LeaderUUID0 Temp = #UUID0 Temp if score #LeaderUUID1 Temp = #UUID1 Temp run function bcsmp:factions/find_new_leader
 #------------------------------------------#

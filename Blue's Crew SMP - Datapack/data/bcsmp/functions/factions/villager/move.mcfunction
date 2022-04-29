@@ -5,7 +5,7 @@
 #==========================================#
 #-------------------INIT-------------------#
 scoreboard players operation #Search Temp = @s MoveEggID
-execute as @e[type=villager,tag=FactionOutpostVillager,tag=Converted] if score @s VillagerID = #Search Temp run tag @s add WillBeMoved
+execute as @e[type=villager,tag=FactionOutpostVillager,tag=Converted] if score @s FactionID = #Search Temp run tag @s add WillBeMoved
 
 execute if entity @e[type=villager,tag=WillBeMoved] run function bcsmp:factions/villager/move_success
 execute unless entity @e[type=villager,tag=WillBeMoved] run function bcsmp:factions/villager/move_fail
