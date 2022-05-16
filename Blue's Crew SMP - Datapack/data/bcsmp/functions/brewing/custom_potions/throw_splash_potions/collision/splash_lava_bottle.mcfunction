@@ -16,4 +16,5 @@ scoreboard players set @a[distance=..3.5] ConsumedItemType 2
 
 execute if block ~ ~ ~ water[level=0] run setblock ~ ~ ~ obsidian
 execute if block ~ ~ ~ water unless block ~ ~ ~ water[level=0] run setblock ~ ~ ~ cobblestone
+execute if block ~ ~ ~ campfire[lit=false] run setblock ~ ~ ~ campfire[lit=true]
 #------------------------------------------#
