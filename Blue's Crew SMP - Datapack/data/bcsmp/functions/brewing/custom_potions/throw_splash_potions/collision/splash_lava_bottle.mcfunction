@@ -16,5 +16,12 @@ scoreboard players set @a[distance=..3.5] ConsumedItemType 2
 
 execute if block ~ ~ ~ water[level=0] run setblock ~ ~ ~ obsidian
 execute if block ~ ~ ~ water unless block ~ ~ ~ water[level=0] run setblock ~ ~ ~ cobblestone
-execute if block ~ ~ ~ campfire[lit=false] run setblock ~ ~ ~ campfire[lit=true]
+execute if block ~ ~ ~ campfire[lit=false,facing=east] run setblock ~ ~ ~ campfire[lit=true,facing=east]
+execute if block ~ ~ ~ campfire[lit=false,facing=south] run setblock ~ ~ ~ campfire[lit=true,facing=south]
+execute if block ~ ~ ~ campfire[lit=false,facing=west] run setblock ~ ~ ~ campfire[lit=true,facing=west]
+execute if block ~ ~ ~ campfire[lit=false,facing=north] run setblock ~ ~ ~ campfire[lit=true,facing=north]
+execute if block ~ ~ ~ soul_campfire[lit=false,facing=east] run setblock ~ ~ ~ soul_campfire[lit=true,facing=east]
+execute if block ~ ~ ~ soul_campfire[lit=false,facing=south] run setblock ~ ~ ~ soul_campfire[lit=true,facing=south]
+execute if block ~ ~ ~ soul_campfire[lit=false,facing=west] run setblock ~ ~ ~ soul_campfire[lit=true,facing=west]
+execute if block ~ ~ ~ soul_campfire[lit=false,facing=north] run setblock ~ ~ ~ soul_campfire[lit=true,facing=north]
 #------------------------------------------#
