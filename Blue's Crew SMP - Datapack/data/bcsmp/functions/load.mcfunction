@@ -40,6 +40,7 @@ scoreboard players set #Constant10000 Temp 10000
 
 function bcsmp:main_1s
 #--------------MODULE RELOADS--------------#
+function bcsmp:armor/load
 function bcsmp:brewing/load
 function bcsmp:right_click/load
 function bcsmp:advancements/load
