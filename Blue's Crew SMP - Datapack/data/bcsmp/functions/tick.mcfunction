@@ -5,6 +5,7 @@
 #==========================================#
 #-------------------TICK-------------------#
 #Modules
+function bcsmp:armor/main
 function bcsmp:right_click/main
 function bcsmp:advancements/main
 function bcsmp:mobs/main
