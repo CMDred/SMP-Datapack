@@ -1,0 +1,56 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{color:16580093}}",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$ArmorColor"
+          },
+          "score": "Temp"
+        },
+        "range": 16579836
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{color:16579837}}",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$ArmorColor"
+          },
+          "score": "Temp"
+        },
+        "range": 16580093
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{color:16514300}}",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$ArmorColor"
+          },
+          "score": "Temp"
+        },
+        "range": 16579837
+      }
+    ]
+  }
+]

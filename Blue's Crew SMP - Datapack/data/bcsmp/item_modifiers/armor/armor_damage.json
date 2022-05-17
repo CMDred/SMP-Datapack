@@ -1,0 +1,25 @@
+[
+    {
+      "function": "minecraft:set_damage",
+      "damage": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$HelmetDamage"
+        },
+        "score": "Temp",
+        "scale": 0.01818181818181818
+      },
+      "add": true,
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:leather_helmet"
+            ]
+          }
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,148 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{color:16645629}}",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$ArmorColor"
+          },
+          "score": "Temp"
+        },
+        "range": 16579836
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{color:16579579}}",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$ArmorColor"
+          },
+          "score": "Temp"
+        },
+        "range": 16580093
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{color:16514299}}",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$ArmorColor"
+          },
+          "score": "Temp"
+        },
+        "range": 16579837
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{color:16514044}}",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$ArmorColor"
+          },
+          "score": "Temp"
+        },
+        "range": 16514300
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "bcsmp:armor"
+    },
+    "ops": [
+      {
+        "source": "Leggings.Power",
+        "target": "Power",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "bcsmp:armor"
+    },
+    "ops": [
+      {
+        "source": "Leggings.Damage",
+        "target": "Damage",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "text": "Copper Leggings",
+        "color": "gold",
+        "italic": false
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+      {
+        "text": "Power: ",
+        "color": "white",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": "$PowerLeggings",
+          "objective": "Temp"
+        },
+        "color": "white",
+        "italic": false
+      },
+      {
+        "text": "/",
+        "color": "white",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": "$BasePowerLeggings",
+          "objective": "Temp"
+        },
+        "color": "white",
+        "italic": false
+      }
+    ]
+    ],
+    "replace": true
+  }
+]
