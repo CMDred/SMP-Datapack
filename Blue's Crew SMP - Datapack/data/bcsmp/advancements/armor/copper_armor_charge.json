@@ -1,0 +1,136 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "head": {
+                        "items": [
+                          "minecraft:leather_helmet"
+                        ],
+                        "nbt": "{display:{color:16579836}}"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "chest": {
+                        "items": [
+                          "minecraft:leather_chestplate"
+                        ],
+                        "nbt": "{display:{color:16579836}}"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "legs": {
+                        "items": [
+                          "minecraft:leather_leggings"
+                        ],
+                        "nbt": "{display:{color:16579836}}"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "feet": {
+                        "items": [
+                          "minecraft:leather_boots"
+                        ],
+                        "nbt": "{display:{color:16579836}}"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "head": {
+                        "items": [
+                          "minecraft:leather_helmet"
+                        ],
+                        "nbt": "{display:{color:16645629}}"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "chest": {
+                        "items": [
+                          "minecraft:leather_chestplate"
+                        ],
+                        "nbt": "{display:{color:16645629}}"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "legs": {
+                        "items": [
+                          "minecraft:leather_leggings"
+                        ],
+                        "nbt": "{display:{color:16645629}}"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "feet": {
+                        "items": [
+                          "minecraft:leather_boots"
+                        ],
+                        "nbt": "{display:{color:16645629}}"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "damage": {
+            "type": {
+              "is_lightning": true
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "bcsmp:armor/copper_armor/charge"
+    }
+  }
